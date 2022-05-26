@@ -7,39 +7,49 @@
 		<title>Guild Wars 2 Character Selection</title>
 		<link rel="stylesheet" href="css/normalize.css">
 		<link rel="stylesheet" href="css/style.css">
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=PT+Serif&display=swap" rel="stylesheet">
 	</head>
 	<body>
-		<h1>Guild Wars 2 Character Selection</h1>
+		<section class="container">
+			<video autoplay loop id="diesealVanVideo">
+				<source src="video/dieselVan_AdobeCreativeCloudExpress.mp4">
+				Your browser does not support HTML5 video.
+		</video>
 		<section class="character-selection">
 		<ul>
-			<li id="dieselVan"></li>
-			<li id="eveingaura"></li>
-			<li id="leonilda"></li>
-			<li id="leonildá"></li>
-			<li id="lordNecomongr"></li>
-			<li id="noire"></li>
-			<li id="rambro"></li>
-			<li id="rayden"></li>
-			<li id="gandalfTheBlack"></li>
-			<li id="alissa"></li>
-			<li id="ironMan"></li>
-			<li id="ranger"></li>
+			<li class="icon" id="dieselVan"></li>
+			<li class="icon" id="eveingaura"></li>
+			<li class="icon" id="leonilda"></li>
+			<li class="icon" id="leonildá"></li>
+			<li class="icon" id="lordNecomongr"></li>
+			<li class="icon" id="noire"></li>
+			<li class="icon" id="rambro"></li>
+			<li class="icon" id="rayden"></li>
+			<li class="icon" id="gandalfTheBlack"></li>
+			<li class="icon" id="alissa"></li>
+			<li class="icon" id="ironMan"></li>
+			<li class="icon" id="ranger"></li>
 		</ul>
 		</section>
 		<footer>
-			<div class="left-div">
-				<button class="logOut">Log Out</button>
-				<button class="worldSelection">World Selection</button>
-			</div>
-			<div class="middle-div">
-				<p>12 of 12 Character Slots in Use</p>
-			</div>
-			<div class="right-div">
-				<button class="play">Play</button>
-				<button class="create">Create</button>
-				<button class="delete">Delete</button>
+			<div class="footer-container">
+				<div class="left-div">
+					<button class="logOut">Log Out</button>
+					<button class="worldSelection">World Selection</button>
+				</div>
+				<div class="middle-div">
+					<p>12 of 12 Character Slots in Use</p>
+				</div>
+				<div class="right-div">
+					<button class="play">Play</button>
+					<button class="create">Create</button>
+					<button class="delete">Delete</button>
+				</div>
 			</div>
 		</footer>
+		</section>
 		<script type="text/javascript" src="js/main.js"></script>
 	</body>
 </html>

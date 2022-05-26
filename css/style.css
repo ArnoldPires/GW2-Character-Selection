@@ -16,6 +16,14 @@ body {
   font-family: 'PT serif', serif;
   overflow: hidden;
 }
+a {
+  text-decoration: none;
+  background-color: rgb(207,196,179);
+  border: 2px solid rgb(207,196,179);
+  border-radius: 2px;
+  margin: 5px;
+  color: black;
+}
 video {
   width: 100%;
   height: 97vh;
@@ -48,13 +56,11 @@ li {
   margin-left: 1rem;
   overflow: hidden;
 }
-footer {
+.footer-container {
   background-color: black;
   position: fixed;
   bottom: 0;
   width: 100%;
-}
-.footer-container {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -77,38 +83,38 @@ footer p {
   background-size: cover;
 }
 #dieselVan {
-  background-image: url(../img/dieselVan.PNG);
+  background-image: url(../img/characterIcons/dieselVan.PNG);
 }
 #eveingaura {
-  background-image: url(../img/eveningaura.PNG);
+  background-image: url(../img/characterIcons/eveningaura.PNG);
 }
 #leonilda {
-  background-image: url(../img/leon.PNG);
+  background-image: url(../img/characterIcons/leon.PNG);
 }
 #leonildá {
-  background-image: url(../img/leonilda.PNG);
+  background-image: url(../img/characterIcons/leonilda.PNG);
 }
 #lordNecomongr {
-  background-image: url(../img/lordNecromongr.PNG);
+  background-image: url(../img/characterIcons/lordNecromongr.PNG);
 }
 #noire {
-  background-image: url(../img/noire.PNG);
+  background-image: url(../img/characterIcons/noire.PNG);
 }
 #rambro {
-  background-image: url(../img/rambro.PNG);
+  background-image: url(../img/characterIcons/rambro.PNG);
 }
 #rayden {
-  background-image: url(../img/rayden.PNG);
+  background-image: url(../img/characterIcons/rayden.PNG);
 }
 #gandalfTheBlack {
-  background-image: url(../img/gandalfTheBlack.PNG);
+  background-image: url(../img/characterIcons/gandalfTheBlack.PNG);
 }
 #alissa {
-  background-image: url(../img/alissa.PNG);
+  background-image: url(../img/characterIcons/alissa.PNG);
 }
 #ironMan {
-  background-image: url(../img/ironMan.PNG);
+  background-image: url(../img/characterIcons/ironMan.PNG);
 }
 #ranger {
-  background-image: url(../img/ranger.PNG);
+  background-image: url(../img/characterIcons/ranger.PNG);
 }

@@ -14,9 +14,25 @@
 /*******************************************/
 body {
   font-family: 'PT serif', serif;
-  overflow: hidden;
 }
-
+a {
+  text-decoration: none;
+  background-color: rgb(207,196,179);
+  border: 2px solid rgb(207,196,179);
+  border-radius: 2px;
+  margin: 5px;
+  color: black;
+}
+main {
+  display: flex;
+  justify-content: space-evenly;
+}
+ul {
+  list-style: none;
+}
+iframe {
+  height: 40vh;
+}
 /******************************************
 /* ADDITIONAL STYLES
 /*******************************************/

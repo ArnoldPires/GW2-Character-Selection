@@ -14,8 +14,18 @@
 /*******************************************/
 body {
   font-family: 'PT serif', serif;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("../../img/specBackground/pof/renegadeBackground.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: white;
+  height: 100vh;
 }
-a {
+.smc {
+  display: flex;
+  flex-direction: row-reverse;
+  padding: 1rem;
+}
+.smc a {
   text-decoration: none;
   background-color: rgb(207,196,179);
   border: 2px solid rgb(207,196,179);
@@ -23,16 +33,67 @@ a {
   margin: 5px;
   color: black;
 }
+h1 {
+  text-align: center;
+}
 main {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-around;
 }
 ul {
   list-style: none;
 }
-iframe {
-  height: 40vh;
+video {
+  border-radius: 2rem;
+  width: 50rem;
+  height: 50vh;
+  object-fit: none;
+  z-index: -1;
+}
+/******************************************
+/* Spec Description
+/*******************************************/
+.specDescription {
+  width: 50rem;
+}
+img {
+  width: 5rem;
+  padding: 1rem;
+}
+/******************************************
+/* Spec Selection
+/*******************************************/
+.specSelection {
+  display: flex;
+  justify-content: space-evenly;
+}
+.specSelection h2 {
+  text-align: center;
+}
+.row {
+  display: contents;
 }
 /******************************************
 /* ADDITIONAL STYLES
 /*******************************************/
+.row1 {
+  display: table-cell;
+}
+.row2 {
+  display: contents;
+}
+.row3 {
+  display: table-cell;
+}
+.coreSpecs h2 {
+  color: #e20505;
+}
+.hotSpecs h2 {
+  color: #607620;
+}
+.pofSpecs h2 {
+  color: #a63a8a;
+}
+.eodSpecs h2 {
+  color: #00c194;
+}

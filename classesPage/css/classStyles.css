@@ -14,11 +14,10 @@
 /*******************************************/
 body {
   font-family: 'PT serif', serif;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("../../img/specBackground/pof/renegadeBackground.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
+ /*background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("../../img/specBackground/pof/renegadeBackground.jpg"); */
   color: white;
   height: 100vh;
+  background-repeat: no-repeat;
 }
 .smc {
   display: flex;
@@ -50,6 +49,10 @@ video {
   object-fit: none;
   z-index: -1;
 }
+iframe {
+  width: 40rem;
+  height: 40vh;
+}
 /******************************************
 /* Spec Description
 /*******************************************/
@@ -66,6 +69,7 @@ img {
 .specSelection {
   display: flex;
   justify-content: space-evenly;
+  padding: 5rem;
 }
 .specSelection h2 {
   text-align: center;

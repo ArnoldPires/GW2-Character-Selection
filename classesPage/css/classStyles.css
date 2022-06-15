@@ -20,6 +20,7 @@ body {
   color: white;
   height: 100vh;
   background-repeat: no-repeat;
+  resize: both;
   text-shadow: -1px 0 black, 0 2.2px black, 2.2px 0 black, 0 -1px black;
 }
 .smc {
@@ -41,7 +42,7 @@ h1 {
 }
 main {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-evenly;
 }
 ul {
   list-style: none;
@@ -54,17 +55,32 @@ video {
   z-index: -1;
 }
 iframe {
-  width: 40rem;
-  height: 40vh;
+  width: 35rem;
+  height: 30vh;
+}
+/******************************************
+/* Class Show Case
+/*******************************************/
+.classShowCase {
+  display: none;
+  justify-content: center;
 }
 /******************************************
 /* Spec Description
 /*******************************************/
 .specDescription {
   width: 50rem;
-  background-color: rgba(0, 0, 0, 0.3);
-  padding: 4rem;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 3rem;
+  border: 2px solid white;
   border-radius: 5rem;
+  display: none;
+}
+.specHighlights ul li {
+  list-style: disc;
+}
+.specHighlights, .specP {
+  padding: 1rem;
 }
 img {
   width: 5rem;
@@ -81,6 +97,9 @@ img {
 .specSelection h2 {
   text-align: center;
 }
+.specSelection li {
+  cursor: pointer;
+}
 .row {
   display: contents;
 }
@@ -96,14 +115,34 @@ img {
 .row3 {
   display: table-cell;
 }
+.coreSpecs, .hotSpecs, .pofSpecs, .eodSpecs {
+  border-radius: 1rem;
+  padding: 10px;
+}
+.coreSpecs {
+  background-color: #e205051f;
+  border: 2px solid #e20505;
+}
 .coreSpecs h2 {
   color: #e20505;
+}
+.hotSpecs {
+  background-color: #6076205c;
+  border: 2px solid #607620;
 }
 .hotSpecs h2 {
   color: #607620;
 }
+.pofSpecs {
+  background-color: #a63a8a8f;
+  border: 2px solid #a63a8a;
+}
 .pofSpecs h2 {
   color: #a63a8a;
+}
+.eodSpecs {
+  background-color: #00c1947a;
+  border: 2px solid #00c194;
 }
 .eodSpecs h2 {
   color: #00c194;

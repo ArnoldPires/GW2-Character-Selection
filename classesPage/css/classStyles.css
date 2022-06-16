@@ -15,18 +15,17 @@
 body {
   font-family: 'PT serif', serif;
   background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("../../img/gw2Logo.png");
-  background-size: contain;
+  background-size: cover;
   background-position: center;
   color: white;
-  height: 100vh;
-  background-repeat: no-repeat;
+  height: auto;
   resize: both;
   text-shadow: -1px 0 black, 0 2.2px black, 2.2px 0 black, 0 -1px black;
+  line-height: 1.5rem;
 }
 .smc {
   display: flex;
   flex-direction: row-reverse;
-  padding: 1rem;
   text-shadow: none;
 }
 .smc a {
@@ -37,15 +36,21 @@ body {
   margin: 5px;
   color: black;
 }
+.heading-title {
+   filter: drop-shadow(0 0 5px white)
+}
 h1 {
   text-align: center;
+  text-shadow: -1px 0 black, 0 2.2px black, 2.2px 0 black, 0 -1px black;
+  margin: 0;
+  padding-bottom: 1rem;
 }
 main {
   display: flex;
   justify-content: space-evenly;
 }
 ul {
-  list-style: none;
+  list-style:inherit;
 }
 video {
   border-radius: 2rem;
@@ -76,14 +81,7 @@ iframe {
   border-radius: 5rem;
   display: none;
 }
-.specHighlights ul li {
-  list-style: disc;
-}
 .specHighlights, .specP {
-  padding: 1rem;
-}
-img {
-  width: 5rem;
   padding: 1rem;
 }
 /******************************************
@@ -91,7 +89,7 @@ img {
 /*******************************************/
 .specSelection {
   display: flex;
-  justify-content: space-evenly;
+  align-items: center;
   padding: 1rem;
 }
 .specSelection h2 {
@@ -99,6 +97,11 @@ img {
 }
 .specSelection li {
   cursor: pointer;
+}
+img {
+  width: 5rem;
+  padding: 1rem;
+  filter: drop-shadow(0 0 5px black);
 }
 .row {
   display: contents;
@@ -120,14 +123,14 @@ img {
   padding: 10px;
 }
 .coreSpecs {
-  background-color: #e205051f;
+  background-color: #e2050573;
   border: 2px solid #e20505;
 }
 .coreSpecs h2 {
   color: #e20505;
 }
 .hotSpecs {
-  background-color: #6076205c;
+  background-color: #607620b8;
   border: 2px solid #607620;
 }
 .hotSpecs h2 {

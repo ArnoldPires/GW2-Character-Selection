@@ -14,9 +14,10 @@
 /*******************************************/
 body {
   font-family: 'PT serif', serif;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("../../img/gw2Logo.png");
+  background-image: url("../../img/gw2Logo.jpg");
+  background-repeat: no-repeat;
   background-size: cover;
-  background-position: center;
+  background-position: top;
   color: white;
   height: auto;
   resize: both;
@@ -48,20 +49,16 @@ h1 {
 main {
   display: flex;
   justify-content: space-evenly;
+  padding: 2rem;
 }
 ul {
   list-style:inherit;
 }
 video {
   border-radius: 2rem;
-  width: 50rem;
-  height: 50vh;
-  object-fit: none;
-  z-index: -1;
-}
-iframe {
   width: 35rem;
   height: 30vh;
+  object-fit: cover;
 }
 /******************************************
 /* Class Show Case

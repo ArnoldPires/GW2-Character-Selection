@@ -14,15 +14,17 @@
 /*******************************************/
 body {
   font-family: 'PT serif', serif;
-  background-image: url("../../img/gw2Logo.jpg");
+  background-image: url("../../img/gw2Background.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: top;
+  background-attachment: fixed;
   color: white;
   height: auto;
   resize: both;
   text-shadow: -1px 0 black, 0 2.2px black, 2.2px 0 black, 0 -1px black;
   line-height: 1.5rem;
+  letter-spacing: 1px;
 }
 .smc {
   display: flex;
@@ -46,15 +48,50 @@ h1 {
   margin: 0;
   padding-bottom: 1rem;
 }
+h2 {
+  text-align: center;
+  margin: 1rem;
+  font-size: 2rem;
+}
+img {
+  width: 5rem;
+  padding: 1rem;
+  filter: drop-shadow(0 0 5px black);
+}
 main {
   display: flex;
   justify-content: space-evenly;
   padding: 2rem;
 }
+/******************************************
+/* Spec Selection
+/*******************************************/
+.coreSpecs {
+  background-color: #1212128c;
+  border: 2px solid white;
+  border-radius: 1rem;
+  padding: 10px;
+}
+.coreSpecs ul{
+  display: flex;
+  list-style: none;
+}
+.specSelection {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 1rem;
+}
+.specSelection h2 {
+  text-align: center;
+}
+.specSelection li {
+  cursor: pointer;
+}
 ul {
   list-style:inherit;
 }
-video {
+#coreVideo, #hotVideo, #pofVideo, #eodVideo {
   border-radius: 2rem;
   width: 35rem;
   height: 30vh;
@@ -71,7 +108,7 @@ video {
 /* Spec Description
 /*******************************************/
 .specDescription {
-  width: 50rem;
+  width: 70rem;
   background-color: rgba(0, 0, 0, 0.5);
   padding: 3rem;
   border: 2px solid white;
@@ -82,68 +119,5 @@ video {
   padding: 1rem;
 }
 /******************************************
-/* Spec Selection
-/*******************************************/
-.specSelection {
-  display: flex;
-  align-items: center;
-  padding: 1rem;
-}
-.specSelection h2 {
-  text-align: center;
-}
-.specSelection li {
-  cursor: pointer;
-}
-img {
-  width: 5rem;
-  padding: 1rem;
-  filter: drop-shadow(0 0 5px black);
-}
-.row {
-  display: contents;
-}
-/******************************************
 /* ADDITIONAL STYLES
 /*******************************************/
-.row1 {
-  display: table-cell;
-}
-.row2 {
-  display: contents;
-}
-.row3 {
-  display: table-cell;
-}
-.coreSpecs, .hotSpecs, .pofSpecs, .eodSpecs {
-  border-radius: 1rem;
-  padding: 10px;
-}
-.coreSpecs {
-  background-color: #e2050573;
-  border: 2px solid #e20505;
-}
-.coreSpecs h2 {
-  color: #e20505;
-}
-.hotSpecs {
-  background-color: #607620b8;
-  border: 2px solid #607620;
-}
-.hotSpecs h2 {
-  color: #607620;
-}
-.pofSpecs {
-  background-color: #a63a8a8f;
-  border: 2px solid #a63a8a;
-}
-.pofSpecs h2 {
-  color: #a63a8a;
-}
-.eodSpecs {
-  background-color: #00c1947a;
-  border: 2px solid #00c194;
-}
-.eodSpecs h2 {
-  color: #00c194;
-}

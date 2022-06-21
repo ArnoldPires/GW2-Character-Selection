@@ -4,37 +4,134 @@ function gwGuard() {
   document.querySelector('body').style.backgroundImage = "linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../../img/specBackground/core/guardianBackground.jpg)";
   document.querySelector('body').style.backgroundPosition = "top"
   document.querySelector('body').style.backgroundSize = "cover"
-  document.querySelector('h1').innerText = "Guardian"
-  document.querySelector('h1').style.color = "#8AF7F5"
   document.querySelector('.classShowCase').style.display = "flex"
   document.querySelector('.specDescription').style.display = "unset"
-  document.querySelector('video').src="../video/characters/leonilda.mp4"
-  document.getElementById('pOne').innerText = "Guardians are devoted fighters who protect their allies and smite their enemies by drawing from the power of their virtues. True guardians are brilliant tacticians and selfless defenders who know how to empower their allies to achieve victory."
-  document.getElementById('pTwo').innerText = "Their profession mechanic are their virtues, which passively provide benefits to the guardian, and can be activated to lose the passive bonus and provide a more powerful effect to nearby allies. Guardians act with conviction when smiting their foes and supporting their allies with their unshakeable faith."
-  document.getElementById('pmOne').innerText = "Zeal — Focuses on increasing damage and applying vulnerability. Enhances greatsword, scepter, and spirit weapon skills."
-  document.getElementById('pmTwo').innerText = "Radiance — Focuses on burning, critical hits, and resolution; based on Virtue of Justice. Enhances sword, torch, and signet skills."
-  document.getElementById('pmThree').innerText = "Valor — Focuses on blocking and toughness; based on Virtue of Courage. Enhances focus, shield, and meditation skills."
-  document.getElementById('pmFour').innerText = "Honor — Focuses on dodging, healing, and protection; based on Virtue of Resolve. Enhances mace, staff, and symbol and shout skills."
-  document.getElementById('pmFive').innerText = "Virtues — Focuses on virtues and resolution. Enhances hammer, consecration, and virtue skills."
+  document.querySelector('.coreName').innerText = "Guardian"
+  document.querySelector('.coreName').style.color = "#8AF7F5"
+  document.getElementById('coreVideo').src = "../video/characters/leonilda.mp4"
+  //Description
+  document.getElementById('coreOneP').innerText = "Guardians are devoted fighters who protect their allies and smite their enemies by drawing from the power of their virtues. True guardians are brilliant tacticians and selfless defenders who know how to empower their allies to achieve victory."
+  document.getElementById('coreTwoP').innerText = "Guardians are devoted fighters. Their profession mechanic are their virtues, which passively provide benefits to the guardian, and can be activated to lose the passive bonus and provide a more powerful effect to nearby allies. Guardians act with conviction when smiting their foes and supporting their allies with their unshakeable faith. As a soldier profession, guardians wear heavy armor."
+  //Weapons
+  document.getElementById('corewOne').innerText = "Greatsword — Offensive melee weapon for dealing high area damage, pulling multiple foes and enhancing allies."
+  document.getElementById('corewTwo').innerText = "Hammer — Defensive melee weapon capable of protecting allies with area damage, protection and enemy-warding."
+  document.getElementById('corewThree').innerText = "Staff — Supportive weapon that can be used to heal and enhance allies, or ward away enemies."
+  document.getElementById('corewFour').innerText = "Mace — Supportive melee weapon for healing allies and blocking attacks."
+  document.getElementById('corewFive').innerText = "Scepter — Offensive long-range weapon used to smite and immobilize foes."
+  document.getElementById('corewSix').innerText = "Sword — Balanced melee weapon with mobility and projectile defense options."
+  document.getElementById('corewSeven').innerText = "Focus — Balanced weapon with damaging abilities and self-defense."
+  document.getElementById('corewEight').innerText = "Shield — Defensive weapon that can protect allies with projectile defense, Aegis and protection."
+  document.getElementById('corewNine').innerText = "Torch — Offensive weapon for burning enemies and cleansing allies."
+  document.getElementById('corewTen').innerText = "Spear — Offensive mid-range weapon used to pull enemies and deal area damage."
+  document.getElementById('corewEleven').innerText = "Trident — Supportive long-range weapon with projectile defense, area damage, healing and a sinking ability."
+  //Specialization Traits
+  document.getElementById('stOne').innerText = "Zeal — Focuses on increasing damage and applying vulnerability. Enhances greatsword, scepter, and spirit weapon skills."
+  document.getElementById('stTwo').innerText = "Radiance — Focuses on burning, critical hits, and resolution; based on Virtue of Justice. Enhances sword, torch, and signet skills."
+  document.getElementById('stThree').innerText = "Valor — Focuses on blocking and toughness; based on Virtue of Courage. Enhances focus, shield, and meditation skills."
+  document.getElementById('stFour').innerText = "Honor — Focuses on dodging, healing, and protection; based on Virtue of Resolve. Enhances mace, staff, and symbol and shout skills."
+  document.getElementById('stFive').innerText = "Virtues — Focuses on virtues and resolution. Enhances hammer, consecration, and virtue skills."
+  //HOT
+  document.querySelector('.hotName').innerText = "Dragonhunter"
+  document.querySelector('.hotName').style.color = "#8AF7F5"
+  document.getElementById('hotVideo').src = "../video/characters/leonilda.mp4"
+  //Description
+  document.getElementById('hotOneP').innerText = '"I will set my trap and wait for them to come."'
+  document.getElementById('hotTwoP').innerText = "The dragon hunter is a ranged, methodical hunter that uses various traps to ensnare their prey while picking them off with arrows of light. Their virtue skills become corporeal and more powerful in exchange for a longer casting time."
+  document.getElementById('hotThreeP').innerText = ""
+  //Weapon
+  document.getElementById('hotWOne').innerText = "Longbow — Offensive long-range weapon, used to enhance allies or burn and control enemies (Dragonhunter specialization only)"
+  //Specialization Trait
+  document.getElementById('hotStOne').innerText = "Dragonhunter — Gains access to longbows, a set of trap skills, and replaces the active virtues with ones that manifest in a physical form."
+  //POF
+  document.querySelector('.pofName').innerText = "Firebrand"
+  document.querySelector('.pofName').style.color = "#8AF7F5"
+  document.getElementById('pofVideo').src = "../video/characters/leonilda.mp4"
+  //Description
+  document.getElementById('pofOneP').innerText = '"Let the ancient magics of Vabbi burn away our foes."'
+  document.getElementById('pofTwoP').innerText = "Firebrands harness the power of ancient Vabbian tomes to burn away impurities and conquer their foes. Each tome contains raw, powerful magic and must be used with patience and care."
+  //Weapon
+  document.getElementById('pofWOne').innerText = "Axe — Offensive melee weapon that can pull enemies and inflict conditions on foes. (Firebrand specialization only)"
+  //Specialization Trait
+  document.getElementById('pofStOne').innerText = "Firebrand — Gains access to axes, a set of mantra skills, and replaces the active virtues with Tomes."
+  //EOD
+  document.querySelector('.eodName').innerText = "Willbender"
+  document.querySelector('.eodName').style.color = "#8AF7F5"
+  document.getElementById('eodVideo').src = "../video/characters/leonilda.mp4"
+  //Description
+  document.getElementById('eodOneP').innerText = '"I will silence the threat before it can fester."'
+  document.getElementById('eodTwoP').innerText = "Willbenders are protectors of the Canthan throne and fated guardians to the Weh no Su. Their sword arm is as strong as their loyalty—unflinching and ruthless. They are known for a swift hand and unmatched swordplay, striking before their foe has time to react."
+  //Weapon
+  document.getElementById('eodWOne').innerText = "Off-hand Sword — Melee weapon with mobility. (Willbender specialization only)"
+  //Specialization Trait
+  document.getElementById('eodStOne').innerText = "Willbender — Gains access to off hand swords, a set of physical skills, and replaces the virtues with ones that have no passive effect, but provide movement abilities when activated."
 }
 document.getElementById('revenant').onclick = gwRev
 function gwRev() {
   document.querySelector('body').style.backgroundImage = "linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../../img/specBackground/core/revenantBackground.jpg)";
   document.querySelector('body').style.backgroundPosition = "center"
   document.querySelector('body').style.backgroundSize = "cover"
-  document.querySelector('h1').innerText = "Revenant"
-  document.querySelector('h1').style.color = "#b50000"
   document.querySelector('.classShowCase').style.display = "flex"
   document.querySelector('.specDescription').style.display = "unset"
-  document.querySelector('video').src="../video/characters/leonildá.mp4"
-  document.getElementById('pOne').innerText = "Heavily armored and equipped with the otherworldly powers of the Mists, revenants channel Tyria’s legends to slaughter foes, unleash chaos on the battlefield, and support their allies. This profession is exclusive to Guild Wars 2: Heart of Thorns™, Guild Wars 2: Path of Fire™, and Guild Wars 2: End of Dragons"
-  document.getElementById('pTwo').innerText = "Revenants channel the power of the Mists. Their profession mechanic are their Legends, they commune with deceased legendary heroes and villains from Tyria's past, which aid them in battle. Revenants commune with two legends, chanelling only one at a time, swapping between the two while in combat. Addtionally, revenant skills cost energy, a resource that replenishes over time or when switching legends."
-   document.getElementById('pThree').innerText = "As a soldier profession, revenants wear heavy armor."
-  document.getElementById('pmOne').innerText = "Corruption — Associated with Legendary Demon Stance. Focuses on applying condition damage (torment) and resisting condition damage. Benefits mace."
-  document.getElementById('pmTwo').innerText = "Retribution — Associated with Legendary Dwarf Stance. Focuses on reducing incoming strike and condition damage (resolution), and endurance recovery (vigor). Benefits dodging."
-  document.getElementById('pmThree').innerText = "Salvation — Associated with Legendary Centaur Stance. Focuses on healing and support. Benefits staff."
-  document.getElementById('pmFour').innerText = "Invocation — Focuses on critical strike chance (fury) and invoking legends."
-  document.getElementById('pmFive').innerText = "Devastation — Associated with Legendary Assassin Stance. Focuses on improving damage to enemies and stealing health (Battle Scars). Benefits dual-wielding."
+  document.querySelector('.coreName').innerText = "Revenant"
+  document.querySelector('.coreName').style.color = "#b50000"
+  document.getElementById('coreVideo').src = "../video/characters/leonilda.mp4"
+  //Description
+  document.getElementById('coreOneP').innerText = "Heavily armored and equipped with the otherworldly powers of the Mists, revenants channel Tyria’s legends to slaughter foes, unleash chaos on the battlefield, and support their allies. This profession is exclusive to Guild Wars 2: Heart of Thorns™, Guild Wars 2: Path of Fire™, and Guild Wars 2: End of Dragons"
+  document.getElementById('coreTwoP').innerText = "Revenants channel the power of the Mists. Their profession mechanic are their Legends, they commune with deceased legendary heroes and villains from Tyria's past, which aid them in battle. Revenants commune with two legends, chanelling only one at a time, swapping between the two while in combat. Addtionally, revenant skills cost energy, a resource that replenishes over time or when switching legends."
+  document.getElementById('coreThreeP').innerText = "As a soldier profession, revenants wear heavy armor."
+  //Weapons
+  document.getElementById('corewOne').innerText = "Main-hand Mace — Inflict various conditions on foes at a medium-close range. Works well with Legendary Demon Stance."
+  document.getElementById('corewTwo').innerText = "Off-hand Sword — Quick and lethal strikes, grants high mobility during combat. Works well with Legendary Assassin Stance."
+  document.getElementById('corewThree').innerText = "Off-hand Axe — Focuses on applying conditions and hindering enemy movement. Works well with Legendary Demon Stance."
+  document.getElementById('corewFour').innerText = "Off-hand Sword — Delivers high burst damage, along with immobilize, chill, and slow. Works well with Legendary Assassin Stance."
+  document.getElementById('corewFive').innerText = "Hammer — Functions as a ranged weapon, good for ranged combat, area damage and projectile block. Works well with Legendary Dwarf Stance."
+  document.getElementById('corewSix').innerText = "Staff — Supportive weapon with close combat attacks, healing and crowd control. Works well with Legendary Centaur Stance."
+  document.getElementById('corewSeven').innerText = "Focus — Balanced weapon with damaging abilities and self-defense."
+  document.getElementById('corewEight').innerText = "Shield — Defensive weapon that can protect allies with projectile defense, Aegis and protection."
+  document.getElementById('corewNine').innerText = "Torch — Offensive weapon for burning enemies and cleansing allies."
+  document.getElementById('corewTen').innerText = " Under water Spear — Hybrid approach weapon with varied ranged attacks, can be used as physical and condition-damage. Works with available Aquatic Stances, Legendary Demon Stance, Legendary Assassin Stance and Legendary Dwarf Stance."
+  document.getElementById('corewEleven').innerText = "Under water Trident — Ranged weapon that inflicts various conditions based on the wielder's legendary stance. Works with available Aquatic Stances, Legendary Demon Stance, Legendary Assassin Stance and Legendary Dwarf Stance."
+  //Specialization Traits
+  document.getElementById('stOne').innerText = "Corruption — Associated with Legendary Demon Stance. Focuses on applying condition damage (torment) and resisting condition damage. Benefits mace."
+  document.getElementById('stTwo').innerText = "Retribution — Associated with Legendary Dwarf Stance. Focuses on reducing incoming strike and condition damage (resolution), and endurance recovery (vigor). Benefits dodging."
+  document.getElementById('stThree').innerText = "Salvation — Associated with Legendary Centaur Stance. Focuses on healing and support. Benefits staff."
+  document.getElementById('stFour').innerText = "Invocation — Focuses on critical strike chance (fury) and invoking legends."
+  document.getElementById('stFive').innerText = "Devastation — Associated with Legendary Assassin Stance. Focuses on improving damage to enemies and stealing health (Battle Scars). Benefits dual-wielding."
+  //HOT
+  document.querySelector('.hotName').innerText = "Herald"
+  document.querySelector('.hotName').style.color = "#b50000"
+  document.getElementById('coreVideo').src[1] = "../video/characters/leonilda.mp4"
+  //Description
+  document.getElementById('hotOneP').innerText = '"You have a destiny to fulfill."'
+  document.getElementById('hotTwoP').innerText = "The herald invokes the legendary dragon Glint, gaining abilities that allow them to channel restorative energies in order to bolster their allies. These abilities can be maintained indefinitely as long as they have sufficient energy, and they can be stacked to gain multiple effects."
+  //Weapon
+  document.getElementById('hotWOne').innerText = "Off-hand Shield — Defensive weapon used to help survivability for you and your allies. Works well with Legendary Dragon Stance. (Herald specialization only)"
+  //Specialization Trait
+  document.getElementById('hotWOne').innerText = "Herald — Focuses on boon sharing based on the facets of Glint. Gains access to shields and the Legendary Dragon Stance."
+  //POF
+  document.querySelector('.pofName').innerText = ""
+  document.querySelector('.pofName').style.color = ""
+  document.getElementById('coreVideo').src[2] = "../video/characters/leonilda.mp4"
+  //Description
+  document.getElementById('pofOneP').innerText = ""
+  document.getElementById('pofTwoP').innerText = ""
+  document.getElementById('pofThreeP').innerText = ""
+  //Weapon
+  document.getElementById('pofWOne').innerText = ""
+  //Specialization Trait
+  document.getElementById('pofWOne').innerText = ""
+  //EOD
+  document.querySelector('.eodName').innerText = ""
+  document.querySelector('.eodName').style.color = ""
+  document.getElementById('coreVideo').src[3] = "../video/characters/leonilda.mp4"
+  //Description
+  document.getElementById('eodOneP').innerText = ""
+  document.getElementById('eodTwoP').innerText = ""
+  document.getElementById('eodThreeP').innerText = ""
+  //Weapon
+  document.getElementById('eodWOne').innerText = ""
+  //Specialization Trait
+  document.getElementById('eodWOne').innerText = ""
 }
 document.getElementById('warrior').onclick = gwWar
 function gwWar() {
@@ -55,6 +152,42 @@ function gwWar() {
   document.getElementById('pmThree').innerText = "Defense — Focuses on damage mitigation, stability and crowd control. Enhances shield, mace and stance skills."
   document.getElementById('pmFour').innerText = "Tactics — Specializes in supporting allies via burst and shout abilities. Enhances warhorn and shout skills."
   document.getElementById('pmFive').innerText = "Focuses on improving adrenaline gain and weapon swapping. Enhances axe, longbow, rifle, harpoon gun, banners and burst skills."
+  //HOT
+  document.querySelector('.hotName').innerText = ""
+  document.querySelector('.hotName').style.color = ""
+  document.querySelector('.hotVideo').src = ""
+  //Description
+  document.getElementById('hotOneP').innerText = ""
+  document.getElementById('hotTwoP').innerText = ""
+  document.getElementById('hotThreeP').innerText = ""
+  //Weapon
+  document.getElementById('hotWOne').innerText = ""
+  //Specialization Trait
+  document.getElementById('hotWOne').innerText = ""
+  //POF
+  document.querySelector('.pofName').innerText = ""
+  document.querySelector('.pofName').style.color = ""
+  document.querySelector('.hotVideo').src = ""
+  //Description
+  document.getElementById('pofOneP').innerText = ""
+  document.getElementById('pofTwoP').innerText = ""
+  document.getElementById('pofThreeP').innerText = ""
+  //Weapon
+  document.getElementById('pofWOne').innerText = ""
+  //Specialization Trait
+  document.getElementById('pofWOne').innerText = ""
+  //EOD
+  document.querySelector('.eodName').innerText = ""
+  document.querySelector('.eodName').style.color = ""
+  document.querySelector('.eodVideo').src = ""
+  //Description
+  document.getElementById('eodOneP').innerText = ""
+  document.getElementById('eodTwoP').innerText = ""
+  document.getElementById('eodThreeP').innerText = ""
+  //Weapon
+  document.getElementById('eodWOne').innerText = ""
+  //Specialization Trait
+  document.getElementById('eodWOne').innerText = ""
 }
 document.getElementById('engineer').onclick = gwEngi
 function gwEngi() {
@@ -74,6 +207,42 @@ function gwEngi() {
   document.getElementById('pmThree').innerText = "Inventions — Focuses on healing, defense, and cleansing conditions. May enhance shield and turret skills."
   document.getElementById('pmFour').innerText = "Alchemy — Focuses on gaining boons and support. May enhance elixir and Med Kit skills."
   document.getElementById('pmFive').innerText = "Tools — Focuses on tool belt skills and endurance. May enhance gadget and Tool Kit skills."
+  //HOT
+  document.querySelector('.hotName').innerText = ""
+  document.querySelector('.hotName').style.color = ""
+  document.querySelector('.hotVideo').src = ""
+  //Description
+  document.getElementById('hotOneP').innerText = ""
+  document.getElementById('hotTwoP').innerText = ""
+  document.getElementById('hotThreeP').innerText = ""
+  //Weapon
+  document.getElementById('hotWOne').innerText = ""
+  //Specialization Trait
+  document.getElementById('hotWOne').innerText = ""
+  //POF
+  document.querySelector('.pofName').innerText = ""
+  document.querySelector('.pofName').style.color = ""
+  document.querySelector('.hotVideo').src = ""
+  //Description
+  document.getElementById('pofOneP').innerText = ""
+  document.getElementById('pofTwoP').innerText = ""
+  document.getElementById('pofThreeP').innerText = ""
+  //Weapon
+  document.getElementById('pofWOne').innerText = ""
+  //Specialization Trait
+  document.getElementById('pofWOne').innerText = ""
+  //EOD
+  document.querySelector('.eodName').innerText = ""
+  document.querySelector('.eodName').style.color = ""
+  document.querySelector('.eodVideo').src = ""
+  //Description
+  document.getElementById('eodOneP').innerText = ""
+  document.getElementById('eodTwoP').innerText = ""
+  document.getElementById('eodThreeP').innerText = ""
+  //Weapon
+  document.getElementById('eodWOne').innerText = ""
+  //Specialization Trait
+  document.getElementById('eodWOne').innerText = ""
 }
 document.getElementById('ranger').onclick = gwRan
 function gwRan() {
@@ -93,6 +262,42 @@ function gwRan() {
   document.getElementById('pmThree').innerText = "Wilderness Survival — Focuses on defence, protection from conditions, and inflicting conditions. May enhance torch and dagger, and survival skills."
   document.getElementById('pmFour').innerText = "Nature Magic — Focuses on support through healing and boon generation. May enhance warhorn and spirit skills."
   document.getElementById('pmFive').innerText = "Beastmastery — Focuses on improving your pets, their beast skill, and pet swapping. May enhance greatsword, axe, and command skills."
+  //HOT
+  document.querySelector('.hotName').innerText = ""
+  document.querySelector('.hotName').style.color = ""
+  document.querySelector('.hotVideo').src = ""
+  //Description
+  document.getElementById('hotOneP').innerText = ""
+  document.getElementById('hotTwoP').innerText = ""
+  document.getElementById('hotThreeP').innerText = ""
+  //Weapon
+  document.getElementById('hotWOne').innerText = ""
+  //Specialization Trait
+  document.getElementById('hotWOne').innerText = ""
+  //POF
+  document.querySelector('.pofName').innerText = ""
+  document.querySelector('.pofName').style.color = ""
+  document.querySelector('.hotVideo').src = ""
+  //Description
+  document.getElementById('pofOneP').innerText = ""
+  document.getElementById('pofTwoP').innerText = ""
+  document.getElementById('pofThreeP').innerText = ""
+  //Weapon
+  document.getElementById('pofWOne').innerText = ""
+  //Specialization Trait
+  document.getElementById('pofWOne').innerText = ""
+  //EOD
+  document.querySelector('.eodName').innerText = ""
+  document.querySelector('.eodName').style.color = ""
+  document.querySelector('.eodVideo').src = ""
+  //Description
+  document.getElementById('eodOneP').innerText = ""
+  document.getElementById('eodTwoP').innerText = ""
+  document.getElementById('eodThreeP').innerText = ""
+  //Weapon
+  document.getElementById('eodWOne').innerText = ""
+  //Specialization Trait
+  document.getElementById('eodWOne').innerText = ""
 }
 document.getElementById('thief').onclick = gwThief
 function gwThief() {
@@ -113,12 +318,48 @@ function gwThief() {
   document.getElementById('pmThree').innerText = "Shadow Arts — Focuses on stealth and blinding enemies. Enhances venom and deception skills."
   document.getElementById('pmFour').innerText = "Acrobatics — Focuses on dodging, mobility, and healing. Enhances sword and spear."
   document.getElementById('pmFive').innerText = "Trickery — Focuses on stealing and managing initiative. Enhances trick and steal skills."
+  //HOT
+  document.querySelector('.hotName').innerText = ""
+  document.querySelector('.hotName').style.color = ""
+  document.querySelector('.hotVideo').src = ""
+  //Description
+  document.getElementById('hotOneP').innerText = ""
+  document.getElementById('hotTwoP').innerText = ""
+  document.getElementById('hotThreeP').innerText = ""
+  //Weapon
+  document.getElementById('hotWOne').innerText = ""
+  //Specialization Trait
+  document.getElementById('hotWOne').innerText = ""
+  //POF
+  document.querySelector('.pofName').innerText = ""
+  document.querySelector('.pofName').style.color = ""
+  document.querySelector('.hotVideo').src = ""
+  //Description
+  document.getElementById('pofOneP').innerText = ""
+  document.getElementById('pofTwoP').innerText = ""
+  document.getElementById('pofThreeP').innerText = ""
+  //Weapon
+  document.getElementById('pofWOne').innerText = ""
+  //Specialization Trait
+  document.getElementById('pofWOne').innerText = ""
+  //EOD
+  document.querySelector('.eodName').innerText = ""
+  document.querySelector('.eodName').style.color = ""
+  document.querySelector('.eodVideo').src = ""
+  //Description
+  document.getElementById('eodOneP').innerText = ""
+  document.getElementById('eodTwoP').innerText = ""
+  document.getElementById('eodThreeP').innerText = ""
+  //Weapon
+  document.getElementById('eodWOne').innerText = ""
+  //Specialization Trait
+  document.getElementById('eodWOne').innerText = ""
 }
 document.getElementById('elementalist').onclick = gwEle
 function gwEle() {
   document.querySelector('body').style.backgroundImage = "linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../../img/specBackground/core/elementalistBackground.jpg)";
-  document.querySelector('body').style.backgroundPosition = "center"
-  document.querySelector('body').style.backgroundSize = "contain"
+  document.querySelector('body').style.backgroundPosition = "top"
+  document.querySelector('body').style.backgroundSize = "cover"
   document.querySelector('h1').innerText = "Elementalist"
   document.querySelector('h1').style.color = "#f77a84"
   document.querySelector('.classShowCase').style.display = "flex"
@@ -133,6 +374,42 @@ function gwEle() {
   document.getElementById('pmThree').innerText = "Earth — Focuses on earth magic, defense, and bleeding. Enhances earth weapon skills and may enhance signet skills."
   document.getElementById('pmFour').innerText = "Water — Focuses on water magic, healing, and exploiting Vulnerability on foes. Enhances water weapon skills and may enhance cantrip skills."
   document.getElementById('pmFive').innerText = "Arcane — Focuses on boons and switching attunements. May enhance arcane skills."
+  //HOT
+  document.querySelector('.hotName').innerText = ""
+  document.querySelector('.hotName').style.color = ""
+  document.querySelector('.hotVideo').src = ""
+  //Description
+  document.getElementById('hotOneP').innerText = ""
+  document.getElementById('hotTwoP').innerText = ""
+  document.getElementById('hotThreeP').innerText = ""
+  //Weapon
+  document.getElementById('hotWOne').innerText = ""
+  //Specialization Trait
+  document.getElementById('hotWOne').innerText = ""
+  //POF
+  document.querySelector('.pofName').innerText = ""
+  document.querySelector('.pofName').style.color = ""
+  document.querySelector('.hotVideo').src = ""
+  //Description
+  document.getElementById('pofOneP').innerText = ""
+  document.getElementById('pofTwoP').innerText = ""
+  document.getElementById('pofThreeP').innerText = ""
+  //Weapon
+  document.getElementById('pofWOne').innerText = ""
+  //Specialization Trait
+  document.getElementById('pofWOne').innerText = ""
+  //EOD
+  document.querySelector('.eodName').innerText = ""
+  document.querySelector('.eodName').style.color = ""
+  document.querySelector('.eodVideo').src = ""
+  //Description
+  document.getElementById('eodOneP').innerText = ""
+  document.getElementById('eodTwoP').innerText = ""
+  document.getElementById('eodThreeP').innerText = ""
+  //Weapon
+  document.getElementById('eodWOne').innerText = ""
+  //Specialization Trait
+  document.getElementById('eodWOne').innerText = ""
 }
 document.getElementById('mesmer').onclick = gwMe
 function gwMe() {
@@ -153,6 +430,42 @@ function gwMe() {
   document.getElementById('pmThree').innerText = "Chaos — Focuses on defense, gaining boons, and increasing boon duration and condition duration. May enhance staff and trident, and manipulation skills."
   document.getElementById('pmFour').innerText = "Inspiration — Focuses on defense, support, and healing. May enhance focus, signet, and mantra skills."
   document.getElementById('pmFive').innerText = "Illusions — Focuses on creating and shattering clones, reduces the recharge of shatter skills. May enhance Shatter, Phantasm, scepter and torch skills."
+  //HOT
+  document.querySelector('.hotName').innerText = ""
+  document.querySelector('.hotName').style.color = ""
+  document.querySelector('.hotVideo').src = ""
+  //Description
+  document.getElementById('hotOneP').innerText = ""
+  document.getElementById('hotTwoP').innerText = ""
+  document.getElementById('hotThreeP').innerText = ""
+  //Weapon
+  document.getElementById('hotWOne').innerText = ""
+  //Specialization Trait
+  document.getElementById('hotWOne').innerText = ""
+  //POF
+  document.querySelector('.pofName').innerText = ""
+  document.querySelector('.pofName').style.color = ""
+  document.querySelector('.hotVideo').src = ""
+  //Description
+  document.getElementById('pofOneP').innerText = ""
+  document.getElementById('pofTwoP').innerText = ""
+  document.getElementById('pofThreeP').innerText = ""
+  //Weapon
+  document.getElementById('pofWOne').innerText = ""
+  //Specialization Trait
+  document.getElementById('pofWOne').innerText = ""
+  //EOD
+  document.querySelector('.eodName').innerText = ""
+  document.querySelector('.eodName').style.color = ""
+  document.querySelector('.eodVideo').src = ""
+  //Description
+  document.getElementById('eodOneP').innerText = ""
+  document.getElementById('eodTwoP').innerText = ""
+  document.getElementById('eodThreeP').innerText = ""
+  //Weapon
+  document.getElementById('eodWOne').innerText = ""
+  //Specialization Trait
+  document.getElementById('eodWOne').innerText = ""
 }
 document.getElementById('necromancer').onclick = gwNecro
 function gwNecro() {
@@ -173,546 +486,40 @@ function gwNecro() {
   document.getElementById('pmThree').innerText = "Death Magic — Focuses on defence by granting toughness and protection against conditions. May enhance minions."
   document.getElementById('pmFour').innerText = "Blood Magic — Focuses on support through healing, life stealing, and reviving allies. May enhance dagger, and warhorn skills."
   document.getElementById('pmFive').innerText = "Soul Reaping — Focuses on improving Death Shroud and life force generation. May enhance marks from staff skills."
-}
-//HOT Specs
-document.getElementById('dragonhunter').onclick = gwDh
-function gwDh() {
-  document.querySelector('body').style.backgroundImage = "linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../../img/specBackground/hot/dragonhunterBackground.jpg)";
-  document.querySelector('body').style.backgroundPosition = "center"
-  document.querySelector('body').style.backgroundSize = "cover"
-  document.querySelector('h1').innerText = "Guardian: Dragonhunter"
-  document.querySelector('h1').style.color = "#8AF7F5"
-  document.querySelector('.classShowCase').style.display = "flex"
-  document.querySelector('.specDescription').style.display = "unset"
-  document.querySelector('video').src="../video/characters/leonilda.mp4"
-  document.getElementById('pOne').innerText = "Guardians who venture the Heart of Maguuma with the Heart of Thorns expansion can choose to become Dragonhunter empowering their virtues for more tangible benefits, while laying traps to hunt their enemies."
-  document.getElementById('pThree').innerText = "Dragonhunter is an elite specialization for the guardian that focuses on trap skills and grants upgraded versions of virtues. It also allows the guardian to use a longbow."
-  document.getElementById('pFour').innerText = "The dragon hunter is a ranged, methodical hunter that uses various traps to ensnare their prey while picking them off with arrows of light. Their virtue skills become corporeal and more powerful in exchange for a longer casting time."
-  document.getElementById('pmOne').innerText = ""
-  document.getElementById('pmTwo').innerText = ""
-  document.getElementById('pmThree').innerText = ""
-  document.getElementById('pmFour').innerText = ""
-  document.getElementById('pmFive').innerText = ""
-}
-document.getElementById('herald').onclick = gwHer
-function gwHer() {
-  document.querySelector('body').style.backgroundImage = "linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../../img/specBackground/hot/heraldBackground.jpg)";
-  document.querySelector('body').style.backgroundPosition = "center"
-  document.querySelector('body').style.backgroundSize = "unset"
-  document.querySelector('h1').innerText = "Revenant: Herald"
-  document.querySelector('h1').style.color = "#b50000"
-  document.querySelector('.classShowCase').style.display = "flex"
-  document.querySelector('.specDescription').style.display = "unset"
-  document.querySelector('video').src="../video/characters/leonildá.mp4"
-  document.getElementById('pOne').innerText = ""
-  document.getElementById('pTwo').innerText = ""
-  document.getElementById('pThree').innerText = ""
-  document.getElementById('pFour').innerText = ""
-  document.getElementById('pmOne').innerText = ""
-  document.getElementById('pmTwo').innerText = ""
-  document.getElementById('pmThree').innerText = ""
-  document.getElementById('pmFour').innerText = ""
-  document.getElementById('pmFive').innerText = ""
-}
-document.getElementById('berserker').onclick = gwBerk
-function gwBerk() {
-  document.querySelector('body').style.backgroundImage = "linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../../img/specBackground/hot/berserkerBackground.jpg)";
-  document.querySelector('body').style.backgroundPosition = "center"
-  document.querySelector('body').style.backgroundSize = "unset"
-  document.querySelector('h1').innerText = "Warrior: Berserker"
-  document.querySelector('h1').style.color = "#c2a056"
-  document.querySelector('.classShowCase').style.display = "flex"
-  document.querySelector('.specDescription').style.display = "unset"
-  document.querySelector('video').src="../video/characters/dieselVan.mp4"
-  document.getElementById('pOne').innerText = ""
-  document.getElementById('pTwo').innerText = ""
-  document.getElementById('pThree').innerText = ""
-  document.getElementById('pFour').innerText = ""
-  document.getElementById('pmOne').innerText = ""
-  document.getElementById('pmTwo').innerText = ""
-  document.getElementById('pmThree').innerText = ""
-  document.getElementById('pmFour').innerText = ""
-  document.getElementById('pmFive').innerText = ""
-}
-document.getElementById('scrapper').onclick = gwScrap
-function gwScrap() {
-  document.querySelector('body').style.backgroundImage = "linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../../img/specBackground/hot/scrapperBackground.jpg)";
-  document.querySelector('body').style.backgroundPosition = "center"
-  document.querySelector('body').style.backgroundSize = "cover"
-  document.querySelector('h1').innerText = "Engineer: Scrapper"
-  document.querySelector('h1').style.color = "#ce7f4b"
-  document.querySelector('.classShowCase').style.display = "flex"
-  document.querySelector('.specDescription').style.display = "unset"
-  document.querySelector('video').src="../video/characters/ironMan.mp4"
-  document.getElementById('pOne').innerText = ""
-  document.getElementById('pTwo').innerText = ""
-  document.getElementById('pThree').innerText = ""
-  document.getElementById('pFour').innerText = ""
-  document.getElementById('pmOne').innerText = ""
-  document.getElementById('pmTwo').innerText = ""
-  document.getElementById('pmThree').innerText = ""
-  document.getElementById('pmFour').innerText = ""
-  document.getElementById('pmFive').innerText = ""
-}
-document.getElementById('druid').onclick = gwDru
-function gwDru() {
-  document.querySelector('body').style.backgroundImage = "linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../../img/specBackground/hot/druidBackground.jpg)";
-  document.querySelector('body').style.backgroundPosition = "center"
-  document.querySelector('body').style.backgroundSize = "cover"
-  document.querySelector('h1').innerText = "Ranger: Druid"
-  document.querySelector('h1').style.color = "#94c34a"
-  document.querySelector('.classShowCase').style.display = "flex"
-  document.querySelector('.specDescription').style.display = "unset"
-  document.querySelector('video').src="../video/characters/leonilda.mp4"
-  document.getElementById('pOne').innerText = ""
-  document.getElementById('pTwo').innerText = ""
-  document.getElementById('pThree').innerText = ""
-  document.getElementById('pFour').innerText = ""
-  document.getElementById('pmOne').innerText = ""
-  document.getElementById('pmTwo').innerText = ""
-  document.getElementById('pmThree').innerText = ""
-  document.getElementById('pmFour').innerText = ""
-  document.getElementById('pmFive').innerText = ""
-}
-document.getElementById('daredevil').onclick = gwDd
-function gwDd() {
-  document.querySelector('body').style.backgroundImage = "linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../../img/specBackground/hot/daredevilBackground.jpg)";
-  document.querySelector('body').style.backgroundPosition = "center"
-  document.querySelector('body').style.backgroundSize = "cover"
-  document.querySelector('h1').innerText = "Thief: Daredevil"
-  document.querySelector('h1').style.color = "#89676d"
-  document.querySelector('.classShowCase').style.display = "flex"
-  document.querySelector('.specDescription').style.display = "unset"
-  document.querySelector('video').src="../video/characters/leonilda.mp4"
-  document.getElementById('pOne').innerText = ""
-  document.getElementById('pTwo').innerText = ""
-  document.getElementById('pThree').innerText = ""
-  document.getElementById('pFour').innerText = ""
-  document.getElementById('pmOne').innerText = ""
-  document.getElementById('pmTwo').innerText = ""
-  document.getElementById('pmThree').innerText = ""
-  document.getElementById('pmFour').innerText = ""
-  document.getElementById('pmFive').innerText = ""
-}
-document.getElementById('tempest').onclick = gwTemp
-function gwTemp() {
-  document.querySelector('body').style.backgroundImage = "linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../../img/specBackground/hot/tempestBackground.jpg)"; 
-  document.querySelector('body').style.backgroundPosition = "center"
-  document.querySelector('body').style.backgroundSize = "cover"
-  document.querySelector('h1').innerText = "Elementalist: Tempest"
-  document.querySelector('h1').style.color = "#f77a84"
-  document.querySelector('.classShowCase').style.display = "flex"
-  document.querySelector('.specDescription').style.display = "unset"
-  document.querySelector('video').src="../video/characters/leonilda.mp4"
-  document.getElementById('pOne').innerText = ""
-  document.getElementById('pTwo').innerText = ""
-  document.getElementById('pThree').innerText = ""
-  document.getElementById('pFour').innerText = ""
-  document.getElementById('pmOne').innerText = ""
-  document.getElementById('pmTwo').innerText = ""
-  document.getElementById('pmThree').innerText = ""
-  document.getElementById('pmFour').innerText = ""
-  document.getElementById('pmFive').innerText = ""
-}
-document.getElementById('chronomancer').onclick = gwChrono
-function gwChrono() {
-  document.querySelector('body').style.backgroundImage = "linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../../img/specBackground/hot/chronomancerBackground.jpg)";
-  document.querySelector('body').style.backgroundPosition = "top"
-  document.querySelector('body').style.backgroundSize = "unset"
-  document.querySelector('h1').innerText = "Mesmer: Chronomancer"
-  document.querySelector('h1').style.color = "#d532ff"
-  document.querySelector('.classShowCase').style.display = "flex"
-  document.querySelector('.specDescription').style.display = "unset"
-  document.querySelector('video').src="../video/characters/leonilda.mp4"
-  document.getElementById('pOne').innerText = ""
-  document.getElementById('pTwo').innerText = ""
-  document.getElementById('pThree').innerText = ""
-  document.getElementById('pFour').innerText = ""
-  document.getElementById('pmOne').innerText = ""
-  document.getElementById('pmTwo').innerText = ""
-  document.getElementById('pmThree').innerText = ""
-  document.getElementById('pmFour').innerText = ""
-  document.getElementById('pmFive').innerText = ""
-}
-document.getElementById('reaper').onclick = gwReap
-function gwReap() {
-  document.querySelector('body').style.backgroundImage = "linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../../img/specBackground/hot/reaperBackground.jpg)";
-  document.querySelector('body').style.backgroundPosition = "center"
-  document.querySelector('body').style.backgroundSize = "cover"
-  document.querySelector('h1').innerText = "Necromancer: Reaper"
-  document.querySelector('h1').style.color = "#3e8e72"
-  document.querySelector('.classShowCase').style.display = "flex"
-  document.querySelector('.specDescription').style.display = "unset"
-  document.querySelector('video').src="../video/characters/leonilda.mp4"
-  document.getElementById('pOne').innerText = ""
-  document.getElementById('pTwo').innerText = ""
-  document.getElementById('pThree').innerText = ""
-  document.getElementById('pFour').innerText = ""
-  document.getElementById('pmOne').innerText = ""
-  document.getElementById('pmTwo').innerText = ""
-  document.getElementById('pmThree').innerText = ""
-  document.getElementById('pmFour').innerText = ""
-  document.getElementById('pmFive').innerText = ""
-}
-//POF Specs
-document.getElementById('firebrand').onclick = gwFb
-function gwFb() {
-  document.querySelector('body').style.backgroundImage = "linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../../img/specBackground/pof/firebrandBackground.jpg)";
-  document.querySelector('body').style.backgroundPosition = "center"
-  document.querySelector('body').style.backgroundSize = "cover"
-  document.querySelector('h1').innerText = "Guardian: Firebrand"
-  document.querySelector('h1').style.color = "#8AF7F5"
-  document.querySelector('.classShowCase').style.display = "flex"
-  document.querySelector('.specDescription').style.display = "unset"
-  document.querySelector('video').src="../video/characters/leonilda.mp4"
-  document.getElementById('pOne').innerText = ""
-  document.getElementById('pTwo').innerText = ""
-  document.getElementById('pThree').innerText = ""
-  document.getElementById('pFour').innerText = ""
-  document.getElementById('pmOne').innerText = ""
-  document.getElementById('pmTwo').innerText = ""
-  document.getElementById('pmThree').innerText = ""
-  document.getElementById('pmFour').innerText = ""
-  document.getElementById('pmFive').innerText = ""
-}
-document.getElementById('renegade').onclick = gwRen
-function gwRen() {
-  document.querySelector('body').style.backgroundImage = "linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../../img/specBackground/pof/renegadeBackground.jpg)";
-  document.querySelector('body').style.backgroundPosition = "top"
-  document.querySelector('body').style.backgroundSize = "cover"
-  document.querySelector('h1').innerText = "Revenant: Renegade"
-  document.querySelector('h1').style.color = "#b50000"
-  document.querySelector('.classShowCase').style.display = "flex"
-  document.querySelector('.specDescription').style.display = "unset"
-  document.querySelector('video').src="../video/characters/leonilda.mp4"
-  document.getElementById('pOne').innerText = ""
-  document.getElementById('pTwo').innerText = ""
-  document.getElementById('pThree').innerText = ""
-  document.getElementById('pFour').innerText = ""
-  document.getElementById('pmOne').innerText = ""
-  document.getElementById('pmTwo').innerText = ""
-  document.getElementById('pmThree').innerText = ""
-  document.getElementById('pmFour').innerText = ""
-  document.getElementById('pmFive').innerText = ""
-}
-document.getElementById('spellbreaker').onclick = gwSpell
-function gwSpell() {
-  document.querySelector('body').style.backgroundImage = "linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../../img/specBackground/pof/spellbreakerBackground.jpg)";
-  document.querySelector('body').style.backgroundPosition = "top"
-  document.querySelector('body').style.backgroundSize = "cover"
-  document.querySelector('h1').innerText = "Warrior: Spellbreaker"
-  document.querySelector('h1').style.color = "#c2a056"
-  document.querySelector('.classShowCase').style.display = "flex"
-  document.querySelector('.specDescription').style.display = "unset"
-  document.querySelector('video').src="../video/characters/leonilda.mp4"
-  document.getElementById('pOne').innerText = ""
-  document.getElementById('pTwo').innerText = ""
-  document.getElementById('pThree').innerText = ""
-  document.getElementById('pFour').innerText = ""
-  document.getElementById('pmOne').innerText = ""
-  document.getElementById('pmTwo').innerText = ""
-  document.getElementById('pmThree').innerText = ""
-  document.getElementById('pmFour').innerText = ""
-  document.getElementById('pmFive').innerText = ""
-}
-document.getElementById('holosmith').onclick = gwHolo
-function gwHolo() {
-  document.querySelector('body').style.backgroundImage = "linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../../img/specBackground/pof/holosmithBackground.jpg)";
-  document.querySelector('body').style.backgroundPosition = "center"
-  document.querySelector('body').style.backgroundSize = "cover"
-  document.querySelector('h1').innerText = "Engineer: Holosmith"
-  document.querySelector('h1').style.color = "#ce7f4b"
-  document.querySelector('.classShowCase').style.display = "flex"
-  document.querySelector('.specDescription').style.display = "unset"
-  document.querySelector('video').src="../video/characters/leonilda.mp4"
-  document.getElementById('pOne').innerText = ""
-  document.getElementById('pTwo').innerText = ""
-  document.getElementById('pThree').innerText = ""
-  document.getElementById('pFour').innerText = ""
-  document.getElementById('pmOne').innerText = ""
-  document.getElementById('pmTwo').innerText = ""
-  document.getElementById('pmThree').innerText = ""
-  document.getElementById('pmFour').innerText = ""
-  document.getElementById('pmFive').innerText = ""
-}
-document.getElementById('soulbeast').onclick = gwSoul
-function gwSoul() {
-  document.querySelector('body').style.backgroundImage = "linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../../img/specBackground/pof/soulbeastBackground.jpg)";
-  document.querySelector('body').style.backgroundPosition = "center"
-  document.querySelector('body').style.backgroundSize = "cover"
-  document.querySelector('h1').innerText = "Ranger: Soulbeast"
-  document.querySelector('h1').style.color = "#94c34a"
-  document.querySelector('.classShowCase').style.display = "flex"
-  document.querySelector('.specDescription').style.display = "unset"
-  document.querySelector('video').src="../video/characters/leonilda.mp4"
-  document.getElementById('pOne').innerText = ""
-  document.getElementById('pTwo').innerText = ""
-  document.getElementById('pThree').innerText = ""
-  document.getElementById('pFour').innerText = ""
-  document.getElementById('pmOne').innerText = ""
-  document.getElementById('pmTwo').innerText = ""
-  document.getElementById('pmThree').innerText = ""
-  document.getElementById('pmFour').innerText = ""
-  document.getElementById('pmFive').innerText = ""
-}
-document.getElementById('deadeye').onclick = gwDead
-function gwDead() {
-  document.querySelector('body').style.backgroundImage = "linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../../img/specBackground/pof/deadeyeBackground.jpg)";
-  document.querySelector('body').style.backgroundPosition = "top"
-  document.querySelector('body').style.backgroundSize = "cover"
-  document.querySelector('h1').innerText = "Thief: Deadeye"
-  document.querySelector('h1').style.color = "#89676d"
-  document.querySelector('.classShowCase').style.display = "flex"
-  document.querySelector('.specDescription').style.display = "unset"
-  document.querySelector('video').src="../video/characters/leonilda.mp4"
-  document.getElementById('pOne').innerText = ""
-  document.getElementById('pTwo').innerText = ""
-  document.getElementById('pThree').innerText = ""
-  document.getElementById('pFour').innerText = ""
-  document.getElementById('pmOne').innerText = ""
-  document.getElementById('pmTwo').innerText = ""
-  document.getElementById('pmThree').innerText = ""
-  document.getElementById('pmFour').innerText = ""
-  document.getElementById('pmFive').innerText = ""
-}
-document.getElementById('weaver').onclick = gwWeaver
-function gwWeaver() {
-  document.querySelector('body').style.backgroundImage = "linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../../img/specBackground/pof/weaverBackground.jpg)";
-  document.querySelector('body').style.backgroundPosition = "top"
-  document.querySelector('body').style.backgroundSize = "cover"
-  document.querySelector('h1').innerText = "Elementalist: Weaver"
-  document.querySelector('h1').style.color = "#f77a84"
-  document.querySelector('.classShowCase').style.display = "flex"
-  document.querySelector('.specDescription').style.display = "unset"
-  document.querySelector('video').src="../video/characters/leonilda.mp4"
-  document.getElementById('pOne').innerText = ""
-  document.getElementById('pTwo').innerText = ""
-  document.getElementById('pThree').innerText = ""
-  document.getElementById('pFour').innerText = ""
-  document.getElementById('pmOne').innerText = ""
-  document.getElementById('pmTwo').innerText = ""
-  document.getElementById('pmThree').innerText = ""
-  document.getElementById('pmFour').innerText = ""
-  document.getElementById('pmFive').innerText = ""
-}
-document.getElementById('mirage').onclick = gwMirage
-function gwMirage() {
-  document.querySelector('body').style.backgroundImage = "linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../../img/specBackground/pof/mirageBackground.jpg)";
-  document.querySelector('body').style.backgroundPosition = "top"
-  document.querySelector('body').style.backgroundSize = "cover"
-  document.querySelector('h1').innerText = "Mesmer: Mirage"
-  document.querySelector('h1').style.color = "#d532ff"
-  document.querySelector('.classShowCase').style.display = "flex"
-  document.querySelector('.specDescription').style.display = "unset"
-  document.querySelector('video').src="../video/characters/leonilda.mp4"
-  document.getElementById('pOne').innerText = ""
-  document.getElementById('pTwo').innerText = ""
-  document.getElementById('pThree').innerText = ""
-  document.getElementById('pFour').innerText = ""
-  document.getElementById('pmOne').innerText = ""
-  document.getElementById('pmTwo').innerText = ""
-  document.getElementById('pmThree').innerText = ""
-  document.getElementById('pmFour').innerText = ""
-  document.getElementById('pmFive').innerText = ""
-}
-document.getElementById('scourge').onclick = gwScourge
-function gwScourge() {
-  document.querySelector('body').style.backgroundImage = "linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../../img/specBackground/pof/scourgeBackground.jpg)";
-  document.querySelector('body').style.backgroundPosition = "top"
-  document.querySelector('body').style.backgroundSize = "cover"
-  document.querySelector('h1').innerText = "Necromancer: Scourge"
-  document.querySelector('h1').style.color = "#3e8e72"
-  document.querySelector('.classShowCase').style.display = "flex"
-  document.querySelector('.specDescription').style.display = "unset"
-  document.querySelector('video').src="../video/characters/leonilda.mp4"
-  document.getElementById('pOne').innerText = ""
-  document.getElementById('pTwo').innerText = ""
-  document.getElementById('pThree').innerText = ""
-  document.getElementById('pFour').innerText = ""
-  document.getElementById('pmOne').innerText = ""
-  document.getElementById('pmTwo').innerText = ""
-  document.getElementById('pmThree').innerText = ""
-  document.getElementById('pmFour').innerText = ""
-  document.getElementById('pmFive').innerText = ""
-}
-//EOD Specs
-document.getElementById('willbender').onclick = gwWill
-function gwWill() {
-  document.querySelector('body').style.backgroundImage = "linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../../img/specBackground/eod/willbenderBackground.jpg)";
-  document.querySelector('body').style.backgroundPosition = "center"
-  document.querySelector('body').style.backgroundSize = "cover"
-  document.querySelector('h1').innerText = "Guardian: Willbender"
-  document.querySelector('h1').style.color = "#8AF7F5"
-  document.querySelector('.classShowCase').style.display = "flex"
-  document.querySelector('.specDescription').style.display = "unset"
-  document.querySelector('video').src="../video/characters/leonilda.mp4"
-  document.getElementById('pOne').innerText = ""
-  document.getElementById('pTwo').innerText = ""
-  document.getElementById('pThree').innerText = ""
-  document.getElementById('pFour').innerText = ""
-  document.getElementById('pmOne').innerText = ""
-  document.getElementById('pmTwo').innerText = ""
-  document.getElementById('pmThree').innerText = ""
-  document.getElementById('pmFour').innerText = ""
-  document.getElementById('pmFive').innerText = ""
-}
-document.getElementById('vindicator').onclick = gwVin
-function gwVin() {
-  document.querySelector('body').style.backgroundImage = "linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../../img/specBackground/eod/vindicatorBackground.jpg)";
-  document.querySelector('body').style.backgroundPosition = "center"
-  document.querySelector('body').style.backgroundSize = "cover"
-  document.querySelector('h1').innerText = "Revenant: Vindicator"
-  document.querySelector('h1').style.color = "#b50000"
-  document.querySelector('.classShowCase').style.display = "flex"
-  document.querySelector('.specDescription').style.display = "unset"
-  document.querySelector('video').src="../video/characters/leonilda.mp4"
-  document.getElementById('pOne').innerText = ""
-  document.getElementById('pTwo').innerText = ""
-  document.getElementById('pThree').innerText = ""
-  document.getElementById('pFour').innerText = ""
-  document.getElementById('pmOne').innerText = ""
-  document.getElementById('pmTwo').innerText = ""
-  document.getElementById('pmThree').innerText = ""
-  document.getElementById('pmFour').innerText = ""
-  document.getElementById('pmFive').innerText = ""
-}
-document.getElementById('bladesworn').onclick = gwBlade
-function gwBlade() {
-  document.querySelector('body').style.backgroundImage = "linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../../img/specBackground/eod/bladeswornBackground.jpg)";
-  document.querySelector('body').style.backgroundPosition = "top"
-  document.querySelector('body').style.backgroundSize = "contain"
-  document.querySelector('h1').innerText = "Warrior: Bladesworn"
-  document.querySelector('h1').style.color = "#c2a056"
-  document.querySelector('.classShowCase').style.display = "flex"
-  document.querySelector('.specDescription').style.display = "unset"
-  document.querySelector('video').src="../video/characters/leonilda.mp4"
-  document.getElementById('pOne').innerText = ""
-  document.getElementById('pTwo').innerText = ""
-  document.getElementById('pThree').innerText = ""
-  document.getElementById('pFour').innerText = ""
-  document.getElementById('pmOne').innerText = ""
-  document.getElementById('pmTwo').innerText = ""
-  document.getElementById('pmThree').innerText = ""
-  document.getElementById('pmFour').innerText = ""
-  document.getElementById('pmFive').innerText = ""
-}
-document.getElementById('mechanist').onclick = gwMech
-function gwMech() {
-  document.querySelector('body').style.backgroundImage = "linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../../img/specBackground/eod/mechanistBackground.png)";
-  document.querySelector('body').style.backgroundPosition = "center"
-  document.querySelector('body').style.backgroundSize = "cover"
-  document.querySelector('h1').innerText = "Engineer: Mechanist"
-  document.querySelector('h1').style.color = "#ce7f4b"
-  document.querySelector('.classShowCase').style.display = "flex"
-  document.querySelector('.specDescription').style.display = "unset"
-  document.querySelector('video').src="../video/characters/leonilda.mp4"
-  document.getElementById('pOne').innerText = ""
-  document.getElementById('pTwo').innerText = ""
-  document.getElementById('pThree').innerText = ""
-  document.getElementById('pFour').innerText = ""
-  document.getElementById('pmOne').innerText = ""
-  document.getElementById('pmTwo').innerText = ""
-  document.getElementById('pmThree').innerText = ""
-  document.getElementById('pmFour').innerText = ""
-  document.getElementById('pmFive').innerText = ""
-}
-document.getElementById('untamed').onclick = gwTamed
-function gwTamed() {
-  document.querySelector('body').style.backgroundImage = "linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../../img/specBackground/eod/untamedBackground.png)";
-  document.querySelector('body').style.backgroundPosition = "center"
-  document.querySelector('body').style.backgroundSize = "cover"
-  document.querySelector('h1').innerText = "Ranger: Untamed"
-  document.querySelector('h1').style.color = "#94c34a"
-  document.querySelector('.classShowCase').style.display = "flex"
-  document.querySelector('.specDescription').style.display = "unset"
-  document.querySelector('video').src="../video/characters/leonilda.mp4"
-  document.getElementById('pOne').innerText = ""
-  document.getElementById('pTwo').innerText = ""
-  document.getElementById('pThree').innerText = ""
-  document.getElementById('pFour').innerText = ""
-  document.getElementById('pmOne').innerText = ""
-  document.getElementById('pmTwo').innerText = ""
-  document.getElementById('pmThree').innerText = ""
-  document.getElementById('pmFour').innerText = ""
-  document.getElementById('pmFive').innerText = ""
-}
-document.getElementById('specter').onclick = gwSpec
-function gwSpec() {
-  document.querySelector('body').style.backgroundImage = "linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../../img/specBackground/eod/specterBackground.png)";
-  document.querySelector('body').style.backgroundPosition = "center"
-  document.querySelector('body').style.backgroundSize = "cover"
-  document.querySelector('h1').innerText = "Thief: Specter"
-  document.querySelector('h1').style.color = "#89676d"
-  document.querySelector('.classShowCase').style.display = "flex"
-  document.querySelector('.specDescription').style.display = "unset"
-  document.querySelector('video').src="../video/characters/leonilda.mp4"
-  document.getElementById('pOne').innerText = ""
-  document.getElementById('pTwo').innerText = ""
-  document.getElementById('pThree').innerText = ""
-  document.getElementById('pFour').innerText = ""
-  document.getElementById('pmOne').innerText = ""
-  document.getElementById('pmTwo').innerText = ""
-  document.getElementById('pmThree').innerText = ""
-  document.getElementById('pmFour').innerText = ""
-  document.getElementById('pmFive').innerText = ""
-}
-document.getElementById('catalyst').onclick = gwCala
-function gwCala() {
-  document.querySelector('body').style.backgroundImage = "linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../../img/specBackground/eod/catalystBackground.jpg)";
-  document.querySelector('body').style.backgroundPosition = "top"
-  document.querySelector('body').style.backgroundSize = "cover"
-  document.querySelector('h1').innerText = "Elementalist: Catalyst"
-  document.querySelector('h1').style.color = "#f77a84"
-  document.querySelector('.classShowCase').style.display = "flex"
-  document.querySelector('.specDescription').style.display = "unset"
-  document.querySelector('video').src="../video/characters/leonilda.mp4"
-  document.getElementById('pOne').innerText = ""
-  document.getElementById('pTwo').innerText = ""
-  document.getElementById('pThree').innerText = ""
-  document.getElementById('pFour').innerText = ""
-  document.getElementById('pmOne').innerText = ""
-  document.getElementById('pmTwo').innerText = ""
-  document.getElementById('pmThree').innerText = ""
-  document.getElementById('pmFour').innerText = ""
-  document.getElementById('pmFive').innerText = ""
-}
-document.getElementById('virtuoso').onclick = gwVirt
-function gwVirt() {
-  document.querySelector('body').style.backgroundImage = "linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../../img/specBackground/eod/virtuosoBackground.jpg)";
-  document.querySelector('body').style.backgroundPosition = "center"
-  document.querySelector('body').style.backgroundSize = "unset"
-  document.querySelector('h1').innerText = "Mesmer: Virtuoso"
-  document.querySelector('h1').style.color = "#d532ff"
-  document.querySelector('.classShowCase').style.display = "flex"
-  document.querySelector('.specDescription').style.display = "unset"
-  document.querySelector('video').src="../video/characters/leonilda.mp4"
-  document.getElementById('pOne').innerText = ""
-  document.getElementById('pTwo').innerText = ""
-  document.getElementById('pThree').innerText = ""
-  document.getElementById('pFour').innerText = ""
-  document.getElementById('pmOne').innerText = ""
-  document.getElementById('pmTwo').innerText = ""
-  document.getElementById('pmThree').innerText = ""
-  document.getElementById('pmFour').innerText = ""
-  document.getElementById('pmFive').innerText = ""
-}
-document.getElementById('harbinger').onclick = gwHarb
-function gwHarb() {
-  document.querySelector('body').style.backgroundImage = "linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../../img/specBackground/eod/harbingerBackground.jpg)";
-  document.querySelector('body').style.backgroundPosition = "center"
-  document.querySelector('body').style.backgroundSize = "cover"
-  document.querySelector('h1').innerText = "Necromancer: Harbinger"
-  document.querySelector('h1').style.color = "#3e8e72"
-  document.querySelector('.classShowCase').style.display = "flex"
-  document.querySelector('.specDescription').style.display = "unset"
-  document.querySelector('video').src="../video/characters/leonilda.mp4"
-  document.getElementById('pOne').innerText = ""
-  document.getElementById('pTwo').innerText = ""
-  document.getElementById('pThree').innerText = ""
-  document.getElementById('pFour').innerText = ""
-  document.getElementById('pmOne').innerText = ""
-  document.getElementById('pmTwo').innerText = ""
-  document.getElementById('pmThree').innerText = ""
-  document.getElementById('pmFour').innerText = ""
-  document.getElementById('pmFive').innerText = ""
+  //HOT
+  document.querySelector('.hotName').innerText = ""
+  document.querySelector('.hotName').style.color = ""
+  document.querySelector('.hotVideo').src = ""
+  //Description
+  document.getElementById('hotOneP').innerText = ""
+  document.getElementById('hotTwoP').innerText = ""
+  document.getElementById('hotThreeP').innerText = ""
+  //Weapon
+  document.getElementById('hotWOne').innerText = ""
+  //Specialization Trait
+  document.getElementById('hotWOne').innerText = ""
+  //POF
+  document.querySelector('.pofName').innerText = ""
+  document.querySelector('.pofName').style.color = ""
+  document.querySelector('.hotVideo').src = ""
+  //Description
+  document.getElementById('pofOneP').innerText = ""
+  document.getElementById('pofTwoP').innerText = ""
+  document.getElementById('pofThreeP').innerText = ""
+  //Weapon
+  document.getElementById('pofWOne').innerText = ""
+  //Specialization Trait
+  document.getElementById('pofWOne').innerText = ""
+  //EOD
+  document.querySelector('.eodName').innerText = ""
+  document.querySelector('.eodName').style.color = ""
+  document.querySelector('.eodVideo').src = ""
+  //Description
+  document.getElementById('eodOneP').innerText = ""
+  document.getElementById('eodTwoP').innerText = ""
+  document.getElementById('eodThreeP').innerText = ""
+  //Weapon
+  document.getElementById('eodWOne').innerText = ""
+  //Specialization Trait
+  document.getElementById('eodWOne').innerText = ""
 }

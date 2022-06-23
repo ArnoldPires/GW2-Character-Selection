@@ -16,12 +16,12 @@ function gwGuard() {
   document.getElementById('corewOne').innerText = "Greatsword — Offensive melee weapon for dealing high area damage, pulling multiple foes and enhancing allies."
   document.getElementById('corewTwo').innerText = "Hammer — Defensive melee weapon capable of protecting allies with area damage, protection and enemy-warding."
   document.getElementById('corewThree').innerText = "Staff — Supportive weapon that can be used to heal and enhance allies, or ward away enemies."
-  document.getElementById('corewFour').innerText = "Mace — Supportive melee weapon for healing allies and blocking attacks."
-  document.getElementById('corewFive').innerText = "Scepter — Offensive long-range weapon used to smite and immobilize foes."
-  document.getElementById('corewSix').innerText = "Sword — Balanced melee weapon with mobility and projectile defense options."
-  document.getElementById('corewSeven').innerText = "Focus — Balanced weapon with damaging abilities and self-defense."
-  document.getElementById('corewEight').innerText = "Shield — Defensive weapon that can protect allies with projectile defense, Aegis and protection."
-  document.getElementById('corewNine').innerText = "Torch — Offensive weapon for burning enemies and cleansing allies."
+  document.getElementById('corewFour').innerText = "Main-hand Mace — Supportive melee weapon for healing allies and blocking attacks."
+  document.getElementById('corewFive').innerText = "Main-hand Scepter — Offensive long-range weapon used to smite and immobilize foes."
+  document.getElementById('corewSix').innerText = "Main-hand Sword — Balanced melee weapon with mobility and projectile defense options."
+  document.getElementById('corewSeven').innerText = "Off-hand Focus — Balanced weapon with damaging abilities and self-defense."
+  document.getElementById('corewEight').innerText = "Off-hand Shield — Defensive weapon that can protect allies with projectile defense, Aegis and protection."
+  document.getElementById('corewNine').innerText = "Off-hand Torch — Offensive weapon for burning enemies and cleansing allies."
   document.getElementById('corewTen').innerText = "Spear — Offensive mid-range weapon used to pull enemies and deal area damage."
   document.getElementById('corewEleven').innerText = "Trident — Supportive long-range weapon with projectile defense, area damage, healing and a sinking ability."
   //Specialization Traits
@@ -37,7 +37,7 @@ function gwGuard() {
   //Description
   document.getElementById('hotOneP').innerText = '"I will set my trap and wait for them to come."'
   document.getElementById('hotTwoP').innerText = "The dragon hunter is a ranged, methodical hunter that uses various traps to ensnare their prey while picking them off with arrows of light. Their virtue skills become corporeal and more powerful in exchange for a longer casting time."
-  document.getElementById('hotThreeP').innerText = ""
+  document.getElementById('hotThreeP').innerText = "Traps — Traps placed on the ground that activate when a target walks over them."
   //Weapon
   document.getElementById('hotWOne').innerText = "Longbow — Offensive long-range weapon, used to enhance allies or burn and control enemies (Dragonhunter specialization only)"
   //Specialization Trait
@@ -49,6 +49,7 @@ function gwGuard() {
   //Description
   document.getElementById('pofOneP').innerText = '"Let the ancient magics of Vabbi burn away our foes."'
   document.getElementById('pofTwoP').innerText = "Firebrands harness the power of ancient Vabbian tomes to burn away impurities and conquer their foes. Each tome contains raw, powerful magic and must be used with patience and care."
+  document.getElementById('pofThreeP').innerText = "Mantra — Mantras are skills that cast instantly to hinder enemies or aid allies. Mantras have charges and recharge over time."
   //Weapon
   document.getElementById('pofWOne').innerText = "Axe — Offensive melee weapon that can pull enemies and inflict conditions on foes. (Firebrand specialization only)"
   //Specialization Trait
@@ -60,6 +61,7 @@ function gwGuard() {
   //Description
   document.getElementById('eodOneP').innerText = '"I will silence the threat before it can fester."'
   document.getElementById('eodTwoP').innerText = "Willbenders are protectors of the Canthan throne and fated guardians to the Weh no Su. Their sword arm is as strong as their loyalty—unflinching and ruthless. They are known for a swift hand and unmatched swordplay, striking before their foe has time to react."
+  document.getElementById('eodThreeP').innerText = "Physical — Mobility skills that focus on damage and crowd control."
   //Weapon
   document.getElementById('eodWOne').innerText = "Off-hand Sword — Melee weapon with mobility. (Willbender specialization only)"
   //Specialization Trait
@@ -74,21 +76,21 @@ function gwRev() {
   document.querySelector('.specDescription').style.display = "unset"
   document.querySelector('.coreName').innerText = "Revenant"
   document.querySelector('.coreName').style.color = "#b50000"
-  document.getElementById('coreVideo').src = "../video/characters/leonilda.mp4"
+  document.getElementById('coreVideo').src = "../../video/characters/alissa.mp4"
   //Description
   document.getElementById('coreOneP').innerText = "Heavily armored and equipped with the otherworldly powers of the Mists, revenants channel Tyria’s legends to slaughter foes, unleash chaos on the battlefield, and support their allies. This profession is exclusive to Guild Wars 2: Heart of Thorns™, Guild Wars 2: Path of Fire™, and Guild Wars 2: End of Dragons"
   document.getElementById('coreTwoP').innerText = "Revenants channel the power of the Mists. Their profession mechanic are their Legends, they commune with deceased legendary heroes and villains from Tyria's past, which aid them in battle. Revenants commune with two legends, chanelling only one at a time, swapping between the two while in combat. Addtionally, revenant skills cost energy, a resource that replenishes over time or when switching legends."
   document.getElementById('coreThreeP').innerText = "As a soldier profession, revenants wear heavy armor."
   //Weapons
   document.getElementById('corewOne').innerText = "Main-hand Mace — Inflict various conditions on foes at a medium-close range. Works well with Legendary Demon Stance."
-  document.getElementById('corewTwo').innerText = "Off-hand Sword — Quick and lethal strikes, grants high mobility during combat. Works well with Legendary Assassin Stance."
+  document.getElementById('corewTwo').innerText = "Main-hand Sword — Quick and lethal strikes, grants high mobility during combat. Works well with Legendary Assassin Stance."
   document.getElementById('corewThree').innerText = "Off-hand Axe — Focuses on applying conditions and hindering enemy movement. Works well with Legendary Demon Stance."
   document.getElementById('corewFour').innerText = "Off-hand Sword — Delivers high burst damage, along with immobilize, chill, and slow. Works well with Legendary Assassin Stance."
   document.getElementById('corewFive').innerText = "Hammer — Functions as a ranged weapon, good for ranged combat, area damage and projectile block. Works well with Legendary Dwarf Stance."
   document.getElementById('corewSix').innerText = "Staff — Supportive weapon with close combat attacks, healing and crowd control. Works well with Legendary Centaur Stance."
-  document.getElementById('corewSeven').innerText = "Focus — Balanced weapon with damaging abilities and self-defense."
-  document.getElementById('corewEight').innerText = "Shield — Defensive weapon that can protect allies with projectile defense, Aegis and protection."
-  document.getElementById('corewNine').innerText = "Torch — Offensive weapon for burning enemies and cleansing allies."
+  document.getElementById('corewSeven').innerText = "Off-hand Focus — Balanced weapon with damaging abilities and self-defense."
+  document.getElementById('corewEight').innerText = "Off-hand Shield — Defensive weapon that can protect allies with projectile defense, Aegis and protection."
+  document.getElementById('corewNine').innerText = "Off-hand Torch — Offensive weapon for burning enemies and cleansing allies."
   document.getElementById('corewTen').innerText = " Under water Spear — Hybrid approach weapon with varied ranged attacks, can be used as physical and condition-damage. Works with available Aquatic Stances, Legendary Demon Stance, Legendary Assassin Stance and Legendary Dwarf Stance."
   document.getElementById('corewEleven').innerText = "Under water Trident — Ranged weapon that inflicts various conditions based on the wielder's legendary stance. Works with available Aquatic Stances, Legendary Demon Stance, Legendary Assassin Stance and Legendary Dwarf Stance."
   //Specialization Traits
@@ -100,105 +102,141 @@ function gwRev() {
   //HOT
   document.querySelector('.hotName').innerText = "Herald"
   document.querySelector('.hotName').style.color = "#b50000"
-  document.getElementById('coreVideo').src[1] = "../video/characters/leonilda.mp4"
+  document.getElementById('hotVideo').src = "../../video/characters/leonilda.mp4"
   //Description
   document.getElementById('hotOneP').innerText = '"You have a destiny to fulfill."'
   document.getElementById('hotTwoP').innerText = "The herald invokes the legendary dragon Glint, gaining abilities that allow them to channel restorative energies in order to bolster their allies. These abilities can be maintained indefinitely as long as they have sufficient energy, and they can be stacked to gain multiple effects."
   //Weapon
   document.getElementById('hotWOne').innerText = "Off-hand Shield — Defensive weapon used to help survivability for you and your allies. Works well with Legendary Dragon Stance. (Herald specialization only)"
   //Specialization Trait
-  document.getElementById('hotWOne').innerText = "Herald — Focuses on boon sharing based on the facets of Glint. Gains access to shields and the Legendary Dragon Stance."
+  document.getElementById('hotStOne').innerText = "Herald — Focuses on boon sharing based on the facets of Glint. Gains access to shields and the Legendary Dragon Stance."
   //POF
-  document.querySelector('.pofName').innerText = ""
-  document.querySelector('.pofName').style.color = ""
-  document.getElementById('coreVideo').src[2] = "../video/characters/leonilda.mp4"
+  document.querySelector('.pofName').innerText = "Renegade"
+  document.querySelector('.pofName').style.color = "#b50000"
+  document.getElementById('pofVideo').src = "../../video/characters/alissa.mp4"
   //Description
-  document.getElementById('pofOneP').innerText = ""
-  document.getElementById('pofTwoP').innerText = ""
-  document.getElementById('pofThreeP').innerText = ""
+  document.getElementById('pofOneP').innerText = '"Legions, fall in!"'
+  document.getElementById('pofTwoP').innerText = "The renegade channels the power of the legendary charr Kalla Scorchrazor, gaining abilities that help them control the battlefield. Summon warband members from the Mists to bolster your allies or crush your enemies."
   //Weapon
-  document.getElementById('pofWOne').innerText = ""
+  document.getElementById('pofWOne').innerText = "Short bow — Inflict conditions and damage on foes at long-medium range. Works well with Legendary Renegade Stance. (Renegade specialization only)"
   //Specialization Trait
-  document.getElementById('pofWOne').innerText = ""
+  document.getElementById('pofStOne').innerText = "Renegade — Commands members of the warband of Kalla Scorchrazor. Gains access to short bows and the Legendary Renegade Stance."
   //EOD
-  document.querySelector('.eodName').innerText = ""
-  document.querySelector('.eodName').style.color = ""
-  document.getElementById('coreVideo').src[3] = "../video/characters/leonilda.mp4"
+  document.querySelector('.eodName').innerText = "Vindicator"
+  document.querySelector('.eodName').style.color = "#b50000"
+  document.getElementById('eodVideo').src = "../../video/characters/leonilda.mp4"
   //Description
-  document.getElementById('eodOneP').innerText = ""
-  document.getElementById('eodTwoP').innerText = ""
-  document.getElementById('eodThreeP').innerText = ""
+  document.getElementById('eodOneP').innerText = '"Once, we fought each other... Now we unite against a common enemy."'
+  document.getElementById('eodTwoP').innerText = "Channel the Luxon and Kurzick heroes Archemorus and Saint Viktor to assault your enemies and protect your allies. Instead of dodging, you leap high into the air, crashing down to devastate your foes."
   //Weapon
-  document.getElementById('eodWOne').innerText = ""
+  document.getElementById('eodWOne').innerText = "Greatsword — Delivers high damage to multiple targets, with vulnerability and chill. Works well with Legendary Alliance Stance. (Vindicator specialization only)"
   //Specialization Trait
-  document.getElementById('eodWOne').innerText = ""
+  document.getElementById('eodStOne').innerText = "Vindicator — Uses the twin legends for the Legendary Alliance Stance, and wields a Greatsword. Has only one dodge."
 }
 document.getElementById('warrior').onclick = gwWar
 function gwWar() {
   document.querySelector('body').style.backgroundImage = "linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../../img/specBackground/core/warriorBackground.jpg)";
   document.querySelector('body').style.backgroundPosition = "center"
   document.querySelector('body').style.backgroundSize = "cover"
-  document.querySelector('h1').innerText = "Warrior"
-  document.querySelector('h1').style.color = "#c2a056"
   document.querySelector('.classShowCase').style.display = "flex"
   document.querySelector('.specDescription').style.display = "unset"
-  document.querySelector('video').src="../video/characters/dieselVan.mp4"
-  document.getElementById('pOne').innerText = "Warriors are masters of weaponry who rely on speed, strength, toughness, and heavy armor to survive in battle. Adrenaline fuels their offensive power—the longer warriors stay in a fight, the more dangerous they become."
-  document.getElementById('pTwo').innerText = "Warriors are masters of physical combat. Their profession mechanic is adrenaline, a resource gained through the glory of combat that warriors then use to fuel a powerful burst attack unique to each of the plethora of weapons that they can wield."
-  document.getElementById('pThree').innerText = "These masters of arms face their enemies head on, their formidable battle presence inspires their allies, while they are always looking for the next enemy to pound into dust. Like other soldier professions, warriors wear heavy armor."
-  document.getElementById('pFour').innerText = "Warriors also have the highest selection of weapons to choose from compared to other professions, giving a good variety of play-styles to choose from."
-  document.getElementById('pmOne').innerText = "Strength — Focuses on dodging, physical (utility) skills and brute force. Enhances greatsword, hammer and physical skills."
-  document.getElementById('pmTwo').innerText = "Arms — Focused on critical hits and condition damage. Enhances sword and signet skills, as well as dual-wielding (i.e. off-hand)."
-  document.getElementById('pmThree').innerText = "Defense — Focuses on damage mitigation, stability and crowd control. Enhances shield, mace and stance skills."
-  document.getElementById('pmFour').innerText = "Tactics — Specializes in supporting allies via burst and shout abilities. Enhances warhorn and shout skills."
-  document.getElementById('pmFive').innerText = "Focuses on improving adrenaline gain and weapon swapping. Enhances axe, longbow, rifle, harpoon gun, banners and burst skills."
+  document.querySelector('.coreName').innerText = "Warrior"
+  document.querySelector('.coreName').style.color = "#c2a056"
+  document.getElementById('coreVideo').src="../../video/characters/dieselVan.mp4"
+  //Description
+  document.getElementById('coreOneP').innerText = "Warriors are masters of weaponry who rely on speed, strength, toughness, and heavy armor to survive in battle. Adrenaline fuels their offensive power—the longer warriors stay in a fight, the more dangerous they become."
+  document.getElementById('coreTwoP').innerText = "Warriors are masters of physical combat. Their profession mechanic is adrenaline, a resource gained through the glory of combat that warriors then use to fuel a powerful burst attack unique to each of the plethora of weapons that they can wield."
+  document.getElementById('coreThreeP').innerText = "These masters of arms face their enemies head on, their formidable battle presence inspires their allies, while they are always looking for the next enemy to pound into dust. Like other soldier professions, warriors wear heavy armor."
+  document.getElementById('coreFourP').innerText = "Warriors also have the highest selection of weapons to choose from compared to other professions, giving a good variety of play-styles to choose from."
+  //Weapons
+  document.getElementById('corewOne').innerText = "Greatsword — Sweeping, brutal attacks that carry the greatsword's momentum from foe to foe."
+  document.getElementById('corewTwo').innerText = "Hammer — Pound the ground with area of effect attacks that can stagger a group of enemies."
+  document.getElementById('corewThree').innerText = "Longbow — Massive fire damage used to keep hordes of enemies at bay from afar."
+  document.getElementById('corewFour').innerText = "Rifle — Unleash powerful ranged attacks against a single target."
+  document.getElementById('corewFive').innerText = "Main-hand Axe — Able to quickly build up adrenaline and deliver powerful, high-damage attacks."
+  document.getElementById('corewSix').innerText = "Main-hand Mace — Mainly a defensive weapon, the mace can also leave enemies vulnerable to further blows."
+  document.getElementById('corewSeven').innerText = "Main-hand Sword — Quick and mobile attacks, with many opportunities to cause bleeding."
+  document.getElementById('corewEight').innerText = "Off-hand Axe — Can be used to strike with both weapons simultaneously or storm with a whirling attack."
+  document.getElementById('corewNine').innerText = "Off-hand Mace — Used to crush the armor of a foe or stun several enemies in front of you by slamming it on the ground."
+  document.getElementById('corewTen').innerText = "Off-hand Shield — Used to bash foes or block incoming attacks."
+  document.getElementById('corewEleven').innerText = "Off-hand Sword — Can be thrown at enemies or used to block and retaliate."
+  document.getElementById('corewTwelve').innerText = "Off-hand Warhorn — Grants boons to allies, facilitating mobility."
+  document.getElementById('corewThirteen').innerText = "Harpoon gun — Long-range mechanical weapon that inflicts various conditions."
+  document.getElementById('corewFourteen').innerText = "Spear — Close-range aquatic weapon with several multi-hit attacks."
+  //Specialization Traits
+  document.getElementById('stOne').innerText = "Strength — Focuses on dodging, physical (utility) skills and brute force. Enhances greatsword, hammer and physical skills."
+  document.getElementById('stTwo').innerText = "Arms — Focused on critical hits and condition damage. Enhances sword and signet skills, as well as dual-wielding (i.e. off-hand)."
+  document.getElementById('stThree').innerText = "Defense — Focuses on damage mitigation, stability and crowd control. Enhances shield, mace and stance skills."
+  document.getElementById('stFour').innerText = "Tactics — Specializes in supporting allies via burst and shout abilities. Enhances warhorn and shout skills."
+  document.getElementById('stFive').innerText = "Discipline — Focuses on improving adrenaline gain and weapon swapping. Enhances axe, longbow, rifle, harpoon gun, banners and burst skills."
   //HOT
-  document.querySelector('.hotName').innerText = ""
-  document.querySelector('.hotName').style.color = ""
-  document.querySelector('.hotVideo').src = ""
+  document.querySelector('.hotName').innerText = "Berserker"
+  document.querySelector('.hotName').style.color = "#c2a056"
+  document.getElementById('hotVideo').src = "../../video/characters/dieselVan.mp4"
   //Description
-  document.getElementById('hotOneP').innerText = ""
-  document.getElementById('hotTwoP').innerText = ""
-  document.getElementById('hotThreeP').innerText = ""
+  document.getElementById('hotOneP').innerText = '"Rage. Fire. Destruction!"'
+  document.getElementById('hotTwoP').innerText = "Embrace your primal side and enter berserk mode to become an avatar of fire and destruction. Deal high damage but be careful that your recklessness doesn't result in an early grave."
+  document.getElementById('hotThreeP').innerText = "Rage — Utility skills that deal direct damage and control and increase the duration of the berserker's profession mechanic, berserk mode."
   //Weapon
-  document.getElementById('hotWOne').innerText = ""
+  document.getElementById('hotWOne').innerText = "Off-hand Torch — Reckless weapon of destruction; can even light warriors themselves ablaze, to become mobile fire fields. (Berserker specialization only)"
   //Specialization Trait
-  document.getElementById('hotWOne').innerText = ""
+  document.getElementById('hotStOne').innerText = "Berserker — Gains access to torches, a set of rage skills and berserk mode, which replaces the standard burst skills with primal bursts."
   //POF
-  document.querySelector('.pofName').innerText = ""
-  document.querySelector('.pofName').style.color = ""
-  document.querySelector('.hotVideo').src = ""
+  document.querySelector('.pofName').innerText = "Spellbreaker"
+  document.querySelector('.pofName').style.color = "#c2a056"
+  document.getElementById('pofVideo').src = "../../video/characters/dieselVan.mp4"
   //Description
-  document.getElementById('pofOneP').innerText = ""
-  document.getElementById('pofTwoP').innerText = ""
-  document.getElementById('pofThreeP').innerText = ""
+  document.getElementById('pofOneP').innerText = '"I counter your magics!"'
+  document.getElementById('pofTwoP').innerText = "Act with precision and intent to strike at the very weave of magic to cut down your foe's enchantments while disrupting their ability to cast spells. Utilize the Full Counter skill to absorb attacks and retaliate with devastating force."
+  document.getElementById('pofThreeP').innerText = "Meditations — Focus on crowd control, supporting the spellbreaker, and removing boons from enemies."
   //Weapon
-  document.getElementById('pofWOne').innerText = ""
+  document.getElementById('pofWOne').innerText = "Main-hand Dagger — Fast attacks to take down your enemies, slow them or disable them. (Spellbreaker specialization only)"
+  document.getElementById('pofWTwo').innerText = "Off-hand Dagger — Strike your enemies when they are off guard or reflect incoming projectiles. (Spellbreaker specialization only)"
   //Specialization Trait
-  document.getElementById('pofWOne').innerText = ""
+  document.getElementById('pofStOne').innerText = "Spellbreaker — Gains ability to wield double daggers, a set of meditation skills and the class mechanic Full Counter."
   //EOD
-  document.querySelector('.eodName').innerText = ""
-  document.querySelector('.eodName').style.color = ""
-  document.querySelector('.eodVideo').src = ""
+  document.querySelector('.eodName').innerText = "Bladesworn"
+  document.querySelector('.eodName').style.color = "#c2a056"
+  document.getElementById('eodVideo').src = "../../video/characters/dieselVan.mp4"
   //Description
-  document.getElementById('eodOneP').innerText = ""
-  document.getElementById('eodTwoP').innerText = ""
-  document.getElementById('eodThreeP').innerText = ""
+  document.getElementById('eodOneP').innerText = '"Concentrate and execute."'
+  document.getElementById('eodTwoP').innerText = "Dedicated to the art of wielding the dangerous Canthan gunsaber, Bladesworn employ the meditative Dragon Trigger technique to strike down their foes with devastating slashes and point-blank blasts."
+  document.getElementById('eodThreeP').innerText = "Armament — Focus on recharges Ammunition skill, supporting bladesworn's Dragon Trigger and flow."
   //Weapon
-  document.getElementById('eodWOne').innerText = ""
+  document.getElementById('eodWOne').innerText = "Off-hand Pistol — Quick close combat shots that revolve around ammunition management. (Bladesworn specialization only)"
   //Specialization Trait
-  document.getElementById('eodWOne').innerText = ""
+  document.getElementById('eodStOne').innerText = "Bladesworn — Gains access to off-hand pistols, a set of armament skills and the class mechanic Dragon Slash."
 }
 document.getElementById('engineer').onclick = gwEngi
 function gwEngi() {
   document.querySelector('body').style.backgroundImage = "linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../../img/specBackground/core/engineerBackground2.jpg)";
   document.querySelector('body').style.backgroundPosition = "top"
   document.querySelector('body').style.backgroundSize = "cover"
-  document.querySelector('h1').innerText = "Engineer"
-  document.querySelector('h1').style.color = "#ce7f4b"
+  document.querySelector('.coreName').innerText = "Engineer"
+  document.querySelector('.coreName').style.color = "#ce7f4b"
   document.querySelector('.classShowCase').style.display = "flex"
   document.querySelector('.specDescription').style.display = "unset"
   document.querySelector('video').src="../video/characters/rambro.mp4"
+  //Description
+  document.getElementById('coreOneP').innerText = "Warriors are masters of weaponry who rely on speed, strength, toughness, and heavy armor to survive in battle. Adrenaline fuels their offensive power—the longer warriors stay in a fight, the more dangerous they become."
+  document.getElementById('coreTwoP').innerText = "Warriors are masters of physical combat. Their profession mechanic is adrenaline, a resource gained through the glory of combat that warriors then use to fuel a powerful burst attack unique to each of the plethora of weapons that they can wield."
+  document.getElementById('coreThreeP').innerText = "These masters of arms face their enemies head on, their formidable battle presence inspires their allies, while they are always looking for the next enemy to pound into dust. Like other soldier professions, warriors wear heavy armor."
+  //Weapons
+  document.getElementById('corewOne').innerText = "Greatsword — Sweeping, brutal attacks that carry the greatsword's momentum from foe to foe."
+  document.getElementById('corewTwo').innerText = "Hammer — Pound the ground with area of effect attacks that can stagger a group of enemies."
+  document.getElementById('corewThree').innerText = "Longbow — Massive fire damage used to keep hordes of enemies at bay from afar."
+  document.getElementById('corewFour').innerText = "Rifle — Unleash powerful ranged attacks against a single target."
+  document.getElementById('corewFive').innerText = "Main-hand Axe — Able to quickly build up adrenaline and deliver powerful, high-damage attacks."
+  document.getElementById('corewSix').innerText = "Main-hand Mace — Mainly a defensive weapon, the mace can also leave enemies vulnerable to further blows."
+  document.getElementById('corewSeven').innerText = "Main-hand Sword — Quick and mobile attacks, with many opportunities to cause bleeding."
+  document.getElementById('corewEight').innerText = "Off-hand Axe — Can be used to strike with both weapons simultaneously or storm with a whirling attack."
+  document.getElementById('corewNine').innerText = "Off-hand Mace — Used to crush the armor of a foe or stun several enemies in front of you by slamming it on the ground."
+  document.getElementById('corewTen').innerText = "Off-hand Shield — Used to bash foes or block incoming attacks."
+  document.getElementById('corewEleven').innerText = "Off-hand Sword — Can be thrown at enemies or used to block and retaliate."
+  document.getElementById('corewTwelve').innerText = "Off-hand Warhorn — Grants boons to allies, facilitating mobility."
+  document.getElementById('corewThirteen').innerText = "Harpoon gun — Long-range mechanical weapon that inflicts various conditions."
+  document.getElementById('corewFourteen').innerText = "Spear — Close-range aquatic weapon with several multi-hit attacks."
+  //Specialization Trait
   document.getElementById('pOne').innerText = "Masters of mechanical mayhem, engineers love to tinker with explosives, elixirs, and all manner of hazardous gadgets. They support their allies with alchemic weaponry, deploy ingenious inventions, or lay waste to foes with a wide array of mines, bombs, and grenades."
   document.getElementById('pTwo').innerText = "Engineers are technological and alchemical masterminds. Their profession mechanic is their tool belt, a second set of skills providing engineers with a plethora of options ensuring they always have the right tool for the job."
   document.getElementById('pThree').innerText = "They employ turrets, grenades, elixirs, gadgets and even wield their own Engineering Kits as weapons to overcome their enemies. As an adventurer profession, engineers wear medium armor."
@@ -249,11 +287,14 @@ function gwRan() {
   document.querySelector('body').style.backgroundImage = "linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../../img/specBackground/core/rangerBackground.jpg)";
   document.querySelector('body').style.backgroundPosition = "top"
   document.querySelector('body').style.backgroundSize = "cover"
-  document.querySelector('h1').innerText = "Ranger"
-  document.querySelector('h1').style.color = "#94c34a"
+  document.querySelector('.coreName').innerText = "Ranger"
+  document.querySelector('.coreName').style.color = "#94c34a"
   document.querySelector('.classShowCase').style.display = "flex"
   document.querySelector('.specDescription').style.display = "unset"
   document.querySelector('video').src="../video/characters/noire.mp4"
+  //Description
+  //Weapon
+  //Specialization Traits
   document.getElementById('pOne').innerText = "Rangers rely on a keen eye, a steady hand, and the power of nature itself. Unparalleled survivalists with traps, nature spirits, and a stable of loyal pets at their command, rangers can adapt to any situation."
   document.getElementById('pTwo').innerText = "Rangers are defenders of nature. Their profession mechanic is their loyal pets, animal companions that rangers tame and train. "
   document.getElementById('pThree').innerText = " Rangers and their pets fight as one, wielding the power of nature to empower their allies, enduring combat with their wilderness survival skills, concealing traps anticipating fights, and overwhelming their enemies with the strength of the pack. As an adventurer profession, rangers wear medium armor."
@@ -304,11 +345,14 @@ function gwThief() {
   document.querySelector('body').style.backgroundImage = "linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../../img/specBackground/core/thiefBackground.jpg)";
   document.querySelector('body').style.backgroundPosition = "center"
   document.querySelector('body').style.backgroundSize = "cover"
-  document.querySelector('h1').innerText = "Thief"
-  document.querySelector('h1').style.color = "#89676d"
+  document.querySelector('.coreName').innerText = "Thief"
+  document.querySelector('.coreName').style.color = "#89676d"
   document.querySelector('.classShowCase').style.display = "flex"
   document.querySelector('.specDescription').style.display = "unset"
   document.querySelector('video').src="../video/characters/eveingaura.mp4"
+  //Description
+  //Weapon
+  //Specialization Traits
   document.getElementById('pOne').innerText = "Experts at stealth and surprise, thieves move through the shadows, vanish into thin air, or steal items from their opponents and use them as weapons. Thieves practice an agile, acrobatic fighting style, which makes them very hard to hit."
   document.getElementById('pTwo').innerText = "Thieves are masters of shadows and assassination. Their profession mechanics are Steal and initiative. With Steal, thieves teleport to their target and create a makeshift weapon inspired by that enemy to gain the upper hand."
   document.getElementById('pThree').innerText = " Initiative, on the other hand, makes their weapon skills have no recharge whatsoever and instead each skill costs a certain amount of initiative to cast. Thieves are elusive and hard to catch, teleporting through the shadows by shadowstepping. "
@@ -360,11 +404,14 @@ function gwEle() {
   document.querySelector('body').style.backgroundImage = "linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../../img/specBackground/core/elementalistBackground.jpg)";
   document.querySelector('body').style.backgroundPosition = "top"
   document.querySelector('body').style.backgroundSize = "cover"
-  document.querySelector('h1').innerText = "Elementalist"
-  document.querySelector('h1').style.color = "#f77a84"
+  document.querySelector('.coreName').innerText = "Elementalist"
+  document.querySelector('.coreName').style.color = "#f77a84"
   document.querySelector('.classShowCase').style.display = "flex"
   document.querySelector('.specDescription').style.display = "unset"
   document.querySelector('video').src="../video/characters/rayden.mp4"
+  //Description
+  //Weapon
+  //Specialization Traits
   document.getElementById('pOne').innerText = "Elementalists are multifaceted spellcasters who channel elemental forces, making fire, air, earth, and water do their bidding. What they lack in physical toughness, they make up for in versatility and the ability to inflict massive damage."
   document.getElementById('pTwo').innerText = "Elementalists are master spell casters. Their profession mechanic are their four attunements: Fire, Water, Air, and Earth. They wield each of these elements to defeat their foes and aid their allies. "
   document.getElementById('pThree').innerText = "Albeit lacking in defense, elementalists are very versatile and have access to a plethora of skills, as attuning to the different elements also changes their skills. "
@@ -416,11 +463,14 @@ function gwMe() {
   document.querySelector('body').style.backgroundImage = "linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../../img/specBackground/core/mesmerBackground.jpg)";
   document.querySelector('body').style.backgroundPosition = "top"
   document.querySelector('body').style.backgroundSize = "cover"
-  document.querySelector('h1').innerText = "Mesmer"
-  document.querySelector('h1').style.color = "#d532ff"
+  document.querySelector('.coreName').innerText = "Mesmer"
+  document.querySelector('.coreName').style.color = "#d532ff"
   document.querySelector('.classShowCase').style.display = "flex"
   document.querySelector('.specDescription').style.display = "unset"
   document.querySelector('video').src="../video/characters/thugMagic.mp4"
+  //Description
+  //Weapon
+  //Specialization Traits
   document.getElementById('pOne').innerText = "Mesmers are magical duelists who wield deception as a weapon. Using powerful illusions, clones, and phantasmal magic to ensure that their enemies can’t believe their own eyes, mesmers tip the balance of every fight in their favor."
   document.getElementById('pTwo').innerText = "Mesmers are masters of deception and misdirection. "
   document.getElementById('pThree').innerText = "Their profession mechanic are Illusions, ethereal creations that look like the mesmer employed to both fool their enemies and attack them. "
@@ -472,11 +522,14 @@ function gwNecro() {
   document.querySelector('body').style.backgroundImage = "linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../../img/specBackground/core/necromancerBackground.jpg)"; 
   document.querySelector('body').style.backgroundPosition = "center"
   document.querySelector('body').style.backgroundSize = "cover"
-  document.querySelector('h1').innerText = "Necromancer"
-  document.querySelector('h1').style.color = "#3e8e72"
+  document.querySelector('.coreName').innerText = "Necromancer"
+  document.querySelector('.coreName').style.color = "#3e8e72"
   document.querySelector('.classShowCase').style.display = "flex"
   document.querySelector('.specDescription').style.display = "unset"
   document.querySelector('video').src="../video/characters/lordNecomongr.mp4"
+  //Description
+  //Weapon
+  //Specialization Traits
   document.getElementById('pOne').innerText = "Practitioners of the dark arts, necromancers summon minions, wield the power of ritual, and heal themselves with blood magic. Necromancers feed on life force, which they can leverage offensively or use to delay their own demise."
   document.getElementById('pTwo').innerText = "Necromancers are masters of the dark arts. They absorb life force from nearby deaths to fuel their profession mechanic, Death Shroud, where they endure incoming attacks while striking their enemies, ensuring they always outlive their foes."
   document.getElementById('pThree').innerText = "Necromancers command over death itself, they can summon undead minions to fight for them, overwhelm their enemies in conditions, corrupt their boons, drink their blood, rip their skin and soul, and steal their life"

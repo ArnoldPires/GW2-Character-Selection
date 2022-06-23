@@ -74,6 +74,8 @@ main {
 }
 .coreSpecs ul{
   display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
   list-style: none;
 }
 .specSelection {
@@ -93,15 +95,15 @@ ul {
 }
 #coreVideo, #hotVideo, #pofVideo, #eodVideo {
   border-radius: 2rem;
-  width: 35rem;
-  height: 30vh;
+  width: 40rem;
+  height: 40vh;
   object-fit: cover;
 }
 /******************************************
 /* Class Show Case
 /*******************************************/
 .classShowCase {
-  display: none;
+  display: flex;
   justify-content: center;
 }
 /******************************************
@@ -109,14 +111,14 @@ ul {
 /*******************************************/
 .specDescription {
   width: 70rem;
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgba(0, 0, 0, 0.7);
   padding: 3rem;
   border: 2px solid white;
   border-radius: 5rem;
   display: none;
 }
-.specHighlights, .specP {
-  padding: 1rem;
+.specHighlights, .specWeapons, .specP {
+  padding: 0rem 3rem 0rem 3rem
 }
 /******************************************
 /* ADDITIONAL STYLES

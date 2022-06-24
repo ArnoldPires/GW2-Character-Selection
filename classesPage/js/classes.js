@@ -6,16 +6,16 @@ function gwGuard() {
   document.querySelector('body').style.backgroundSize = "cover"
   document.querySelector('.classShowCase').style.display = "flex"
   document.querySelector('.specDescription').style.display = "unset"
-  document.querySelector('.coreName').innerText = "Guardian"
-  document.querySelector('.coreName').style.color = "#8AF7F5"
+  document.querySelector('.coreName').innerHTML = "<span class='guardColors'>" + "Guardian" + "</span>"
+
   document.getElementById('coreVideo').src = "../video/characters/leonilda.mp4"
   //Description
   document.getElementById('coreOneP').innerText = "Guardians are devoted fighters who protect their allies and smite their enemies by drawing from the power of their virtues. True guardians are brilliant tacticians and selfless defenders who know how to empower their allies to achieve victory."
   document.getElementById('coreTwoP').innerText = "Guardians are devoted fighters. Their profession mechanic are their virtues, which passively provide benefits to the guardian, and can be activated to lose the passive bonus and provide a more powerful effect to nearby allies. Guardians act with conviction when smiting their foes and supporting their allies with their unshakeable faith. As a soldier profession, guardians wear heavy armor."
   //Weapons
-  document.getElementById('corewOne').innerText = "Greatsword — Offensive melee weapon for dealing high area damage, pulling multiple foes and enhancing allies."
-  document.getElementById('corewTwo').innerText = "Hammer — Defensive melee weapon capable of protecting allies with area damage, protection and enemy-warding."
-  document.getElementById('corewThree').innerText = "Staff — Supportive weapon that can be used to heal and enhance allies, or ward away enemies."
+  document.getElementById('corewOne').innerHTML = "<span class='guardColors'>" + "Greatsword" + "</span> — Offensive melee weapon for dealing high area damage, pulling multiple foes and enhancing allies."
+  document.getElementById('corewTwo').innerHTML = "<span class='guardColors'>" + "Hammer" + "</span> — Defensive melee weapon capable of protecting allies with area damage, protection and enemy-warding."
+  document.getElementById('corewThree').innerHTML = "<a href='https://www.boston.com/'>'Staff'</a> — Supportive weapon that can be used to heal and enhance allies, or ward away enemies."
   document.getElementById('corewFour').innerText = "Main-hand Mace — Supportive melee weapon for healing allies and blocking attacks."
   document.getElementById('corewFive').innerText = "Main-hand Scepter — Offensive long-range weapon used to smite and immobilize foes."
   document.getElementById('corewSix').innerText = "Main-hand Sword — Balanced melee weapon with mobility and projectile defense options."
@@ -576,3 +576,8 @@ function gwNecro() {
   //Specialization Trait
   document.getElementById('eodWOne').innerText = ""
 }
+// Hello, I wanted to ask if anyone knows if its possible to edit specfic text in a string
+// Is it possible to have a string element appear on the page, and then edit a specfic word in that string?
+//Examaple: 
+//document.getElementById(h1).innerText = "Hello this is an h1"
+//I want to bolden the word Hello and leave the rest of the words alone.

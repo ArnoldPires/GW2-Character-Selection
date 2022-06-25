@@ -127,3 +127,35 @@ ul {
   font-weight: bold;
   color: #8AF7F5;
 }
+.RevColors {
+  font-weight: bold;
+  color: #b50000;
+}
+.warColors {
+  font-weight: bold;
+  color: #c2a056;
+}
+.engiColors {
+  font-weight: bold;
+  color: #ce7f4b;
+}
+.rangeColors {
+  font-weight: bold;
+  color: #94c34a;
+}
+.thiefColors {
+  font-weight: bold;
+  color: #89676d;
+}
+.eleColors {
+  font-weight: bold;
+  color: #f77a84;
+}
+.mesColors {
+  font-weight: bold;
+  color: #d532ff;
+}
+.necroColors {
+  font-weight: bold;
+  color: #3e8e72;
+}

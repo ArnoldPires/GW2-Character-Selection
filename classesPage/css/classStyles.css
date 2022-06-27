@@ -91,7 +91,7 @@ main {
   cursor: pointer;
 }
 ul {
-  list-style:inherit;
+  list-style: none;
 }
 #coreVideo, #hotVideo, #pofVideo, #eodVideo {
   border-radius: 2rem;

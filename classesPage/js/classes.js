@@ -264,8 +264,8 @@ function gwEngi() {
   document.getElementById('hotVideo').src = "../../video/characters/rambro.mp4";
   //Description
   document.getElementById('hotOneP').innerText = "'I'll patch you right on up'";
-  document.getElementById('hotTwoP').innerText = "Scrappers are support-oriented engineers with access to gyros and a plethora of other cleansing abilities. ";
-  document.getElementById('hotThreeP').innerHTML = "You can aid multiple allies in large-scale battles with massive area-of-effect skills, healing and providing superspeed and other necessary boons. They are also adept at crowd control.";
+  document.getElementById('hotTwoP').innerText = "You can aid multiple allies in large-scale battles with massive area-of-effect skills, healing and providing superspeed and other necessary boons. They are also adept at crowd control.";
+  document.getElementById('hotThreeP').innerHTML = "Wells — Scrappers can use gyros to surround themselves with mobile wells that follow them around, either aiding allies or harming enemies.";
   //Weapon
   document.getElementById('hotWOne').innerHTML = "Two-handed Hammer — Focuses on aoe damage, can reflect projectiles, evade, block, and disrupt opponents, perfect for a bruiser playstyle. (Scrapper specialization only)";
   //Specialization Trait
@@ -276,7 +276,7 @@ function gwEngi() {
   //Description
   document.getElementById('pofOneP').innerText = "'Burnin' up!'";
   document.getElementById('pofTwoP').innerText = "Use your Photon Forge to generate weapons of pure, blinding light, cauterizing your enemies—but be careful not to use these weapons for too long, or you'll overheat.";
-  document.getElementById('pofThreeP').innerHTML = "";
+  document.getElementById('pofThreeP').innerHTML = "Exceed — Powerful holographic weapons and tools created using solidified sunlight, or hard light, that benefit from the amount of accumulated heat in the Photon Forge.";
   //Weapon
   document.getElementById('pofWOne').innerHTML = "Main-hand Sword — Cut through enemies' defenses, launch blades of concentrated light that bleed them, or jump at them with the speed of light while gaining quickness. Sword skills gain bonus effects based on your current heat level. (Holosmith specialization only)";
   document.getElementById('pofWTwo').innerHTML = "";
@@ -288,7 +288,7 @@ function gwEngi() {
   //Description
   document.getElementById('eodOneP').innerText = '"All systems go. Mech cleared for launch!"';
   document.getElementById('eodTwoP').innerText = "The mechanist is an innovator and master of jade tech, battling alongside a mech of their own creation. Customize your mech and use it to crush your enemies—together, you're unstoppable";
-  document.getElementById('eodThreeP').innerHTML = "";
+  document.getElementById('eodThreeP').innerHTML = "Signets — Signets grant passive effects while equipped, and produce a powerful effect at the mechanists or the mechs location when activated. The passive effect is lost while the signet recharges.";
   //Weapon
   document.getElementById('eodWOne').innerHTML = "Main-hand Mace — Smash your targets with heavy blows confusing them and applying barrier to allies, leap towards your foes, or launch a exploding fist that stuns the first target it hits. (Mechanist specialization only)";
   //Specialization Trait
@@ -348,8 +348,8 @@ function gwRan() {
   document.querySelector('.pofName').innerHTML = "Soulbeast";
   document.getElementById('pofVideo').src = "../../video/characters/noire.mp4";
   //Description
-  document.getElementById('pofOneP').innerText = '""';
-  document.getElementById('pofTwoP').innerText = "";
+  document.getElementById('pofOneP').innerText = '"Two hearts fighting as one"';
+  document.getElementById('pofTwoP').innerText = "Soulbeasts gain the ability to merge with their pet, channeling their power and the ability to use their beast skills. One with your pet, you are fierce in melee-focused combat.";
   document.getElementById('pofThreeP').innerHTML = "";
   //Weapon
   document.getElementById('pofWOne').innerHTML = "Main-hand Dagger — A swift melee weapon designed to overwhelm with conditions. (Soulbeast specialization only)";
@@ -360,13 +360,13 @@ function gwRan() {
   document.querySelector('.eodName').innerHTML = "Untamed";
   document.getElementById('eodVideo').src = "../../video/characters/noire.mp4";
   //Description
-  document.getElementById('eodOneP').innerText = '""';
-  document.getElementById('eodTwoP').innerText = "";
+  document.getElementById('eodOneP').innerText = '"Unleashed, unbound—the rage of the Echovald Forest lives in us."';
+  document.getElementById('eodTwoP').innerText = "The Untamed share a primal bond with nature through their pet, juggling control of raw power back and forth to defeat foes—your pet uses debilitating nature-based skills to weaken enemies, then relinquishes that power to you for the final strike.";
   document.getElementById('eodThreeP').innerHTML = "";
   //Weapon
   document.getElementById('eodWOne').innerHTML = "Two-handed Hammer — A melee weapon, made to control the enemies. (Untamed specialization only)";
   //Specialization Trait
-  document.getElementById('eodStOne').innerHTML = "";
+  document.getElementById('eodStOne').innerHTML = "Untamed — Focuses on greater pet control, gives access to hammer, cantrip skills, and the ability to enter Unleashed.";
 }
 document.getElementById('thief').onclick = gwThief
 function gwThief() {
@@ -376,25 +376,25 @@ function gwThief() {
   document.querySelector('.coreName').innerHTML = "Thief";
   document.querySelector('.classShowCase').style.display = "flex";
   document.querySelector('.specDescription').style.display = "unset";
-  document.querySelector('video').src="../video/characters/eveingaura.mp4";
+  document.querySelector('video').src="../../video/characters/eveingaura.mp4";
   let elements = document.getElementsByClassName('colorChange');
     for(let i = 0; i < elements.length; i++) {
       elements[i].style.color = "#89676d";
     }
   //Description
-  document.getElementById('coreOneP').innerText = "";
-  document.getElementById('coreTwoP').innerText = "";
-  document.getElementById('coreThreeP').innerText = "";
-  document.getElementById('coreFourP').innerText = "";
+  document.getElementById('coreOneP').innerText = "Thieves are masters of shadows and assassination. Their profession mechanics are Steal and initiative.";
+  document.getElementById('coreTwoP').innerText = "With Steal, thieves teleport to their target and create a makeshift weapon inspired by that enemy to gain the upper hand. Initiative, on the other hand, makes their weapon skills have no recharge whatsoever and instead each skill costs a certain amount of initiative to cast.";
+  document.getElementById('coreThreeP').innerText = " Thieves are elusive and hard to catch, teleporting through the shadows by shadowstepping.";
+  document.getElementById('coreFourP').innerText = "They are experts in stealth, becoming fully invisible to then surprise their enemies with a powerful Stealth Attack unique to each of their weapons. As an adventurer profession, thieves wear medium armor.";
   //Weapons
-  document.getElementById('corewOne').innerHTML = "";
-  document.getElementById('corewTwo').innerHTML = "";
-  document.getElementById('corewThree').innerHTML = "";
-  document.getElementById('corewFour').innerHTML = "";
-  document.getElementById('corewFive').innerHTML = "";
-  document.getElementById('corewSix').innerHTML = "";
-  document.getElementById('corewSeven').innerHTML = "";
-  document.getElementById('corewEight').innerHTML = "";
+  document.getElementById('corewOne').innerHTML = "Two-handed Short bow — Ranged mobile weapon with AoE attacks and shadow step ability.";
+  document.getElementById('corewTwo').innerHTML = "Main-hand Dagger — Jump on a foe, attack quickly and inflict many conditions on them.";
+  document.getElementById('corewThree').innerHTML = "Main-hand Pistol — Ranged shots from pistols leave enemies vulnerable to following attacks.";
+  document.getElementById('corewFour').innerHTML = "Main-hand Sword — Flanking sword attacks provide extra evasiveness and control enemy movement.";
+  document.getElementById('corewFive').innerHTML = "Off-hand Dagger — Gives access to skills that allow quick escape by crippling the enemy or vanishing from sight.";
+  document.getElementById('corewSix').innerHTML = "Off-hand Pistol — Ranged weapon used to quickly retreat or to daze the target by a shot to the head or a pistol whip.";
+  document.getElementById('corewSeven').innerHTML = "Under water Harpoon gun — Bombard enemy with ranged attacks - good for kiting with several attacks that cause movement impairment.";
+  document.getElementById('corewEight').innerHTML = "Under water Spear — Rapid melee counterattacks spiced up with the usual thief tricks.";
   document.getElementById('corewNine').innerHTML = "";
   document.getElementById('corewTen').innerHTML = "";
   document.getElementById('corewEleven').innerHTML = "";
@@ -402,45 +402,45 @@ function gwThief() {
   document.getElementById('corewThirteen').innerHTML = "";
   document.getElementById('corewFourteen').innerHTML = "";
   //Specialization Traits
-  document.getElementById('stOne').innerHTML = "";
-  document.getElementById('stTwo').innerHTML = "";
-  document.getElementById('stThree').innerHTML = "";
-  document.getElementById('stFour').innerHTML = "";
-  document.getElementById('stFive').innerHTML = "";
+  document.getElementById('stOne').innerHTML = "Deadly Arts — Focuses on use of poisoned, and exploiting enemies with low health. Enhances dagger skills.";
+  document.getElementById('stTwo').innerHTML = "Critical Strikes — Focuses on critical hits and critical damage. Enhances pistol, harpoon gun, and signet skills.";
+  document.getElementById('stThree').innerHTML = "Shadow Arts — Focuses on stealth and blinding enemies. Enhances venom and deception skills.";
+  document.getElementById('stFour').innerHTML = "Acrobatics — Focuses on dodging, mobility, and healing. Enhances sword and spear.";
+  document.getElementById('stFive').innerHTML = "Trickery — Focuses on stealing and managing initiative. Enhances trick and steal skills.";
   //HOT
-  document.querySelector('.hotName').innerHTML = "";
-  document.getElementById('hotVideo').src = "";
+  document.querySelector('.hotName').innerHTML = "Daredevil";
+  document.getElementById('hotVideo').src = "../../video/characters/eveingaura.mp4";
   //Description
-  document.getElementById('hotOneP').innerText = '""';
-  document.getElementById('hotTwoP').innerText = "";
+  document.getElementById('hotOneP').innerText = '"Try keepin up with this!"';
+  document.getElementById('hotTwoP').innerText = "The daredevil is a master of maneuverability and mobility. Gaining an additional endurance bar and the ability to customize their dodge roll, the daredevil has the tools to become a melee whirlwind of destruction.";
   document.getElementById('hotThreeP').innerHTML = "";
   //Weapon
-  document.getElementById('hotWOne').innerHTML = "";
+  document.getElementById('hotWOne').innerHTML = "Two-handed Staff — Gain access to regular area-of-effect melee damage. (Daredevil specialization only)";
   //Specialization Trait
-  document.getElementById('hotStOne').innerHTML = "";
+  document.getElementById('hotStOne').innerHTML = "Daredevil — Gains access to staves, a set of physical skills, replace the steal mechanic with swipe, increased endurance bar, and additional dodge mechanics.";
   //POF
-  document.querySelector('.pofName').innerHTML = "";
-  document.getElementById('pofVideo').src = "";
+  document.querySelector('.pofName').innerHTML = "Deadeye";
+  document.getElementById('pofVideo').src = "../../video/characters/eveingaura.mp4";
   //Description
-  document.getElementById('pofOneP').innerText = '""';
-  document.getElementById('pofTwoP').innerText = "";
+  document.getElementById('pofOneP').innerText = '"One shot, one kill."';
+  document.getElementById('pofTwoP').innerText = "Take aim with your rifle and mark your enemies for assassination. The deadeye specializes in long-range combat and picking off enemies before they can get close. By marking your target, you gain increased damage against them as you wear them down before taking the final shot.";
   document.getElementById('pofThreeP').innerHTML = "";
   //Weapon
-  document.getElementById('pofWOne').innerHTML = "";
+  document.getElementById('pofWOne').innerHTML = "Two-handed Rifle — Long ranged sniper that rewards carefully calculated shots with a powerful burst. (Deadeye specialization only)";
   document.getElementById('pofWTwo').innerHTML = "";
   //Specialization Trait
-  document.getElementById('pofStOne').innerHTML = "";
+  document.getElementById('pofStOne').innerHTML = "Deadeye — Gains access to rifles, a set of cantrips, and replace the steal mechanic with deadeye's marks.";
   //EOD
-  document.querySelector('.eodName').innerHTML = "";
-  document.getElementById('eodVideo').src = "";
+  document.querySelector('.eodName').innerHTML = "Specter";
+  document.getElementById('eodVideo').src = "../../video/characters/eveingaura.mp4";
   //Description
-  document.getElementById('eodOneP').innerText = '""';
-  document.getElementById('eodTwoP').innerText = "";
+  document.getElementById('eodOneP').innerText = '"Join me—the darkness is our ally."';
+  document.getElementById('eodTwoP').innerText = "The Specter harnesses the power of shadow magic to debilitate enemies and preserve the health of allies. Enter Shadow Shroud to link with friends and fuel the destruction of your foes.";
   document.getElementById('eodThreeP').innerHTML = "";
   //Weapon
-  document.getElementById('eodWOne').innerHTML = "";
+  document.getElementById('eodWOne').innerHTML = "Main-hand Scepter — Support an ally with boons and barrier or inflict conditions on an enemy. (Specter specialization only)";
   //Specialization Trait
-  document.getElementById('eodStOne').innerHTML = "";
+  document.getElementById('eodStOne').innerHTML = "Specter — Gains access to scepters, a set of wells, replace the steal mechanic with siphon, and gain shadow shroud.";
 }
 document.getElementById('elementalist').onclick = gwEle
 function gwEle() {
@@ -450,15 +450,15 @@ function gwEle() {
   document.querySelector('.coreName').innerHTML = "Elementalist";
   document.querySelector('.classShowCase').style.display = "flex";
   document.querySelector('.specDescription').style.display = "unset";
-  document.querySelector('video').src="../video/characters/rayden.mp4";
+  document.querySelector('video').src="../../video/characters/rayden.mp4";
   let elements = document.getElementsByClassName('colorChange');
     for(let i = 0; i < elements.length; i++) {
       elements[i].style.color = "#f77a84";
     }
   //Description
-  document.getElementById('coreOneP').innerText = "";
-  document.getElementById('coreTwoP').innerText = "";
-  document.getElementById('coreThreeP').innerText = "";
+  document.getElementById('coreOneP').innerText = "Elementalists are master spell casters. Their profession mechanic are their four attunements: Fire, Water, Air, and Earth. They wield each of these elements to defeat their foes and aid their allies. ";
+  document.getElementById('coreTwoP').innerText = "Albeit lacking in defense, elementalists are very versatile and have access to a plethora of skills, as attuning to the different elements also changes their skills.";
+  document.getElementById('coreThreeP').innerText = "Elementalists can also manifest the elements as conjured weapons with their own set of skills, or as allied elementals to aid them in combat. As a scholar profession, elementalists wear light armor.";
   document.getElementById('coreFourP').innerText = "";
   //Weapons
   document.getElementById('corewOne').innerHTML = "";
@@ -482,22 +482,22 @@ function gwEle() {
   document.getElementById('stFour').innerHTML = "";
   document.getElementById('stFive').innerHTML = "";
   //HOT
-  document.querySelector('.hotName').innerHTML = "";
-  document.getElementById('hotVideo').src = "";
+  document.querySelector('.hotName').innerHTML = "Tempest";
+  document.getElementById('hotVideo').src = "../../video/characters/rayden.mp4";
   //Description
-  document.getElementById('hotOneP').innerText = '""';
-  document.getElementById('hotTwoP').innerText = "";
+  document.getElementById('hotOneP').innerText = '"My power, coming to a peak!"';
+  document.getElementById('hotTwoP').innerText = "Overload your attunements to become a powerful singularity of elemental power, shouting at your foes and calling upon your allies. The tempest specialization offers superior area-of-effect abilities in exchange for a slower attunement rotation.";
   document.getElementById('hotThreeP').innerHTML = "";
   //Weapon
   document.getElementById('hotWOne').innerHTML = "";
   //Specialization Trait
   document.getElementById('hotStOne').innerHTML = "";
   //POF
-  document.querySelector('.pofName').innerHTML = "";
-  document.getElementById('pofVideo').src = "";
+  document.querySelector('.pofName').innerHTML = "Weaver";
+  document.getElementById('pofVideo').src = "../../video/characters/rayden.mp4";
   //Description
-  document.getElementById('pofOneP').innerText = '""';
-  document.getElementById('pofTwoP').innerText = "";
+  document.getElementById('pofOneP').innerText = '"The elements are twisting, turning—melding as one."';
+  document.getElementById('pofTwoP').innerText = "The weaver gains the ability to combine two different elements and wield them simultaneously. Rapidly combine elements to create a fast and dynamic fighting style that dances in and out of combat.";
   document.getElementById('pofThreeP').innerHTML = "";
   //Weapon
   document.getElementById('pofWOne').innerHTML = "";
@@ -505,11 +505,11 @@ function gwEle() {
   //Specialization Trait
   document.getElementById('pofStOne').innerHTML = "";
   //EOD
-  document.querySelector('.eodName').innerHTML = "";
-  document.getElementById('eodVideo').src = "";
+  document.querySelector('.eodName').innerHTML = "Catalyst";
+  document.getElementById('eodVideo').src = "../../video/characters/rayden.mp4";
   //Description
-  document.getElementById('eodOneP').innerText = '""';
-  document.getElementById('eodTwoP').innerText = "";
+  document.getElementById('eodOneP').innerText = '"My power shapes and bends the world."';
+  document.getElementById('eodTwoP').innerText = "Master cutting-edge Canthan technology to wield nature's forces with scientific precision. Imbue the elements into your jade-tech Sphere, creating wells of immense power.";
   document.getElementById('eodThreeP').innerHTML = "";
   //Weapon
   document.getElementById('eodWOne').innerHTML = "";

@@ -338,19 +338,19 @@ function gwRan() {
   document.getElementById('hotVideo').src = "../../video/characters/noire.mp4";
   //Description
   document.getElementById('hotOneP').innerText = '"The stars, earth, and sky above will heal us"';
-  document.getElementById('hotTwoP').innerText = "Druids utilize the power of nature and the stars above to heal their allies, using glyph skills to channel powerful boons and protective utilities.";
-  document.getElementById('hotThreeP').innerHTML = "By generating your astral force, you can channel your Celestial Avatar form.";
+  document.getElementById('hotTwoP').innerText = "Druids utilize the power of nature and the stars above to heal their allies, using glyph skills to channel powerful boons and protective utilities. By generating your astral force, you can channel your Celestial Avatar form.";
+  document.getElementById('hotThreeP').innerHTML = "Glyph — Double-faced skills focused on support that interact with the druid's profession mechanic of Celestial Avatar.";
   //Weapon
   document.getElementById('hotWOne').innerHTML = "Two-handed Staff — A support oriented long range weapon. (Druid specialization only)";
   //Specialization Trait
-  document.getElementById('hotStOne').innerHTML = "";
+  document.getElementById('hotStOne').innerHTML = "Druid — Focuses on support, gives access to staff, glyph skills, and the ability to transform into a Celestial Avatar.";
   //POF
   document.querySelector('.pofName').innerHTML = "Soulbeast";
   document.getElementById('pofVideo').src = "../../video/characters/noire.mp4";
   //Description
   document.getElementById('pofOneP').innerText = '"Two hearts fighting as one"';
   document.getElementById('pofTwoP').innerText = "Soulbeasts gain the ability to merge with their pet, channeling their power and the ability to use their beast skills. One with your pet, you are fierce in melee-focused combat.";
-  document.getElementById('pofThreeP').innerHTML = "";
+  document.getElementById('pofThreeP').innerHTML = "Stance — Skills that grant the soulbeast positive effects over a few seconds, inspired by the strengths of the depicted animals.";
   //Weapon
   document.getElementById('pofWOne').innerHTML = "Main-hand Dagger — A swift melee weapon designed to overwhelm with conditions. (Soulbeast specialization only)";
   document.getElementById('pofWTwo').innerHTML = "";
@@ -362,7 +362,7 @@ function gwRan() {
   //Description
   document.getElementById('eodOneP').innerText = '"Unleashed, unbound—the rage of the Echovald Forest lives in us."';
   document.getElementById('eodTwoP').innerText = "The Untamed share a primal bond with nature through their pet, juggling control of raw power back and forth to defeat foes—your pet uses debilitating nature-based skills to weaken enemies, then relinquishes that power to you for the final strike.";
-  document.getElementById('eodThreeP').innerHTML = "";
+  document.getElementById('eodThreeP').innerHTML = "Cantrip — Skills that focus on survivability and crowd control. They provide offensive boons when the ranger is unleashed, and defensive when the pet is unleashed.";
   //Weapon
   document.getElementById('eodWOne').innerHTML = "Two-handed Hammer — A melee weapon, made to control the enemies. (Untamed specialization only)";
   //Specialization Trait
@@ -413,7 +413,7 @@ function gwThief() {
   //Description
   document.getElementById('hotOneP').innerText = '"Try keepin up with this!"';
   document.getElementById('hotTwoP').innerText = "The daredevil is a master of maneuverability and mobility. Gaining an additional endurance bar and the ability to customize their dodge roll, the daredevil has the tools to become a melee whirlwind of destruction.";
-  document.getElementById('hotThreeP').innerHTML = "";
+  document.getElementById('hotThreeP').innerHTML = "Physical — Skills that focus on damage and crowd control.";
   //Weapon
   document.getElementById('hotWOne').innerHTML = "Two-handed Staff — Gain access to regular area-of-effect melee damage. (Daredevil specialization only)";
   //Specialization Trait
@@ -424,7 +424,7 @@ function gwThief() {
   //Description
   document.getElementById('pofOneP').innerText = '"One shot, one kill."';
   document.getElementById('pofTwoP').innerText = "Take aim with your rifle and mark your enemies for assassination. The deadeye specializes in long-range combat and picking off enemies before they can get close. By marking your target, you gain increased damage against them as you wear them down before taking the final shot.";
-  document.getElementById('pofThreeP').innerHTML = "";
+  document.getElementById('pofThreeP').innerHTML = "Cantrip — Skills that interact with the Deadeye's profession mechanic, Deadeye's Mark, to crowd control enemies, and provide mobility and stealth to the Deadeye.";
   //Weapon
   document.getElementById('pofWOne').innerHTML = "Two-handed Rifle — Long ranged sniper that rewards carefully calculated shots with a powerful burst. (Deadeye specialization only)";
   document.getElementById('pofWTwo').innerHTML = "";
@@ -436,7 +436,7 @@ function gwThief() {
   //Description
   document.getElementById('eodOneP').innerText = '"Join me—the darkness is our ally."';
   document.getElementById('eodTwoP').innerText = "The Specter harnesses the power of shadow magic to debilitate enemies and preserve the health of allies. Enter Shadow Shroud to link with friends and fuel the destruction of your foes.";
-  document.getElementById('eodThreeP').innerHTML = "";
+  document.getElementById('eodThreeP').innerHTML = "Well — Skills that focus on debilitating enemies or supporting allies. All these skills also shadowstep.";
   //Weapon
   document.getElementById('eodWOne').innerHTML = "Main-hand Scepter — Support an ally with boons and barrier or inflict conditions on an enemy. (Specter specialization only)";
   //Specialization Trait
@@ -461,12 +461,12 @@ function gwEle() {
   document.getElementById('coreThreeP').innerText = "Elementalists can also manifest the elements as conjured weapons with their own set of skills, or as allied elementals to aid them in combat. As a scholar profession, elementalists wear light armor.";
   document.getElementById('coreFourP').innerText = "";
   //Weapons
-  document.getElementById('corewOne').innerHTML = "";
-  document.getElementById('corewTwo').innerHTML = "";
-  document.getElementById('corewThree').innerHTML = "";
-  document.getElementById('corewFour').innerHTML = "";
-  document.getElementById('corewFive').innerHTML = "";
-  document.getElementById('corewSix').innerHTML = "";
+  document.getElementById('corewOne').innerHTML = "Two-haneded Staff — Can cast different area effect spells with direct or lasting effects.";
+  document.getElementById('corewTwo').innerHTML = "Main-hand Dagger — Emphasizes close range, heavy damage spells.";
+  document.getElementById('corewThree').innerHTML = "Main-hand Scepter — Casts various single and multiple target, medium range spells.";
+  document.getElementById('corewFour').innerHTML = "Off-hand Dagger — Provides powerful close range abilities suitable for offense as well as abilities designed for defense.";
+  document.getElementById('corewFive').innerHTML = "Off-hand Focus — Provides supportive spells in form of energy shields, disabling snares and defensive area effects.";
+  document.getElementById('corewSix').innerHTML = "Under water Trident — Long range magical weapon for manipulating attuned elements underwater.";
   document.getElementById('corewSeven').innerHTML = "";
   document.getElementById('corewEight').innerHTML = "";
   document.getElementById('corewNine').innerHTML = "";
@@ -476,45 +476,45 @@ function gwEle() {
   document.getElementById('corewThirteen').innerHTML = "";
   document.getElementById('corewFourteen').innerHTML = "";
   //Specialization Traits
-  document.getElementById('stOne').innerHTML = "";
-  document.getElementById('stTwo').innerHTML = "";
-  document.getElementById('stThree').innerHTML = "";
-  document.getElementById('stFour').innerHTML = "";
-  document.getElementById('stFive').innerHTML = "";
+  document.getElementById('stOne').innerHTML = "Fire — Focuses on fire magic, increased damage, and burning. Enhances fire weapon skills and may enhance conjured weapon skills.";
+  document.getElementById('stTwo').innerHTML = "Air — Focuses on air magic, movement speed, critical hits, and critical damage. Enhances air weapon skills and may enhance glyph skills.";
+  document.getElementById('stThree').innerHTML = "Earth — Focuses on earth magic, defense, and bleeding. Enhances earth weapon skills and may enhance signet skills.";
+  document.getElementById('stFour').innerHTML = "Water — Focuses on water magic, healing, and exploiting Vulnerability on foes. Enhances water weapon skills and may enhance cantrip skills.";
+  document.getElementById('stFive').innerHTML = "Arcane — Focuses on boons and switching attunements. May enhance arcane skills.";
   //HOT
   document.querySelector('.hotName').innerHTML = "Tempest";
   document.getElementById('hotVideo').src = "../../video/characters/rayden.mp4";
   //Description
   document.getElementById('hotOneP').innerText = '"My power, coming to a peak!"';
   document.getElementById('hotTwoP').innerText = "Overload your attunements to become a powerful singularity of elemental power, shouting at your foes and calling upon your allies. The tempest specialization offers superior area-of-effect abilities in exchange for a slower attunement rotation.";
-  document.getElementById('hotThreeP').innerHTML = "";
+  document.getElementById('hotThreeP').innerHTML = "Shout — Skills that take effect in an area around the tempest, dealing damage while also giving an aura to the tempest and nearby allies.";
   //Weapon
-  document.getElementById('hotWOne').innerHTML = "";
+  document.getElementById('hotWOne').innerHTML = "Off-hand Warhorn — Provides assistance to you in both supporting your allies and creating disruptive areas for enemies. (Tempest specialization only)";
   //Specialization Trait
-  document.getElementById('hotStOne').innerHTML = "";
+  document.getElementById('hotStOne').innerHTML = "Tempest — Gain access to warhorns, a set of shout skills, and the ability to overload attunements for powerful effects.";
   //POF
   document.querySelector('.pofName').innerHTML = "Weaver";
   document.getElementById('pofVideo').src = "../../video/characters/rayden.mp4";
   //Description
   document.getElementById('pofOneP').innerText = '"The elements are twisting, turning—melding as one."';
   document.getElementById('pofTwoP').innerText = "The weaver gains the ability to combine two different elements and wield them simultaneously. Rapidly combine elements to create a fast and dynamic fighting style that dances in and out of combat.";
-  document.getElementById('pofThreeP').innerHTML = "";
+  document.getElementById('pofThreeP').innerHTML = "Stance — Skills that provide positive effects for the weaver, or do damage to nearby enemies.";
   //Weapon
-  document.getElementById('pofWOne').innerHTML = "";
+  document.getElementById('pofWOne').innerHTML = "Main-hand Sword — Melee brawling weapon that channels various elements through its blade. (Weaver specialization only)";
   document.getElementById('pofWTwo').innerHTML = "";
   //Specialization Trait
-  document.getElementById('pofStOne').innerHTML = "";
+  document.getElementById('pofStOne').innerHTML = "Weaver — Gain access to swords, a set of stance skills, and the ability to wield dual attunements.";
   //EOD
   document.querySelector('.eodName').innerHTML = "Catalyst";
   document.getElementById('eodVideo').src = "../../video/characters/rayden.mp4";
   //Description
   document.getElementById('eodOneP').innerText = '"My power shapes and bends the world."';
   document.getElementById('eodTwoP').innerText = "Master cutting-edge Canthan technology to wield nature's forces with scientific precision. Imbue the elements into your jade-tech Sphere, creating wells of immense power.";
-  document.getElementById('eodThreeP').innerHTML = "";
+  document.getElementById('eodThreeP').innerHTML = "Augment — Skills that interact with Catalyst's profession mechanic, Jade Sphere, providing positive effects to the catalyst.";
   //Weapon
-  document.getElementById('eodWOne').innerHTML = "";
+  document.getElementById('eodWOne').innerHTML = "Two-handed Hammer — Focuses on juggling between close ranged and medium ranged attacks. Built around using Grand Finale. (Catalyst specialization only)";
   //Specialization Trait
-  document.getElementById('eodStOne').innerHTML = "";
+  document.getElementById('eodStOne').innerHTML = "Catalyst — Gain access to hammers, a set of augment skills, and the ability to use jade spheres that grant boons to allies.";
 }
 document.getElementById('mesmer').onclick = gwMes
 function gwMes() {
@@ -524,71 +524,71 @@ function gwMes() {
   document.querySelector('.coreName').innerHTML = "Mesmer";
   document.querySelector('.classShowCase').style.display = "flex";
   document.querySelector('.specDescription').style.display = "unset";
-  document.querySelector('video').src="../video/characters/thugMagic.mp4";
+  document.querySelector('video').src="../../video/characters/thugMagic.mp4";
   let elements = document.getElementsByClassName('colorChange');
     for(let i = 0; i < elements.length; i++) {
       elements[i].style.color = "#d532ff";
     }
   //Description
-  document.getElementById('coreOneP').innerText = "";
-  document.getElementById('coreTwoP').innerText = "";
-  document.getElementById('coreThreeP').innerText = "";
-  document.getElementById('coreFourP').innerText = "";
+  document.getElementById('coreOneP').innerText = "Mesmers are masters of deception and misdirection. Their profession mechanic are Illusions, ethereal creations that look like the mesmer employed to both fool their enemies and attack them.";
+  document.getElementById('coreTwoP').innerText = "Mesmers then shatter their illusions in the blink of an eye to annihilate their dumbfounded enemies. As a scholar profession, mesmers wear light armor.";
+  document.getElementById('coreThreeP').innerText = "As masters of misdirection, mesmers create Illusions to help them in combat. They come in two types: Phantasms and clones.";
+  document.getElementById('coreFourP').innerText = "Phantasms: phantasm are semi-transparent ethereal creations focused on doing damage. Clones: clones are perfect copies of the mesmer whose main function is to confuse enemies, who will not be able to differentiate the mesmer from their clones. ";
   //Weapons
-  document.getElementById('corewOne').innerHTML = "";
-  document.getElementById('corewTwo').innerHTML = "";
-  document.getElementById('corewThree').innerHTML = "";
-  document.getElementById('corewFour').innerHTML = "";
-  document.getElementById('corewFive').innerHTML = "";
-  document.getElementById('corewSix').innerHTML = "";
-  document.getElementById('corewSeven').innerHTML = "";
-  document.getElementById('corewEight').innerHTML = "";
-  document.getElementById('corewNine').innerHTML = "";
-  document.getElementById('corewTen').innerHTML = "";
+  document.getElementById('corewOne').innerHTML = "Two-handed Greatsword — Long-ranged weapon with powerful area damage. Its clones and phantasms will be summoned at target's position to distract the enemies.";
+  document.getElementById('corewTwo').innerHTML = "Two-handed Staff — Long-ranged weapon mainly for defense that randomly grants conditions to foes and boons to allies. Its clones and phantasms will be summoned at the mesmer's position and attack from range.";
+  document.getElementById('corewThree').innerHTML = "Main-hand Scepter — Medium-ranged weapon that creates clones quickly, blocks enemy attacks, and inflicts various damaging conditions.";
+  document.getElementById('corewFour').innerHTML = "Main-hand Sword — Melee weapon that engages fights quickly and evasively.";
+  document.getElementById('corewFive').innerHTML = "Off-hand Focus — Improves your movement speed and impedes the enemies'. Its phantasm has a powerful multi-hit whirl that also protects from projectiles.";
+  document.getElementById('corewSix').innerHTML = "Off-hand Pistol — Disable multiple enemies at once. Its phantasm causes high multi-hit damage against a target.";
+  document.getElementById('corewSeven').innerHTML = "Off-hand Sword — Blocks enemy attacks. Its phantasm deals very high damage to enemies in melee range.";
+  document.getElementById('corewEight').innerHTML = "Off-hand Torch — Gives an area blind and burn attack which also makes you briefly stealthed. Its phantasm burns, confuses, and interrupts enemies.";
+  document.getElementById('corewNine').innerHTML = "Under water Spear — Melee weapon that maneuvers yourself and the enemies.";
+  document.getElementById('corewTen').innerHTML = "Under water Trident — Long-ranged weapon that applies various conditions and boons.";
   document.getElementById('corewEleven').innerHTML = "";
   document.getElementById('corewTwelve').innerHTML = "";
   document.getElementById('corewThirteen').innerHTML = "";
   document.getElementById('corewFourteen').innerHTML = "";
   //Specialization Traits
-  document.getElementById('stOne').innerHTML = "";
-  document.getElementById('stTwo').innerHTML = "";
-  document.getElementById('stThree').innerHTML = "";
-  document.getElementById('stFour').innerHTML = "";
-  document.getElementById('stFive').innerHTML = "";
+  document.getElementById('stOne').innerHTML = "Domination — Focuses on removing boons, applying vulnerability, and interrupting targets. May enhance greatsword and phantasm skills.";
+  document.getElementById('stTwo').innerHTML = "Dueling — Focuses on critical hits. May increase the mesmer's elusiveness, and enhance pistol and sword skills.";
+  document.getElementById('stThree').innerHTML = "Chaos — Focuses on defense, gaining boons, and increasing boon duration and condition duration. May enhance staff and trident, and manipulation skills.";
+  document.getElementById('stFour').innerHTML = "Inspiration — Focuses on defense, support, and healing. May enhance focus, signet, and mantra skills.";
+  document.getElementById('stFive').innerHTML = "Illusions — Focuses on creating and shattering clones, reduces the recharge of shatter skills. May enhance Shatter, Phantasm, scepter and torch skills.";
   //HOT
-  document.querySelector('.hotName').innerHTML = "";
-  document.getElementById('hotVideo').src = "";
+  document.querySelector('.hotName').innerHTML = "Chronomancer";
+  document.getElementById('hotVideo').src = "../../video/characters/thugMagic.mp4";
   //Description
-  document.getElementById('hotOneP').innerText = '""';
-  document.getElementById('hotTwoP').innerText = "";
-  document.getElementById('hotThreeP').innerHTML = "";
+  document.getElementById('hotOneP').innerText = '"And once more..."';
+  document.getElementById('hotTwoP').innerText = "Chronomancers manipulate the battlefield through the use of wells, creating brief ripples in time that give their allies various boons and slowing your enemies. They also have access to the powerful alacrity boon, reducing skill cooldowns.";
+  document.getElementById('hotThreeP').innerHTML = "Well — Wells are placed on the ground and tick down to provide positive effects to allies, or negatives to enemies, before exploding to create a more powerful effect.";
   //Weapon
-  document.getElementById('hotWOne').innerHTML = "";
+  document.getElementById('hotWOne').innerHTML = "Off-hand Shield — Offers alacrity, quickness, and stuns. Its phantasm slows foes and provides protection to nearby allies. (Chronomancer specialization only)";
   //Specialization Trait
-  document.getElementById('hotStOne').innerHTML = "";
+  document.getElementById('hotStOne').innerHTML = "Chronomancer — Focuses on time control through alacrity, quickness, and slow. Gives access to shield, well skills, and replaces Shatter skills with Chronomancer shatters, including replacing Distortion with Continuum Split, enabling the chronomancer to travel back in time.";
   //POF
-  document.querySelector('.pofName').innerHTML = "";
-  document.getElementById('pofVideo').src = "";
+  document.querySelector('.pofName').innerHTML = "Mirage";
+  document.getElementById('pofVideo').src = "../../video/characters/thugMagic.mp4";
   //Description
-  document.getElementById('pofOneP').innerText = '""';
-  document.getElementById('pofTwoP').innerText = "";
-  document.getElementById('pofThreeP').innerHTML = "";
+  document.getElementById('pofOneP').innerText = '"A ripple in the sand, you see me no more"';
+  document.getElementById('pofTwoP').innerText = "Cloaking themselves in rich desert sands, the mirage can execute skills and strike their foes while simultaneously dodging incoming attacks. You dance between your illusions, taking their place and deceiving your enemies.";
+  document.getElementById('pofThreeP').innerHTML = "Deception — Deceptions focus on making the mirage even more elusive and confounding enemies.";
   //Weapon
-  document.getElementById('pofWOne').innerHTML = "";
+  document.getElementById('pofWOne').innerHTML = "Main-hand Axe — Melee weapon that inflicts various damaging conditions, and allows you to retarget your clones. (Mirage specialization only)";
   document.getElementById('pofWTwo').innerHTML = "";
   //Specialization Trait
-  document.getElementById('pofStOne').innerHTML = "";
+  document.getElementById('pofStOne').innerHTML = "Mirage — Focuses on condition damage and elusiveness. Gives access to mainhand axe, deception skills, and replaces dodge with access to Mirage Cloak, during which ambush skills may be used.";
   //EOD
-  document.querySelector('.eodName').innerHTML = "";
-  document.getElementById('eodVideo').src = "";
+  document.querySelector('.eodName').innerHTML = "Virtuoso";
+  document.getElementById('eodVideo').src = "../../video/characters/thugMagic.mp4";
   //Description
-  document.getElementById('eodOneP').innerText = '""';
-  document.getElementById('eodTwoP').innerText = "";
-  document.getElementById('eodThreeP').innerHTML = "";
+  document.getElementById('eodOneP').innerText = '"I imagine blades, you bleed."';
+  document.getElementById('eodTwoP').innerText = "The Virtuoso forgoes traditional illusions in favor of psychic daggers, wielded by the sheer power of the mind. Unleash a volley of sharp blades, then outwit your foes with a sharp mind.";
+  document.getElementById('eodThreeP').innerHTML = "Psionic — focus on damage dealing and virtuoso's blade.";
   //Weapon
-  document.getElementById('eodWOne').innerHTML = "";
+  document.getElementById('eodWOne').innerHTML = "Main-hand Dagger — Long ranged weapon. (Virtuoso specialization only)";
   //Specialization Trait
-  document.getElementById('eodStOne').innerHTML = "";
+  document.getElementById('eodStOne').innerHTML = "Virtuoso — Replaces clones with blades, and shatters with bladesongs that fire the blades. Gives access to mainhand dagger and psionic skills.";
 }
 document.getElementById('necromancer').onclick = gwNecro
 function gwNecro() {
@@ -598,69 +598,69 @@ function gwNecro() {
   document.querySelector('.coreName').innerHTML = "Necromancer";
   document.querySelector('.classShowCase').style.display = "flex";
   document.querySelector('.specDescription').style.display = "unset";
-  document.querySelector('video').src="../video/characters/lordNecomongr.mp4";
+  document.querySelector('video').src="../../video/characters/lordNecomongr.mp4";
   let elements = document.getElementsByClassName('colorChange');
     for(let i = 0; i < elements.length; i++) {
       elements[i].style.color = "#3e8e72";
     }
   //Description
-  document.getElementById('coreOneP').innerText = "";
-  document.getElementById('coreTwoP').innerText = "";
-  document.getElementById('coreThreeP').innerText = "";
+  document.getElementById('coreOneP').innerText = "Necromancers are masters of the dark arts. They absorb life force from nearby deaths to fuel their profession mechanic, Death Shroud, where they endure incoming attacks while striking their enemies, ensuring they always outlive their foes. ";
+  document.getElementById('coreTwoP').innerText = "Necromancers command over death itself, they can summon undead minions to fight for them, overwhelm their enemies in conditions, corrupt their boons, drink their blood, rip their skin and soul, and steal their life.";
+  document.getElementById('coreThreeP').innerText = "As a scholar profession, necromancers wear light armor.";
   document.getElementById('coreFourP').innerText = "";
   //Weapons
-  document.getElementById('corewOne').innerHTML = "";
-  document.getElementById('corewTwo').innerHTML = "";
-  document.getElementById('corewThree').innerHTML = "";
-  document.getElementById('corewFour').innerHTML = "";
-  document.getElementById('corewFive').innerHTML = "";
-  document.getElementById('corewSix').innerHTML = "";
-  document.getElementById('corewSeven').innerHTML = "";
-  document.getElementById('corewEight').innerHTML = "";
-  document.getElementById('corewNine').innerHTML = "";
+  document.getElementById('corewOne').innerHTML = "Two-handed Staff — Long range spellcasting weapon which emphasizes AoE support via use of marks.";
+  document.getElementById('corewTwo').innerHTML = "Main-hand Axe — Use powerful attacks to tear enemies at medium range.";
+  document.getElementById('corewThree').innerHTML = "Main-hand Dagger — Steal an enemy's health or life force at close range.";
+  document.getElementById('corewFour').innerHTML = "Main-hand Scepter — Inflict various conditions on foes at a long range.";
+  document.getElementById('corewFive').innerHTML = "Off-hand Dagger — Weaken foes or transfer conditions to them.";
+  document.getElementById('corewSix').innerHTML = "Off-hand Focus — Make the enemy vulnerable or chill them, while removing boons.";
+  document.getElementById('corewSeven').innerHTML = "Off-hand Warhorn — Summon a swarm of locusts or fear enemies with the wail of the horn.";
+  document.getElementById('corewEight').innerHTML = "Under water Spear — Reap enemies with close range attacks or terrorize them by summoning vampiric shrimp.";
+  document.getElementById('corewNine').innerHTML = "Under water Trident — Thwart the enemy with offensive support and sink them into the abyss.";
   document.getElementById('corewTen').innerHTML = "";
   document.getElementById('corewEleven').innerHTML = "";
   document.getElementById('corewTwelve').innerHTML = "";
   document.getElementById('corewThirteen').innerHTML = "";
   document.getElementById('corewFourteen').innerHTML = "";
   //Specialization Traits
-  document.getElementById('stOne').innerHTML = "";
-  document.getElementById('stTwo').innerHTML = "";
-  document.getElementById('stThree').innerHTML = "";
-  document.getElementById('stFour').innerHTML = "";
-  document.getElementById('stFive').innerHTML = "";
+  document.getElementById('stOne').innerHTML = "Spite — Focuses on improving power damage, might generation, and applying vulnerability on enemies. May enhance focus, axe, and signet skills.";
+  document.getElementById('stTwo').innerHTML = "Curses — Focuses on applying conditions, improving condition damage, and benefiting from critical hits. May enhance scepter, and corruption skills.";
+  document.getElementById('stThree').innerHTML = "Death Magic — Focuses on defence by granting toughness and protection against conditions. May enhance minions.";
+  document.getElementById('stFour').innerHTML = "Blood Magic — Focuses on support through healing, life stealing, and reviving allies. May enhance dagger, and warhorn skills.";
+  document.getElementById('stFive').innerHTML = "Soul Reaping — Focuses on improving Death Shroud and life force generation. May enhance marks from staff skills.";
   //HOT
-  document.querySelector('.hotName').innerHTML = "";
-  document.getElementById('hotVideo').src = "";
+  document.querySelector('.hotName').innerHTML = "Reaper";
+  document.getElementById('hotVideo').src = "../../video/characters/lordNecomongr.mp4";
   //Description
-  document.getElementById('hotOneP').innerText = '""';
-  document.getElementById('hotTwoP').innerText = "";
-  document.getElementById('hotThreeP').innerHTML = "";
+  document.getElementById('hotOneP').innerText = '"My scythe, it thirsts..."';
+  document.getElementById('hotTwoP').innerText = "The reaper is a harbinger of death, cleaving through multiple foes at once. Utilize your Reaper's Shroud, chilling your foes gaining access to a spectral scythe to cut down all who stand in your way.";
+  document.getElementById('hotThreeP').innerHTML = "Shout — Skills that damage enemies around the reaper, becoming more powerful the more enemies they hit.";
   //Weapon
-  document.getElementById('hotWOne').innerHTML = "";
+  document.getElementById('hotWOne').innerHTML = "Two-handed Greatsword — Slow attacks with massive damage, focusing in close combat and chill. (Reaper specialization only)";
   //Specialization Trait
-  document.getElementById('hotStOne').innerHTML = "";
+  document.getElementById('hotStOne').innerHTML = "Reaper — Focuses on melee combat, gives access to greatsword, shout skills, and replaces Death Shroud with the more offensive Reaper's Shroud.";
   //POF
-  document.querySelector('.pofName').innerHTML = "";
-  document.getElementById('pofVideo').src = "";
+  document.querySelector('.pofName').innerHTML = "Scourge";
+  document.getElementById('pofVideo').src = "../../video/characters/lordNecomongr.mp4";
   //Description
-  document.getElementById('pofOneP').innerText = '""';
-  document.getElementById('pofTwoP').innerText = "";
-  document.getElementById('pofThreeP').innerHTML = "";
+  document.getElementById('pofOneP').innerText = '"Sink into a sea of sand."';
+  document.getElementById('pofTwoP').innerText = "The scourge harnesses the power of the desert to summon sand shades onto the battlefield. While they lose many of the protective benefits of death shroud, they control the battlefield by afflicting foes while bolstering allies and granting barrier.";
+  document.getElementById('pofThreeP').innerHTML = "Punishment — Skills that focus on providing boons to allies and conditions to enemies, while corrupting boons on enemies.";
   //Weapon
-  document.getElementById('pofWOne').innerHTML = "";
+  document.getElementById('pofWOne').innerHTML = "Off-hand Torch — Torment and burn your enemies while empowering your allies. (Scourge specialization only)";
   document.getElementById('pofWTwo').innerHTML = "";
   //Specialization Trait
-  document.getElementById('pofStOne').innerHTML = "";
+  document.getElementById('pofStOne').innerHTML = "Scourge — Focuses on support, condition damage, and boon corruption. Gives access to torch, punishment skills to corrupt boons, and replaces Death Shroud with the ability to create Sand Shades and use shade skills, most notoriously Desert Shroud.";
   //EOD
-  document.querySelector('.eodName').innerHTML = "";
-  document.getElementById('eodVideo').src = "";
+  document.querySelector('.eodName').innerHTML = "Harbinger";
+  document.getElementById('eodVideo').src = "../../video/characters/lordNecomongr.mp4";
   //Description
-  document.getElementById('eodOneP').innerText = '""';
-  document.getElementById('eodTwoP').innerText = "";
-  document.getElementById('eodThreeP').innerHTML = "";
+  document.getElementById('eodOneP').innerText = '"Volatile powers, all at my fingertips.."';
+  document.getElementById('eodTwoP').innerText = "The Harbinger is a gunslinger and an alchemist, empowering their pistol and utilizing elixirs imbued with dark energies. But strength comes at a cost, and the Harbinger must balance on a knife's edge between power and corruption.";
+  document.getElementById('eodThreeP').innerHTML = "Elixir — Skills that focus on support by providing boons and then splash dangerous effects on enemies in the area. The splash effect can be aimed on the Harbinger as well to inflict Blight and used to remove Blight to amplify their negative effects.";
   //Weapon
-  document.getElementById('eodWOne').innerHTML = "";
+  document.getElementById('eodWOne').innerHTML = "Main-hand Pistol — Torments, poisons, and weakens your enemies at range. (Harbinger specialization only)";
   //Specialization Trait
-  document.getElementById('eodStOne').innerHTML = "";
+  document.getElementById('eodStOne').innerHTML = "Harbinger — Versatile specialization, possessing powerful potential, at the cost of their own life due to Blight. Gives access to a mainhand pistol, Elixirs for boons, and replaces Death Shroud with the more offensive Harbinger Shroud.";
 }

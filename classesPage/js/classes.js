@@ -13,8 +13,8 @@ function gwGuard() {
       elements[i].style.color = "#8AF7F5";
     }
   //Description
-  document.getElementById('coreOneP').innerText = "Guardians are devoted fighters who protect their allies and smite their enemies by drawing from the power of their virtues. True guardians are brilliant tacticians and selfless defenders who know how to empower their allies to achieve victory.";
-  document.getElementById('coreTwoP').innerText = "Guardians are devoted fighters. Their profession mechanic are their virtues, which passively provide benefits to the guardian, and can be activated to lose the passive bonus and provide a more powerful effect to nearby allies. Guardians act with conviction when smiting their foes and supporting their allies with their unshakeable faith. As a soldier profession, guardians wear heavy armor.";
+  document.getElementById('coreOneP').innerHTML = "<span class='guardColors'>" + "Guardians" + "</span> are devoted fighters who protect their allies and smite their enemies by drawing from the power of their virtues. True <span class='guardColors'>" + "Guardians" + "</span> are brilliant tacticians and selfless defenders who know how to empower their allies to achieve victory.";
+  document.getElementById('coreTwoP').innerHTML = "<span class='guardColors'>" + "Guardians" + "</span> are devoted fighters. Their profession mechanic are their virtues, which passively provide benefits to the <span class='guardColors'>" + "Guardian" + "</span>, and can be activated to lose the passive bonus and provide a more powerful effect to nearby allies. <span class='guardColors'>" + "Guardians" + "</span> act with conviction when smiting their foes and supporting their allies with their unshakeable faith. As a soldier profession, <span class='guardColors'>" + "Guardians" + "</span> wear heavy armor.";
   document.getElementById('coreThreeP').innerText = "";
   document.getElementById('coreFourP').innerText = "";
   //Weapons
@@ -43,10 +43,10 @@ function gwGuard() {
   document.getElementById('hotVideo').src = "../../video/characters/leonilda.mp4";
   //Description
   document.getElementById('hotOneP').innerText = '"I will set my trap and wait for them to come."';
-  document.getElementById('hotTwoP').innerText = "The Dragonhunter is a ranged, methodical hunter that uses various traps to ensnare their prey while picking them off with arrows of light. Their virtue skills become corporeal and more powerful in exchange for a longer casting time.";
+  document.getElementById('hotTwoP').innerHTML = "The <span class='guardColors'>" + "Dragonhunter" + "</span> is a ranged, methodical hunter that uses various traps to ensnare their prey while picking them off with arrows of light. Their virtue skills become corporeal and more powerful in exchange for a longer casting time.";
   document.getElementById('hotThreeP').innerHTML = "<span class='guardColors'>" + "Traps" + "</span> — Traps placed on the ground that activate when a target walks over them.";
   //Weapon
-  document.getElementById('hotWOne').innerHTML = "<span class='guardColors'>" + "Two-handed Longbow" + "</span> — Offensive long-range weapon, used to enhance allies or burn and control enemies (Dragonhunter specialization only)";
+  document.getElementById('hotWOne').innerHTML = "<span class='guardColors'>" + "Two-handed Longbow" + "</span> — Offensive long-range weapon, used to enhance allies or burn and control enemies (<span class='guardColors'>" + "Dragonhunter" + "</span> specialization only)";
   //Specialization Trait
   document.getElementById('hotStOne').innerHTML = "<span class='guardColors'>" + "Dragonhunter" + "</span> — Gains access to longbows, a set of trap skills, and replaces the active virtues with ones that manifest in a physical form.";
   //POF
@@ -54,10 +54,10 @@ function gwGuard() {
   document.getElementById('pofVideo').src = "../../video/characters/leonilda.mp4";
   //Description
   document.getElementById('pofOneP').innerText = '"Let the ancient magics of Vabbi burn away our foes."';
-  document.getElementById('pofTwoP').innerText = "Firebrands harness the power of ancient Vabbian tomes to burn away impurities and conquer their foes. Each tome contains raw, powerful magic and must be used with patience and care.";
+  document.getElementById('pofTwoP').innerHTML = "<span class='guardColors'>" + "Firebrands" + "</span> harness the power of ancient Vabbian tomes to burn away impurities and conquer their foes. Each tome contains raw, powerful magic and must be used with patience and care.";
   document.getElementById('pofThreeP').innerHTML = "<span class='guardColors'>" + "Mantra" + "</span> — Mantras are skills that cast instantly to hinder enemies or aid allies. Mantras have charges and recharge over time.";
   //Weapon
-  document.getElementById('pofWOne').innerHTML = "<span class='guardColors'>" + "Main-hand Axe" + "</span> — Offensive melee weapon that can pull enemies and inflict conditions on foes. (Firebrand specialization only)";
+  document.getElementById('pofWOne').innerHTML = "<span class='guardColors'>" + "Main-hand Axe" + "</span> — Offensive melee weapon that can pull enemies and inflict conditions on foes. (<span class='guardColors'>" + "Firebrand" + "</span> specialization only)";
   document.getElementById('pofWTwo').innerHTML = "";
   //Specialization Trait
   document.getElementById('pofStOne').innerHTML = "<span class='guardColors'>" + "Firebrand" + "</span> — Gains access to axes, a set of mantra skills, and replaces the active virtues with Tomes.";
@@ -66,10 +66,10 @@ function gwGuard() {
   document.getElementById('eodVideo').src = "../../video/characters/leonilda.mp4";
   //Description
   document.getElementById('eodOneP').innerText = '"I will silence the threat before it can fester."';
-  document.getElementById('eodTwoP').innerText = "Willbenders are protectors of the Canthan throne and fated guardians to the Weh no Su. Their sword arm is as strong as their loyalty—unflinching and ruthless. They are known for a swift hand and unmatched swordplay, striking before their foe has time to react.";
+  document.getElementById('eodTwoP').innerHTML = "<span class='guardColors'>" + "Willbenders" + "</span> are protectors of the Canthan throne and fated <span class='guardColors'>" + "Guardians" + "</span> to the Weh no Su. Their sword arm is as strong as their loyalty—unflinching and ruthless. They are known for a swift hand and unmatched swordplay, striking before their foe has time to react.";
   document.getElementById('eodThreeP').innerHTML = "<span class='guardColors'>" + "Physical" + "</span> — Mobility skills that focus on damage and crowd control.";
   //Weapon
-  document.getElementById('eodWOne').innerHTML = "<span class='guardColors'>" + "Off-hand Sword" + "</span> — Melee weapon with mobility. (Willbender specialization only)";
+  document.getElementById('eodWOne').innerHTML = "<span class='guardColors'>" + "Off-hand Sword" + "</span> — Melee weapon with mobility. (<span class='guardColors'>" + "Willbender" + "</span> specialization only)";
   //Specialization Trait
   document.getElementById('eodStOne').innerHTML = "<span class='guardColors'>" + "Willbender" + "</span> — Gains access to off hand swords, a set of physical skills, and replaces the virtues with ones that have no passive effect, but provide movement abilities when activated.";
 }
@@ -87,9 +87,9 @@ function gwRev() {
       elements[i].style.color = "#b50000";
     }
   //Description
-  document.getElementById('coreOneP').innerText = "Heavily armored and equipped with the otherworldly powers of the Mists, revenants channel Tyria’s legends to slaughter foes, unleash chaos on the battlefield, and support their allies. This profession is exclusive to Guild Wars 2: Heart of Thorns™, Guild Wars 2: Path of Fire™, and Guild Wars 2: End of Dragons.";
-  document.getElementById('coreTwoP').innerText = "Revenants channel the power of the Mists. Their profession mechanic are their Legends, they commune with deceased legendary heroes and villains from Tyria's past, which aid them in battle. Revenants commune with two legends, chanelling only one at a time, swapping between the two while in combat. Addtionally, revenant skills cost energy, a resource that replenishes over time or when switching legends.";
-  document.getElementById('coreThreeP').innerText = "As a soldier profession, revenants wear heavy armor.";
+  document.getElementById('coreOneP').innerHTML = "Heavily armored and equipped with the otherworldly powers of the Mists, <span class='RevColors'>" + "Revenants" + "</span> channel Tyria’s legends to slaughter foes, unleash chaos on the battlefield, and support their allies. This profession is exclusive to Guild Wars 2: Heart of Thorns™, Guild Wars 2: Path of Fire™, and Guild Wars 2: End of Dragons.";
+  document.getElementById('coreTwoP').innerHTML = "<span class='RevColors'>" + "Revenants" + "</span> channel the power of the Mists. Their profession mechanic are their Legends, they commune with deceased legendary heroes and villains from Tyria's past, which aid them in battle. <span class='RevColors'>" + "Revenants" + "</span> commune with two legends, chanelling only one at a time, swapping between the two while in combat. Addtionally, <span class='RevColors'>" + "Revenant" + "</span> skills cost energy, a resource that replenishes over time or when switching legends.";
+  document.getElementById('coreThreeP').innerHTML = "As a soldier profession, <span class='RevColors'>" + "Revenants" + "</span> wear heavy armor.";
   document.getElementById('coreFourP').innerText = "";
   //Weapons
   document.getElementById('corewOne').innerHTML = "<span class='RevColors'>" + "Main-hand Mace" + "</span> — Inflict various conditions on foes at a medium-close range. Works well with Legendary Demon Stance.";
@@ -117,10 +117,10 @@ function gwRev() {
   document.getElementById('hotVideo').src = "../../video/characters/leonilda.mp4";
   //Description
   document.getElementById('hotOneP').innerText = '"You have a destiny to fulfill."';
-  document.getElementById('hotTwoP').innerText = "The Herald invokes the legendary dragon Glint, gaining abilities that allow them to channel restorative energies in order to bolster their allies. These abilities can be maintained indefinitely as long as they have sufficient energy, and they can be stacked to gain multiple effects.";
+  document.getElementById('hotTwoP').innerHTML = "The <span class='RevColors'>" + "Herald" + "</span> invokes the legendary dragon Glint, gaining abilities that allow them to channel restorative energies in order to bolster their allies. These abilities can be maintained indefinitely as long as they have sufficient energy, and they can be stacked to gain multiple effects.";
   document.getElementById('hotThreeP').innerHTML = ""
   //Weapon
-  document.getElementById('hotWOne').innerHTML = "<span class='RevColors'>" + "Off-hand Shield" + "</span> — Defensive weapon used to help survivability for you and your allies. Works well with Legendary Dragon Stance. (Herald specialization only)";
+  document.getElementById('hotWOne').innerHTML = "<span class='RevColors'>" + "Off-hand Shield" + "</span> — Defensive weapon used to help survivability for you and your allies. Works well with Legendary Dragon Stance. (<span class='RevColors'>" + "Herald" + "</span> specialization only)";
   //Specialization Trait
   document.getElementById('hotStOne').innerHTML = "<span class='RevColors'>" + "Herald" + "</span> — Focuses on boon sharing based on the facets of Glint. Gains access to shields and the Legendary Dragon Stance.";
   //POF
@@ -128,13 +128,13 @@ function gwRev() {
   document.getElementById('pofVideo').src = "../../video/characters/alissa.mp4";
   //Description
   document.getElementById('pofOneP').innerText = '"Legions, fall in!"';
-  document.getElementById('pofTwoP').innerText = "The Renegade channels the power of the legendary charr Kalla Scorchrazor, gaining abilities that help them control the battlefield. Summon warband members from the Mists to bolster your allies or crush your enemies.";
+  document.getElementById('pofTwoP').innerHTML = "The <span class='RevColors'>" + "Renegade" + "</span> channels the power of the legendary charr Kalla Scorchrazor, gaining abilities that help them control the battlefield. Summon warband members from the Mists to bolster your allies or crush your enemies.";
   document.getElementById('pofThreeP').innerHTML = "";
   //Weapon
-  document.getElementById('pofWOne').innerHTML = "<span class='RevColors'>" + "Two-handed Short bow" + "</span> — Inflict conditions and damage on foes at long-medium range. Works well with Legendary Renegade Stance. (Renegade specialization only)";
+  document.getElementById('pofWOne').innerHTML = "<span class='RevColors'>" + "Two-handed Short bow" + "</span> — Inflict conditions and damage on foes at long-medium range. Works well with Legendary <span class='RevColors'>" + "Renegade" + "</span> Stance. (<span class='RevColors'>" + "Renegade" + "</span> specialization only)";
   document.getElementById('pofWTwo').innerHTML = "";
   //Specialization Trait
-  document.getElementById('pofStOne').innerHTML = "<span class='RevColors'>" + "Renegade" + "</span> — Commands members of the warband of Kalla Scorchrazor. Gains access to short bows and the Legendary Renegade Stance.";
+  document.getElementById('pofStOne').innerHTML = "<span class='RevColors'>" + "Renegade" + "</span> — Commands members of the warband of Kalla Scorchrazor. Gains access to short bows and the Legendary <span class='RevColors'>" + "Renegade" + "</span> Stance.";
   //EOD
   document.querySelector('.eodName').innerHTML = "<span class='RevColors'>" + "Vindicator" + "</span>";
   document.getElementById('eodVideo').src = "../../video/characters/leonilda.mp4";
@@ -143,7 +143,7 @@ function gwRev() {
   document.getElementById('eodTwoP').innerText = "Channel the Luxon and Kurzick heroes Archemorus and Saint Viktor to assault your enemies and protect your allies. Instead of dodging, you leap high into the air, crashing down to devastate your foes."
    document.getElementById('eodThreeP').innerHTML = "";
   //Weapon
-  document.getElementById('eodWOne').innerHTML = "<span class='RevColors'>" + "Two-handed Greatsword" + "</span> — Delivers high damage to multiple targets, with vulnerability and chill. Works well with Legendary Alliance Stance. (Vindicator specialization only)"
+  document.getElementById('eodWOne').innerHTML = "<span class='RevColors'>" + "Two-handed Greatsword" + "</span> — Delivers high damage to multiple targets, with vulnerability and chill. Works well with Legendary Alliance Stance. (<span class='RevColors'>" + "Vindicator" + "</span> specialization only)"
   //Specialization Trait
   document.getElementById('eodStOne').innerHTML = "<span class='RevColors'>" + "Vindicator" + "</span> — Uses the twin legends for the Legendary Alliance Stance, and wields a Greatsword. Has only one dodge."
 }
@@ -161,10 +161,10 @@ function gwWar() {
       elements[i].style.color = "#c2a056";
     }
   //Description
-  document.getElementById('coreOneP').innerText = "Warriors are masters of weaponry who rely on speed, strength, toughness, and heavy armor to survive in battle. Adrenaline fuels their offensive power—the longer warriors stay in a fight, the more dangerous they become."
-  document.getElementById('coreTwoP').innerText = "Warriors are masters of physical combat. Their profession mechanic is adrenaline, a resource gained through the glory of combat that warriors then use to fuel a powerful burst attack unique to each of the plethora of weapons that they can wield."
-  document.getElementById('coreThreeP').innerText = "These masters of arms face their enemies head on, their formidable battle presence inspires their allies, while they are always looking for the next enemy to pound into dust. Like other soldier professions, warriors wear heavy armor."
-  document.getElementById('coreFourP').innerText = "Warriors also have the highest selection of weapons to choose from compared to other professions, giving a good variety of play-styles to choose from."
+  document.getElementById('coreOneP').innerHTML = "<span class='warColors'>" + "Warriors" + "</span> are masters of weaponry who rely on speed, strength, toughness, and heavy armor to survive in battle. Adrenaline fuels their offensive power—the longer <span class='warColors'>" + "Warriors" + "</span> stay in a fight, the more dangerous they become."
+  document.getElementById('coreTwoP').innerHTML = "<span class='warColors'>" + "Warriors" + "</span> are masters of physical combat. Their profession mechanic is adrenaline, a resource gained through the glory of combat that <span class='warColors'>" + "Warriors" + "</span> then use to fuel a powerful burst attack unique to each of the plethora of weapons that they can wield."
+  document.getElementById('coreThreeP').innerHTML = "These masters of arms face their enemies head on, their formidable battle presence inspires their allies, while they are always looking for the next enemy to pound into dust. Like other soldier professions, <span class='warColors'>" + "Warriors" + "</span> wear heavy armor."
+  document.getElementById('coreFourP').innerHTML = "<span class='warColors'>" + "Warriors" + "</span> also have the highest selection of weapons to choose from compared to other professions, giving a good variety of play-styles to choose from."
   //Weapons
   document.getElementById('corewOne').innerHTML = "<span class='warColors'>" + "Two-handed Greatsword" + "</span> — Sweeping, brutal attacks that carry the greatsword's momentum from foe to foe."
   document.getElementById('corewTwo').innerHTML = "<span class='warColors'>" + "Two-handed Hammer" + "</span> — Pound the ground with area of effect attacks that can stagger a group of enemies."
@@ -191,12 +191,12 @@ function gwWar() {
   document.getElementById('hotVideo').src = "../../video/characters/dieselVan.mp4"
   //Description
   document.getElementById('hotOneP').innerText = '"Rage. Fire. Destruction!"'
-  document.getElementById('hotTwoP').innerText = "Embrace your primal side and enter berserk mode to become an avatar of fire and destruction. Deal high damage but be careful that your recklessness doesn't result in an early grave."
-  document.getElementById('hotThreeP').innerHTML = "<span class='warColors'>" + "Rage" + "</span> — Utility skills that deal direct damage and control and increase the duration of the berserker's profession mechanic, berserk mode."
+  document.getElementById('hotTwoP').innerHTML = "Embrace your primal side and enter <span class='warColors'>" + "Berserk" + "</span> mode to become an avatar of fire and destruction. Deal high damage but be careful that your recklessness doesn't result in an early grave."
+  document.getElementById('hotThreeP').innerHTML = "<span class='warColors'>" + "Rage" + "</span> — Utility skills that deal direct damage and control and increase the duration of the <span class='warColors'>" + "Berserker's" + "</span> profession mechanic, <span class='warColors'>" + "Berserk" + "</span> mode."
   //Weapon
-  document.getElementById('hotWOne').innerHTML = "<span class='warColors'>" + "Off-hand Torch" + "</span> — Reckless weapon of destruction; can even light warriors themselves ablaze, to become mobile fire fields. (Berserker specialization only)"
+  document.getElementById('hotWOne').innerHTML = "<span class='warColors'>" + "Off-hand Torch" + "</span> — Reckless weapon of destruction; can even light warriors themselves ablaze, to become mobile fire fields. (<span class='warColors'>" + "Berserker" + "</span> specialization only)"
   //Specialization Trait
-  document.getElementById('hotStOne').innerHTML = "<span class='warColors'>" + "Berserker" + "</span> — Gains access to torches, a set of rage skills and berserk mode, which replaces the standard burst skills with primal bursts."
+  document.getElementById('hotStOne').innerHTML = "<span class='warColors'>" + "Berserker" + "</span> — Gains access to torches, a set of rage skills and <span class='warColors'>" + "Berserk" + "</span> mode, which replaces the standard burst skills with primal bursts."
   //POF
   document.querySelector('.pofName').innerHTML = "<span class='warColors'>" + "Spellbreaker" + "</span>"
   document.getElementById('pofVideo').src = "../../video/characters/dieselVan.mp4"
@@ -205,8 +205,8 @@ function gwWar() {
   document.getElementById('pofTwoP').innerText = "Act with precision and intent to strike at the very weave of magic to cut down your foe's enchantments while disrupting their ability to cast spells. Utilize the Full Counter skill to absorb attacks and retaliate with devastating force."
   document.getElementById('pofThreeP').innerHTML = "<span class='warColors'>" + "Meditations" + "</span> — Focus on crowd control, supporting the spellbreaker, and removing boons from enemies."
   //Weapon
-  document.getElementById('pofWOne').innerHTML = "<span class='warColors'>" + "Main-hand Dagger" + "</span> — Fast attacks to take down your enemies, slow them or disable them. (Spellbreaker specialization only)"
-  document.getElementById('pofWTwo').innerHTML = "<span class='warColors'>" + "Off-hand Dagger" + "</span> — Strike your enemies when they are off guard or reflect incoming projectiles. (Spellbreaker specialization only)"
+  document.getElementById('pofWOne').innerHTML = "<span class='warColors'>" + "Main-hand Dagger" + "</span> — Fast attacks to take down your enemies, slow them or disable them. (<span class='warColors'>" + "Spellbreaker" + "</span> specialization only)"
+  document.getElementById('pofWTwo').innerHTML = "<span class='warColors'>" + "Off-hand Dagger" + "</span> — Strike your enemies when they are off guard or reflect incoming projectiles. (<span class='warColors'>" + "Spellbreaker" + "</span> specialization only)"
   //Specialization Trait
   document.getElementById('pofStOne').innerHTML = "<span class='warColors'>" + "Spellbreaker" + "</span> — Gains ability to wield double daggers, a set of meditation skills and the class mechanic Full Counter."
   //EOD
@@ -214,10 +214,10 @@ function gwWar() {
   document.getElementById('eodVideo').src = "../../video/characters/dieselVan.mp4"
   //Description
   document.getElementById('eodOneP').innerText = '"Concentrate and execute."'
-  document.getElementById('eodTwoP').innerText = "Dedicated to the art of wielding the dangerous Canthan gunsaber, Bladesworn employ the meditative Dragon Trigger technique to strike down their foes with devastating slashes and point-blank blasts."
-  document.getElementById('eodThreeP').innerHTML = "<span class='warColors'>" + "Armament" + "</span> — Focus on recharges Ammunition skill, supporting bladesworn's Dragon Trigger and flow."
+  document.getElementById('eodTwoP').innerHTML = "Dedicated to the art of wielding the dangerous Canthan gunsaber, <span class='warColors'>" + "Bladesworn" + "</span> employ the meditative Dragon Trigger technique to strike down their foes with devastating slashes and point-blank blasts."
+  document.getElementById('eodThreeP').innerHTML = "<span class='warColors'>" + "Armament" + "</span> — Focus on recharges Ammunition skill, supporting <span class='warColors'>" + "Bladesworn's" + "</span> Dragon Trigger and flow."
   //Weapon
-  document.getElementById('eodWOne').innerHTML = "<span class='warColors'>" + "Off-hand Pistol" + "</span> — Quick close combat shots that revolve around ammunition management. (Bladesworn specialization only)"
+  document.getElementById('eodWOne').innerHTML = "<span class='warColors'>" + "Off-hand Pistol" + "</span> — Quick close combat shots that revolve around ammunition management. (<span class='warColors'>" + "Bladesworn" + "</span> specialization only)"
   //Specialization Trait
   document.getElementById('eodStOne').innerHTML = "<span class='warColors'>" + "Bladesworn" + "</span> — Gains access to off-hand pistols, a set of armament skills and the class mechanic Dragon Slash."
 }
@@ -234,16 +234,16 @@ function gwEngi() {
     for(let i = 0; i < elements.length; i++) {
       elements[i].style.color = "#ce7f4b";
     }
-  document.getElementById('coreOneP').innerText = "Engineers are technological and alchemical masterminds. Their profession mechanic is their tool belt, a second set of skills providing engineers with a plethora of options ensuring they always have the right tool for the job.";
+  document.getElementById('coreOneP').innerHTML = "<span class='engiColors'>" + "Engineers" + "</span> are technological and alchemical masterminds. Their profession mechanic is their tool belt, a second set of skills providing <span class='engiColors'>" + "Engineers" + "</span> with a plethora of options ensuring they always have the right tool for the job.";
   document.getElementById('coreTwoP').innerText = "They employ turrets, grenades, elixirs, gadgets and even wield their own Engineering Kits as weapons to overcome their enemies. ";
-  document.getElementById('coreThreeP').innerText = "Engineers don't have access to weapon swap during combat, instead they can freely swap between kits with no cooldown. Depending on which kit you swap too, determinds what kind of skills you will have access too.";
-  document.getElementById('coreFourP').innerText = "As an adventurer profession, engineers wear medium armor.";
+  document.getElementById('coreThreeP').innerHTML = "<span class='engiColors'>" + "Engineer" + "</span> don't have access to weapon swap during combat, instead they can freely swap between kits with no cooldown. Depending on which kit you swap too, determinds what kind of skills you will have access too.";
+  document.getElementById('coreFourP').innerHTML = "As an adventurer profession, <span class='engiColors'>" + "Engineer" + "</span> wear medium armor.";
   //Weapons
-  document.getElementById('corewOne').innerHTML = "Two-handed Rifle — Blast foes out of the way or jump on them with a powerful jump attack. Rifles provide the engineer with the ability to manipulate their position as well as the opponent. With a quick interrupt, piercing ranged shots and a short-ranged bleed to deter foes who come too close, this weapon best suits the engineer who prefers to stay mobile.";
-  document.getElementById('corewTwo').innerHTML = "Main-hand Pistol — Poison, bleed or confuse enemies with variety of ranged shots. Pistols allow the engineer to quickly stack a variety of damaging conditions in a short amount of time. This weapon is ideal for engineers who like to focus on condition damage.";
-  document.getElementById('corewThree').innerHTML = "Off-hand Pistol — Spread sticky glue on the ground or fire a jet of flames from your pistol, providing further condition damage and the option of immobilizing foes.";
-  document.getElementById('corewFour').innerHTML = "Off-hand Shield — Provides protection from ranged and melee attacks and can be used to push foes back with a magnetic pulse. Can also be thrown like a boomerang for a 2-hit ranged attack. Good for engineers who value defense over pure offense while wielding a pistol, sword, or mace";
-  document.getElementById('corewFive').innerHTML = "Under water Harpoon gun — Ranged weapon suitable for controlling foes.";
+  document.getElementById('corewOne').innerHTML = "<span class='engiColors'>" + "Two-handed Rifle" + "</span> — Blast foes out of the way or jump on them with a powerful jump attack. Rifles provide the engineer with the ability to manipulate their position as well as the opponent. With a quick interrupt, piercing ranged shots and a short-ranged bleed to deter foes who come too close, this weapon best suits the <span class='engiColors'>" + "Engineer" + "</span> who prefers to stay mobile.";
+  document.getElementById('corewTwo').innerHTML = "<span class='engiColors'>" + "Main-hand Pistol" + "</span> — Poison, bleed or confuse enemies with variety of ranged shots. Pistols allow the <span class='engiColors'>" + "Engineer" + "</span> to quickly stack a variety of damaging conditions in a short amount of time. This weapon is ideal for <span class='engiColors'>" + "Engineers" + "</span> who like to focus on condition damage.";
+  document.getElementById('corewThree').innerHTML = "<span class='engiColors'>" + "Off-hand Pistol" + "</span> — Spread sticky glue on the ground or fire a jet of flames from your pistol, providing further condition damage and the option of immobilizing foes.";
+  document.getElementById('corewFour').innerHTML = "<span class='engiColors'>" + "Off-hand Shield" + "</span> — Provides protection from ranged and melee attacks and can be used to push foes back with a magnetic pulse. Can also be thrown like a boomerang for a 2-hit ranged attack. Good for <span class='engiColors'>" + "Engineers" + "</span> who value defense over pure offense while wielding a pistol, sword, or mace";
+  document.getElementById('corewFive').innerHTML = "<span class='engiColors'>" + "Under water Harpoon gun" + "</span> — Ranged weapon suitable for controlling foes.";
   document.getElementById('corewSix').innerHTML = "";
   document.getElementById('corewSeven').innerHTML = "";
   document.getElementById('corewEight').innerHTML = "";
@@ -254,52 +254,52 @@ function gwEngi() {
   document.getElementById('corewThirteen').innerHTML = "";
   document.getElementById('corewFourteen').innerHTML = "";
   //Specialization Traits
-  document.getElementById('stOne').innerHTML = "Explosives — Focuses on damage increase, dodging, vulnerability, and Explosions, including bombs, grenades, and mines. May enhance the Bomb Kit and the Grenade Kit.";
-  document.getElementById('stTwo').innerHTML = "Firearms — Focuses on critical hits and conditions, especially bleeding and burning. May enhance pistol, rifle, harpoon gun, and Flamethrower skills.";
-  document.getElementById('stThree').innerHTML = "Inventions — Focuses on healing, defense, and cleansing conditions. May enhance shield and turret skills.";
-  document.getElementById('stFour').innerHTML = "Alchemy — Focuses on gaining boons and support. May enhance elixir and Med Kit skills.";
-  document.getElementById('stFive').innerHTML = "Tools — Focuses on tool belt skills and endurance. May enhance gadget and Tool Kit skills.";
+  document.getElementById('stOne').innerHTML = "<span class='engiColors'>" + "Explosives" + "</span> — Focuses on damage increase, dodging, vulnerability, and Explosions, including bombs, grenades, and mines. May enhance the Bomb Kit and the Grenade Kit.";
+  document.getElementById('stTwo').innerHTML = "<span class='engiColors'>" + "Firearms" + "</span> — Focuses on critical hits and conditions, especially bleeding and burning. May enhance pistol, rifle, harpoon gun, and Flamethrower skills.";
+  document.getElementById('stThree').innerHTML = "<span class='engiColors'>" + "Inventions" + "</span> — Focuses on healing, defense, and cleansing conditions. May enhance shield and turret skills.";
+  document.getElementById('stFour').innerHTML = "<span class='engiColors'>" + "Alchemy" + "</span> — Focuses on gaining boons and support. May enhance elixir and Med Kit skills.";
+  document.getElementById('stFive').innerHTML = "<span class='engiColors'>" + "Tools" + "</span> — Focuses on tool belt skills and endurance. May enhance gadget and Tool Kit skills.";
   //HOT
-  document.querySelector('.hotName').innerHTML = "Scrapper";
+  document.querySelector('.hotName').innerHTML = "<span class='engiColors'>" + "Scrapper" + "</span>";
   document.getElementById('hotVideo').src = "../../video/characters/rambro.mp4";
   //Description
   document.getElementById('hotOneP').innerText = "'I'll patch you right on up'";
   document.getElementById('hotTwoP').innerText = "You can aid multiple allies in large-scale battles with massive area-of-effect skills, healing and providing superspeed and other necessary boons. They are also adept at crowd control.";
-  document.getElementById('hotThreeP').innerHTML = "Wells — Scrappers can use gyros to surround themselves with mobile wells that follow them around, either aiding allies or harming enemies.";
+  document.getElementById('hotThreeP').innerHTML = "<span class='engiColors'>" + "Wells" + "</span> — Scrappers can use gyros to surround themselves with mobile wells that follow them around, either aiding allies or harming enemies.";
   //Weapon
-  document.getElementById('hotWOne').innerHTML = "Two-handed Hammer — Focuses on aoe damage, can reflect projectiles, evade, block, and disrupt opponents, perfect for a bruiser playstyle. (Scrapper specialization only)";
+  document.getElementById('hotWOne').innerHTML = "<span class='engiColors'>" + "Two-handed Hammer" + "</span> — Focuses on aoe damage, can reflect projectiles, evade, block, and disrupt opponents, perfect for a bruiser playstyle. (<span class='engiColors'>" + "Scrapper" + "</span> specialization only)";
   //Specialization Trait
-  document.getElementById('hotStOne').innerHTML = "Scrapper — Focuses on combat durability through barrier, gives access to hammer, wells, and replaces the fifth tool belt skill with Function Gyro, which can revive allies and finish foes on its own.";
+  document.getElementById('hotStOne').innerHTML = "<span class='engiColors'>" + "Scrapper" + "</span> — Focuses on combat durability through barrier, gives access to hammer, wells, and replaces the fifth tool belt skill with Function Gyro, which can revive allies and finish foes on its own.";
   //POF
-  document.querySelector('.pofName').innerHTML = "Holosmith";
+  document.querySelector('.pofName').innerHTML = "<span class='engiColors'>" + "Holosmith" + "</span>";
   document.getElementById('pofVideo').src = "../../video/characters/rambro.mp4";
   //Description
   document.getElementById('pofOneP').innerText = "'Burnin' up!'";
   document.getElementById('pofTwoP').innerText = "Use your Photon Forge to generate weapons of pure, blinding light, cauterizing your enemies—but be careful not to use these weapons for too long, or you'll overheat.";
-  document.getElementById('pofThreeP').innerHTML = "Exceed — Powerful holographic weapons and tools created using solidified sunlight, or hard light, that benefit from the amount of accumulated heat in the Photon Forge.";
+  document.getElementById('pofThreeP').innerHTML = "<span class='engiColors'>" + "Exceed" + "</span> — Powerful holographic weapons and tools created using solidified sunlight, or hard light, that benefit from the amount of accumulated heat in the Photon Forge.";
   //Weapon
-  document.getElementById('pofWOne').innerHTML = "Main-hand Sword — Cut through enemies' defenses, launch blades of concentrated light that bleed them, or jump at them with the speed of light while gaining quickness. Sword skills gain bonus effects based on your current heat level. (Holosmith specialization only)";
+  document.getElementById('pofWOne').innerHTML = "<span class='engiColors'>" + "Main-hand Sword" + "</span> — Cut through enemies' defenses, launch blades of concentrated light that bleed them, or jump at them with the speed of light while gaining quickness. Sword skills gain bonus effects based on your current heat level. (<span class='engiColors'>" + "Holosmith" + "</span> specialization only)";
   document.getElementById('pofWTwo').innerHTML = "";
   //Specialization Trait
-  document.getElementById('pofStOne').innerHTML = "Holosmith — Enables the Photon Forge, which replaces the fifth tool belt skill and harnesses sunlight to create holographic weapons to cauterize enemies while storing Heat. Gives access to mainhand sword and Exceed skills, both benefiting from stored Heat.";
+  document.getElementById('pofStOne').innerHTML = "<span class='engiColors'>" + "Holosmith" + "</span> — Enables the Photon Forge, which replaces the fifth tool belt skill and harnesses sunlight to create holographic weapons to cauterize enemies while storing Heat. Gives access to mainhand sword and Exceed skills, both benefiting from stored Heat.";
   //EOD
-  document.querySelector('.eodName').innerHTML = "Mechanist";
+  document.querySelector('.eodName').innerHTML = "<span class='engiColors'>" + "Mechanist" + "</span>";
   document.getElementById('eodVideo').src = "../../video/characters/rambro.mp4";
   //Description
   document.getElementById('eodOneP').innerText = '"All systems go. Mech cleared for launch!"';
-  document.getElementById('eodTwoP').innerText = "The mechanist is an innovator and master of jade tech, battling alongside a mech of their own creation. Customize your mech and use it to crush your enemies—together, you're unstoppable";
-  document.getElementById('eodThreeP').innerHTML = "Signets — Signets grant passive effects while equipped, and produce a powerful effect at the mechanists or the mechs location when activated. The passive effect is lost while the signet recharges.";
+  document.getElementById('eodTwoP').innerHTML = "The <span class='engiColors'>" + "Engineer" + "</span> is an innovator and master of jade tech, battling alongside a mech of their own creation. Customize your mech and use it to crush your enemies—together, you're unstoppable";
+  document.getElementById('eodThreeP').innerHTML = "<span class='engiColors'>" + "Signets" + "</span> — grant passive effects while equipped, and produce a powerful effect at the <span class='engiColors'>" + "Mechanists" + "</span> or the mechs location when activated. The passive effect is lost while the signet recharges.";
   //Weapon
-  document.getElementById('eodWOne').innerHTML = "Main-hand Mace — Smash your targets with heavy blows confusing them and applying barrier to allies, leap towards your foes, or launch a exploding fist that stuns the first target it hits. (Mechanist specialization only)";
+  document.getElementById('eodWOne').innerHTML = "<span class='engiColors'>" + "Main-hand Mace" + "</span> — Smash your targets with heavy blows confusing them and applying barrier to allies, leap towards your foes, or launch a exploding fist that stuns the first target it hits. (Mechanist specialization only)";
   //Specialization Trait
-  document.getElementById('eodStOne').innerHTML = "Mechanist — Enables the Jade Mech CJ-1 with Mech Commands which replace tool belt skills, gives access to mace and signets.";
+  document.getElementById('eodStOne').innerHTML = "<span class='engiColors'>" + "Mechanist" + "</span> — Enables the Jade Mech CJ-1 with Mech Commands which replace tool belt skills, gives access to mace and signets.";
 }
 document.getElementById('ranger').onclick = gwRan;
 function gwRan() {
   document.querySelector('body').style.backgroundImage = "linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../../img/specBackground/core/rangerBackground.jpg)";
   document.querySelector('body').style.backgroundPosition = "top";
   document.querySelector('body').style.backgroundSize = "cover";
-  document.querySelector('.coreName').innerHTML = "Ranger";
+  document.querySelector('.coreName').innerHTML = "<span class='rangeColors'>" + "Ranger" + "</span>";
   document.querySelector('.classShowCase').style.display = "flex";
   document.querySelector('.specDescription').style.display = "unset";
   document.querySelector('video').src="../../video/characters/noire.mp4";
@@ -308,65 +308,65 @@ function gwRan() {
       elements[i].style.color = "#94c34a";
     }
   //Description
-  document.getElementById('coreOneP').innerText = "Rangers are defenders of nature. Their profession mechanic is their loyal pets, animal companions that rangers tame and train. ";
-  document.getElementById('coreTwoP').innerText = "Rangers and their pets fight as one, wielding the power of nature to empower their allies, enduring combat with their wilderness survival skills, concealing traps anticipating fights, and overwhelming their enemies with the strength of the pack. ";
-  document.getElementById('coreThreeP').innerText = "As an adventurer profession, rangers wear medium armor.";
+  document.getElementById('coreOneP').innerHTML = "<span class='rangeColors'>" + "Rangers" + "</span> are defenders of nature. Their profession mechanic is their loyal pets, animal companions that <span class='rangeColors'>" + "Rangers" + "</span> tame and train. ";
+  document.getElementById('coreTwoP').innerHTML = "<span class='rangeColors'>" + "Rangers" + "</span> and their pets fight as one, wielding the power of nature to empower their allies, enduring combat with their wilderness survival skills, concealing traps anticipating fights, and overwhelming their enemies with the strength of the pack. ";
+  document.getElementById('coreThreeP').innerHTML = "As an adventurer profession, <span class='rangeColors'>" + "Rangers" + "</span> wear medium armor.";
   document.getElementById('coreFourP').innerText = "";
   //Weapons
-  document.getElementById('corewOne').innerHTML = "Two-handed Greatsword — A brute force, heavy-damage weapon with emphasis on countering and evasion.";
-  document.getElementById('corewTwo').innerHTML = "Two-handed Longbow — Powerful, long-range weapon used for Rapid Fire strikes and AoE barrages.";
-  document.getElementById('corewThree').innerHTML = "Two-handed Short bow — Quick skirmishing weapon relying on movement, positioning, and conditions for quick kills.";
-  document.getElementById('corewFour').innerHTML = "Main-hand Axe — Medium ranged throwing weapon which can ricochet off a target or can toss a cluster of axes.";
-  document.getElementById('corewFive').innerHTML = "Main-hand Sword — Mobile melee strikes which can be used to distance the ranger from the target or surprise them from behind.";
-  document.getElementById('corewSix').innerHTML = "Off-hand Axe — Enter a stance to reflect incoming strikes or throw the axe for a boomerang effect.";
-  document.getElementById('corewSeven').innerHTML = "Off-hand Dagger — Used as a crippling ranged attack, or a quick poisonous stab for melee.";
-  document.getElementById('corewEight').innerHTML = "Off-hand Torch — Throw the torch at enemies for burning damage, or light areas on fire";
-  document.getElementById('corewNine').innerHTML = "Off-hand Warhorn — Used to deal damage over time or buff allies.";
-  document.getElementById('corewTen').innerHTML = "Under water Harpoon gun — Use ranged attacks to strike multiple foes and makes use of the underwater environment.";
-  document.getElementById('corewEleven').innerHTML = "Under water Spear — Keep foes at bay with close range spear stabs and swipes.";
+  document.getElementById('corewOne').innerHTML = "<span class='rangeColors'>" + "Two-handed Greatsword" + "</span>— A brute force, heavy-damage weapon with emphasis on countering and evasion.";
+  document.getElementById('corewTwo').innerHTML = "<span class='rangeColors'>" + "Two-handed Longbow" + "</span> — Powerful, long-range weapon used for Rapid Fire strikes and AoE barrages.";
+  document.getElementById('corewThree').innerHTML = "<span class='rangeColors'>" + "Two-handed Shortbow" + "</span> — Quick skirmishing weapon relying on movement, positioning, and conditions for quick kills.";
+  document.getElementById('corewFour').innerHTML = "<span class='rangeColors'>" + "Main-hand Axe" + "</span>— Medium ranged throwing weapon which can ricochet off a target or can toss a cluster of axes.";
+  document.getElementById('corewFive').innerHTML = "<span class='rangeColors'>" + "Main-hand Sword" + "</span> — Mobile melee strikes which can be used to distance the <span class='rangeColors'>" + "Ranger" + "</span> from the target or surprise them from behind.";
+  document.getElementById('corewSix').innerHTML = "<span class='rangeColors'>" + "Off-hand Axe" + "</span> — Enter a stance to reflect incoming strikes or throw the axe for a boomerang effect.";
+  document.getElementById('corewSeven').innerHTML = "<span class='rangeColors'>" + "Off-hand Dagger" + "</span> — Used as a crippling ranged attack, or a quick poisonous stab for melee.";
+  document.getElementById('corewEight').innerHTML = "<span class='rangeColors'>" + "Off-hand Torch" + "</span> — Throw the torch at enemies for burning damage, or light areas on fire";
+  document.getElementById('corewNine').innerHTML = "<span class='rangeColors'>" + "Off-hand Warhorn" + "</span> — Used to deal damage over time or buff allies.";
+  document.getElementById('corewTen').innerHTML = "<span class='rangeColors'>" + "Under water Harpoon Gun" + "</span> — Use ranged attacks to strike multiple foes and makes use of the underwater environment.";
+  document.getElementById('corewEleven').innerHTML = "<span class='rangeColors'>" + "Under water spear" + "</span>— Keep foes at bay with close range spear stabs and swipes.";
   document.getElementById('corewTwelve').innerHTML = "";
   document.getElementById('corewThirteen').innerHTML = "";
   document.getElementById('corewFourteen').innerHTML = "";
   //Specialization Traits
-  document.getElementById('stOne').innerHTML = "Marksmanship — Focuses on power damage and starting fights with burst damage. May enhance longbow and harpoon gun, and signet skills.";
-  document.getElementById('stTwo').innerHTML = "Skirmishing — Focuses on critical hits for both power and condition damage, and enhances weapon swapping. May enhance sword, short bow, and trap skills.";
-  document.getElementById('stThree').innerHTML = "Wilderness Survival — Focuses on defence, protection from conditions, and inflicting conditions. May enhance torch and dagger, and survival skills.";
-  document.getElementById('stFour').innerHTML = "Nature Magic — Focuses on support through healing and boon generation. May enhance warhorn and spirit skills.";
-  document.getElementById('stFive').innerHTML = "Beastmastery — Focuses on improving your pets, their beast skill, and pet swapping. May enhance greatsword, axe, and command skills.";
+  document.getElementById('stOne').innerHTML = "<span class='rangeColors'>" + "Marksmanship" + "</span> — Focuses on power damage and starting fights with burst damage. May enhance longbow and harpoon gun, and signet skills.";
+  document.getElementById('stTwo').innerHTML = "<span class='rangeColors'>" + "Skirmishing" + "</span> — Focuses on critical hits for both power and condition damage, and enhances weapon swapping. May enhance sword, short bow, and trap skills.";
+  document.getElementById('stThree').innerHTML = "<span class='rangeColors'>" + "Wilderness Survival" + "</span> — Focuses on defence, protection from conditions, and inflicting conditions. May enhance torch and dagger, and survival skills.";
+  document.getElementById('stFour').innerHTML = "<span class='rangeColors'>" + "Nature Magic" + "</span> — Focuses on support through healing and boon generation. May enhance warhorn and spirit skills.";
+  document.getElementById('stFive').innerHTML = "<span class='rangeColors'>" + "Beastmastery" + "</span> — Focuses on improving your pets, their beast skill, and pet swapping. May enhance greatsword, axe, and command skills.";
   //HOT
-  document.querySelector('.hotName').innerHTML = "Druid";
+  document.querySelector('.hotName').innerHTML = "<span class='rangeColors'>" + "Druid" + "</span>";
   document.getElementById('hotVideo').src = "../../video/characters/noire.mp4";
   //Description
   document.getElementById('hotOneP').innerText = '"The stars, earth, and sky above will heal us"';
-  document.getElementById('hotTwoP').innerText = "Druids utilize the power of nature and the stars above to heal their allies, using glyph skills to channel powerful boons and protective utilities. By generating your astral force, you can channel your Celestial Avatar form.";
-  document.getElementById('hotThreeP').innerHTML = "Glyph — Double-faced skills focused on support that interact with the druid's profession mechanic of Celestial Avatar.";
+  document.getElementById('hotTwoP').innerHTML = "<span class='rangeColors'>" + "Druids" + "</span> utilize the power of nature and the stars above to heal their allies, using glyph skills to channel powerful boons and protective utilities. By generating your astral force, you can channel your Celestial Avatar form.";
+  document.getElementById('hotThreeP').innerHTML = "<span class='rangeColors'>" + "Glyph" + "</span> — Double-faced skills focused on support that interact with the <span class='rangeColors'>" + "Druids" + "</span> profession mechanic of Celestial Avatar.";
   //Weapon
-  document.getElementById('hotWOne').innerHTML = "Two-handed Staff — A support oriented long range weapon. (Druid specialization only)";
+  document.getElementById('hotWOne').innerHTML = "<span class='rangeColors'>" + "Two-handed Staff" + "</span> — A support oriented long range weapon. (<span class='rangeColors'>" + "Druid's" + "</span> specialization only)";
   //Specialization Trait
-  document.getElementById('hotStOne').innerHTML = "Druid — Focuses on support, gives access to staff, glyph skills, and the ability to transform into a Celestial Avatar.";
+  document.getElementById('hotStOne').innerHTML = "<span class='rangeColors'>" + "Druid" + "</span> — Focuses on support, gives access to staff, glyph skills, and the ability to transform into a Celestial Avatar.";
   //POF
-  document.querySelector('.pofName').innerHTML = "Soulbeast";
+  document.querySelector('.pofName').innerHTML = "<span class='rangeColors'>" + "Soulbeast" + "</span>";
   document.getElementById('pofVideo').src = "../../video/characters/noire.mp4";
   //Description
   document.getElementById('pofOneP').innerText = '"Two hearts fighting as one"';
-  document.getElementById('pofTwoP').innerText = "Soulbeasts gain the ability to merge with their pet, channeling their power and the ability to use their beast skills. One with your pet, you are fierce in melee-focused combat.";
-  document.getElementById('pofThreeP').innerHTML = "Stance — Skills that grant the soulbeast positive effects over a few seconds, inspired by the strengths of the depicted animals.";
+  document.getElementById('pofTwoP').innerHTML = "<span class='rangeColors'>" + "Soulbeasts" + "</span> gain the ability to merge with their pet, channeling their power and the ability to use their beast skills. One with your pet, you are fierce in melee-focused combat.";
+  document.getElementById('pofThreeP').innerHTML = "<span class='rangeColors'>" + "Stance" + "</span> — Skills that grant the <span class='rangeColors'>" + "Soulbeast" + "</span> positive effects over a few seconds, inspired by the strengths of the depicted animals.";
   //Weapon
-  document.getElementById('pofWOne').innerHTML = "Main-hand Dagger — A swift melee weapon designed to overwhelm with conditions. (Soulbeast specialization only)";
+  document.getElementById('pofWOne').innerHTML = "<span class='rangeColors'>" + "Main-hand Dagger" + "</span> — A swift melee weapon designed to overwhelm with conditions. (<span class='rangeColors'>" + "Soulbeast" + "</span> specialization only)";
   document.getElementById('pofWTwo').innerHTML = "";
   //Specialization Trait
-  document.getElementById('pofStOne').innerHTML = "Druid is an elite specialization for the ranger that focuses on glyph skills and adds a new astral force mechanic that allows them to become a celestial avatar. It also allows the ranger to use a staff.";
+  document.getElementById('pofStOne').innerHTML = "<span class='rangeColors'>" + "Druid" + "</span> is an elite specialization for the <span class='rangeColors'>" + "Ranger" + "</span> that focuses on glyph skills and adds a new astral force mechanic that allows them to become a celestial avatar. It also allows the <span class='rangeColors'>" + "Ranger" + "</span> to use a staff.";
   //EOD
-  document.querySelector('.eodName').innerHTML = "Untamed";
+  document.querySelector('.eodName').innerHTML = "<span class='rangeColors'>" + "Untamed" + "</span>";
   document.getElementById('eodVideo').src = "../../video/characters/noire.mp4";
   //Description
   document.getElementById('eodOneP').innerText = '"Unleashed, unbound—the rage of the Echovald Forest lives in us."';
-  document.getElementById('eodTwoP').innerText = "The Untamed share a primal bond with nature through their pet, juggling control of raw power back and forth to defeat foes—your pet uses debilitating nature-based skills to weaken enemies, then relinquishes that power to you for the final strike.";
-  document.getElementById('eodThreeP').innerHTML = "Cantrip — Skills that focus on survivability and crowd control. They provide offensive boons when the ranger is unleashed, and defensive when the pet is unleashed.";
+  document.getElementById('eodTwoP').innerHTML = "The <span class='rangeColors'>" + "Untamed" + "</span> share a primal bond with nature through their pet, juggling control of raw power back and forth to defeat foes—your pet uses debilitating nature-based skills to weaken enemies, then relinquishes that power to you for the final strike.";
+  document.getElementById('eodThreeP').innerHTML = "<span class='rangeColors'>" + "Cantrip" + "</span> — Skills that focus on survivability and crowd control. They provide offensive boons when the <span class='rangeColors'>" + "Ranger" + "</span> is unleashed, and defensive when the pet is unleashed.";
   //Weapon
-  document.getElementById('eodWOne').innerHTML = "Two-handed Hammer — A melee weapon, made to control the enemies. (Untamed specialization only)";
+  document.getElementById('eodWOne').innerHTML = "<span class='rangeColors'>" + "Two-handed Hammer" + "</span> — A melee weapon, made to control the enemies. (<span class='rangeColors'>" + "Untamed" + "</span> specialization only)";
   //Specialization Trait
-  document.getElementById('eodStOne').innerHTML = "Untamed — Focuses on greater pet control, gives access to hammer, cantrip skills, and the ability to enter Unleashed.";
+  document.getElementById('eodStOne').innerHTML = "<span class='rangeColors'>" + "Untamed" + "</span> — Focuses on greater pet control, gives access to hammer, cantrip skills, and the ability to enter Unleashed.";
 }
 document.getElementById('thief').onclick = gwThief
 function gwThief() {

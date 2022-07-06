@@ -309,7 +309,7 @@ function gwRan() {
     }
   //Description
   document.getElementById('coreOneP').innerHTML = "<span class='rangeColors'>" + "Rangers" + "</span> are defenders of nature. Their profession mechanic is their loyal pets, animal companions that <span class='rangeColors'>" + "Rangers" + "</span> tame and train. ";
-  document.getElementById('coreTwoP').innerHTML = "<span class='rangeColors'>" + "Rangers" + "</span> and their pets fight as one, wielding the power of nature to empower their allies, enduring combat with their wilderness survival skills, concealing traps anticipating fights, and overwhelming their enemies with the strength of the pack. ";
+  document.getElementById('coreTwoP').innerHTML = "<span class='rangeColors'>" + "Rangers" + "</span> and their pets fight as one, wielding the power of nature to empower their allies, enduring combat with their wilderness survival skills, concealing traps anticipating fights, and overwhelming their enemies with the strength of the pack.";
   document.getElementById('coreThreeP').innerHTML = "As an adventurer profession, <span class='rangeColors'>" + "Rangers" + "</span> wear medium armor.";
   document.getElementById('coreFourP').innerText = "";
   //Weapons
@@ -456,7 +456,7 @@ function gwEle() {
       elements[i].style.color = "#f77a84";
     }
   //Description
-  document.getElementById('coreOneP').innerHTML = "<span class='eleColors'>" + "Elementalists" + "</span> are master spell casters. Their profession mechanic are their four attunements: Fire, Water, Air, and Earth. They wield each of these elements to defeat their foes and aid their allies. ";
+  document.getElementById('coreOneP').innerHTML = "<span class='eleColors'>" + "Elementalists" + "</span> are master spell casters. Their profession mechanic are their four attunements: Fire, Water, Air, and Earth. They wield each of these elements to defeat their foes and aid their allies.";
   document.getElementById('coreTwoP').innerHTML = "Albeit lacking in defense, <span class='eleColors'>" + "Elementalists" + "</span> are very versatile and have access to a plethora of skills, as attuning to the different elements also changes their skills.";
   document.getElementById('coreThreeP').innerHTML = "<span class='eleColors'>" + "Elementalists" + "</span> can also manifest the elements as conjured weapons with their own set of skills, or as allied elementals to aid them in combat. As a scholar profession, <span class='eleColors'>" + "Elementalists" + "</span> wear light armor.";
   document.getElementById('coreFourP').innerText = "";
@@ -601,10 +601,10 @@ function gwNecro() {
   document.querySelector('video').src="../../video/characters/lordNecomongr.mp4";
   let elements = document.getElementsByClassName('colorChange');
     for(let i = 0; i < elements.length; i++) {
-      elements[i].style.color = "#3e8e72";
+      elements[i].style.color = "#2C9D5D";
     }
   //Description
-  document.getElementById('coreOneP').innerHTML = "<span class='necroColors'>" + "Necromancers" + "</span> are masters of the dark arts. They absorb life force from nearby deaths to fuel their profession mechanic, Death Shroud, where they endure incoming attacks while striking their enemies, ensuring they always outlive their foes. ";
+  document.getElementById('coreOneP').innerHTML = "<span class='necroColors'>" + "Necromancers" + "</span> are masters of the dark arts. They absorb life force from nearby deaths to fuel their profession mechanic, Death Shroud, where they endure incoming attacks while striking their enemies, ensuring they always outlive their foes.";
   document.getElementById('coreTwoP').innerHTML = "<span class='necroColors'>" + "Necromancers" + "</span> command over death itself, they can summon undead minions to fight for them, overwhelm their enemies in conditions, corrupt their boons, drink their blood, rip their skin and soul, and steal their life.";
   document.getElementById('coreThreeP').innerHTML = "As a scholar profession, <span class='necroColors'>" + "Necromancers" + "</span> wear light armor.";
   document.getElementById('coreFourP').innerText = "";

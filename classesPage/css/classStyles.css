@@ -93,7 +93,7 @@ main {
 ul {
   list-style: none;
 }
-#coreVideo, #hotVideo, #pofVideo, #eodVideo {
+.video {
   border-radius: 2rem;
   width: 40rem;
   height: 40vh;
@@ -112,13 +112,16 @@ ul {
 .specDescription {
   width: 70rem;
   background-color: rgba(0, 0, 0, 0.7);
-  padding: 3rem;
+  padding: 1rem;
   border: 2px solid white;
-  border-radius: 5rem;
+  border-radius: 2rem;
   display: none;
 }
 .specHighlights, .specWeapons, .specP {
-  padding: 0rem 3rem 0rem 3rem
+  padding: 0rem 3rem 0rem 3rem;
+}
+p {
+  padding-bottom: 10px;
 }
 /******************************************
 /* ADDITIONAL STYLES
@@ -157,5 +160,63 @@ ul {
 }
 .necroColors {
   font-weight: bold;
-  color: #BFE6D0;
+  color: #30e56e;
+}
+/******************************************
+/* Media Queries
+/*******************************************/
+/* ------------------------ */
+/* Below 1344px (smaller screens) */
+/* ------------------------ */
+@media (max-width: 84em) {
+  
+}
+/* ------------------------ */
+/* Below 1200px (Landscape tablets) */
+/* ------------------------ */
+@media (max-width: 75em) {
+  html {
+    /* 9px / 16px = 0.5625 font-size: 56.25%; */
+    
+  }
+  
+}
+/* ------------------------ */
+/* Below 944px (tablets) */
+/* ------------------------ */
+@media (max-width: 59em) {
+  html {
+    /*8px / 16px = 0.5 = 50%  font-size: 50%;*/
+    
+  }
+  body {
+    background-size: 100% 100%;
+  }
+  .specSelection {
+    margin: 0 auto;
+    width: 23em;
+  }
+  .video {
+    border-radius: 1rem;
+    width: 22em;
+    height: 35vh;
+  }
+  .specHighlights, .specWeapons, .specP {
+  padding: 1em;
+}
+/* ------------------------ */
+/* Mobile navigation */
+/* ------------------------ */
+}
+/* ------------------------ */
+/* Below 704px (Small Tablets) */
+/* ------------------------ */
+@media (max-width: 44em) {
+  
+}
+/* ------------------------ */
+/* Below 544px (Phones) */
+/* ------------------------ */
+@media (max-width: 34em) {
+  
 }

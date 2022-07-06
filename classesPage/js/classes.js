@@ -601,7 +601,7 @@ function gwNecro() {
   document.querySelector('video').src="../../video/characters/lordNecomongr.mp4";
   let elements = document.getElementsByClassName('colorChange');
     for(let i = 0; i < elements.length; i++) {
-      elements[i].style.color = "#3e8e72";
+      elements[i].style.color = "#2C9D5D";
     }
   //Description
   document.getElementById('coreOneP').innerHTML = "<span class='necroColors'>" + "Necromancers" + "</span> are masters of the dark arts. They absorb life force from nearby deaths to fuel their profession mechanic, Death Shroud, where they endure incoming attacks while striking their enemies, ensuring they always outlive their foes. ";

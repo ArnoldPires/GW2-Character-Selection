@@ -213,6 +213,7 @@ p {
   .specSelection {
     margin: 0 auto;
     width: 25em;
+    max-width: 100%;
   }
   .video {
     border-radius: 1rem;
@@ -236,5 +237,18 @@ p {
 /* Below 544px (Phones) */
 /* ------------------------ */
 @media (max-width: 34em) {
-  
+  .specSelection {
+    width: 21em;
+  }
+  .video {
+    width: 19em;
+  }
+}
+@media (max-width: 29em) {
+  .coreSpecs {
+    padding: 5px;
+  }
+  .video {
+    width: 17em;
+  }
 }

@@ -208,7 +208,7 @@ p {
     
   }
   body {
-    background-size: 50rem 46rem;
+    background-size: 90em 100%;
   }
   .specSelection {
     margin: 0 auto;
@@ -216,7 +216,7 @@ p {
     max-width: 100%;
   }
   .video {
-    border-radius: 1rem;
+    border-radius: 1em;
     width: 22em;
     height: 35vh;
   }
